@@ -1,0 +1,2700 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ACLXRAYModelStoreContainer" CdmEntityContainer="ACLXRAYEntities">
+    <EntitySetMapping Name="AD_CONFIG">
+      <EntityTypeMapping TypeName="ACLXRAYModel.AD_CONFIG">
+        <MappingFragment StoreEntitySet="AD_CONFIG">
+          <ScalarProperty Name="ServerFqdn" ColumnName="ServerFqdn" />
+          <ScalarProperty Name="ServerSID" ColumnName="ServerSID" />
+          <ScalarProperty Name="ObjectSID" ColumnName="ObjectSID" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+          <ScalarProperty Name="Info" ColumnName="Info" />
+          <ScalarProperty Name="Access" ColumnName="Access" />
+          <ScalarProperty Name="AccessType" ColumnName="AccessType" />
+          <ScalarProperty Name="IsInherited" ColumnName="IsInherited" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ServerID" ColumnName="ServerID" />
+          <ScalarProperty Name="Authority" ColumnName="Authority" />
+          <ScalarProperty Name="Owner" ColumnName="Owner" />
+          <ScalarProperty Name="OwnerIsWellKnown" ColumnName="OwnerIsWellKnown" />
+          <ScalarProperty Name="OwnerRightsPresent" ColumnName="OwnerRightsPresent" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AD_DOMAIN_ROOT">
+      <EntityTypeMapping TypeName="ACLXRAYModel.AD_DOMAIN_ROOT">
+        <MappingFragment StoreEntitySet="AD_DOMAIN_ROOT">
+          <ScalarProperty Name="ServerFqdn" ColumnName="ServerFqdn" />
+          <ScalarProperty Name="ServerSID" ColumnName="ServerSID" />
+          <ScalarProperty Name="ObjectSID" ColumnName="ObjectSID" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+          <ScalarProperty Name="Info" ColumnName="Info" />
+          <ScalarProperty Name="AccessType" ColumnName="AccessType" />
+          <ScalarProperty Name="Access" ColumnName="Access" />
+          <ScalarProperty Name="IsInherited" ColumnName="IsInherited" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ServerID" ColumnName="ServerID" />
+          <ScalarProperty Name="Authority" ColumnName="Authority" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AD_OBJECT_ACCESS">
+      <EntityTypeMapping TypeName="ACLXRAYModel.AD_OBJECT_ACCESS">
+        <MappingFragment StoreEntitySet="AD_OBJECT_ACCESS">
+          <ScalarProperty Name="ServerFqdn" ColumnName="ServerFqdn" />
+          <ScalarProperty Name="ServerSID" ColumnName="ServerSID" />
+          <ScalarProperty Name="ObjectSID" ColumnName="ObjectSID" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+          <ScalarProperty Name="Info" ColumnName="Info" />
+          <ScalarProperty Name="Access" ColumnName="Access" />
+          <ScalarProperty Name="AccessType" ColumnName="AccessType" />
+          <ScalarProperty Name="IsInherited" ColumnName="IsInherited" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ServerID" ColumnName="ServerID" />
+          <ScalarProperty Name="Authority" ColumnName="Authority" />
+          <ScalarProperty Name="Owner" ColumnName="Owner" />
+          <ScalarProperty Name="OwnerIsWellKnown" ColumnName="OwnerIsWellKnown" />
+          <ScalarProperty Name="OwnerRightsPresent" ColumnName="OwnerRightsPresent" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AD_OBJECT_AUDIT">
+      <EntityTypeMapping TypeName="ACLXRAYModel.AD_OBJECT_AUDIT">
+        <MappingFragment StoreEntitySet="AD_OBJECT_AUDIT">
+          <ScalarProperty Name="ServerFqdn" ColumnName="ServerFqdn" />
+          <ScalarProperty Name="ServerSID" ColumnName="ServerSID" />
+          <ScalarProperty Name="ObjectSID" ColumnName="ObjectSID" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+          <ScalarProperty Name="Info" ColumnName="Info" />
+          <ScalarProperty Name="Access" ColumnName="Access" />
+          <ScalarProperty Name="AccessType" ColumnName="AccessType" />
+          <ScalarProperty Name="IsInherited" ColumnName="IsInherited" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ServerID" ColumnName="ServerID" />
+          <ScalarProperty Name="Authority" ColumnName="Authority" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ADMIN_COUNT">
+      <EntityTypeMapping TypeName="ACLXRAYModel.ADMIN_COUNT">
+        <MappingFragment StoreEntitySet="ADMIN_COUNT">
+          <ScalarProperty Name="ServerFqdn" ColumnName="ServerFqdn" />
+          <ScalarProperty Name="ServerSID" ColumnName="ServerSID" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+          <ScalarProperty Name="CanBeDelegated" ColumnName="CanBeDelegated" />
+          <ScalarProperty Name="ObjectSID" ColumnName="ObjectSID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ServerID" ColumnName="ServerID" />
+          <ScalarProperty Name="Authority" ColumnName="Authority" />
+          <ScalarProperty Name="Info" ColumnName="Info" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ADMIN_SDHOLDER">
+      <EntityTypeMapping TypeName="ACLXRAYModel.ADMIN_SDHOLDER">
+        <MappingFragment StoreEntitySet="ADMIN_SDHOLDER">
+          <ScalarProperty Name="ServerFqdn" ColumnName="ServerFqdn" />
+          <ScalarProperty Name="ServerSID" ColumnName="ServerSID" />
+          <ScalarProperty Name="ObjectSID" ColumnName="ObjectSID" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+          <ScalarProperty Name="Info" ColumnName="Info" />
+          <ScalarProperty Name="AccessType" ColumnName="AccessType" />
+          <ScalarProperty Name="Access" ColumnName="Access" />
+          <ScalarProperty Name="IsInherited" ColumnName="IsInherited" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ServerID" ColumnName="ServerID" />
+          <ScalarProperty Name="Authority" ColumnName="Authority" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ALL_DRIVERS">
+      <EntityTypeMapping TypeName="ACLXRAYModel.ALL_DRIVERS">
+        <MappingFragment StoreEntitySet="ALL_DRIVERS">
+          <ScalarProperty Name="ServerFqdn" ColumnName="ServerFqdn" />
+          <ScalarProperty Name="ServerSID" ColumnName="ServerSID" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ModuleName" ColumnName="ModuleName" />
+          <ScalarProperty Name="DisplayName" ColumnName="DisplayName" />
+          <ScalarProperty Name="DriverType" ColumnName="DriverType" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="LinkDate" ColumnName="LinkDate" />
+          <ScalarProperty Name="Path" ColumnName="Path" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+          <ScalarProperty Name="ServerID" ColumnName="ServerID" />
+          <ScalarProperty Name="Authority" ColumnName="Authority" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AllGroupsInfoes">
+      <EntityTypeMapping TypeName="ACLXRAYModel.AllGroupsInfo">
+        <MappingFragment StoreEntitySet="AllGroupsInfo">
+          <ScalarProperty Name="GroupId" ColumnName="GroupId" />
+          <ScalarProperty Name="GroupAuthority" ColumnName="GroupAuthority" />
+          <ScalarProperty Name="GroupSid" ColumnName="GroupSid" />
+          <ScalarProperty Name="GroupName" ColumnName="GroupName" />
+          <ScalarProperty Name="GroupSamAccountName" ColumnName="GroupSamAccountName" />
+          <ScalarProperty Name="GroupObjectClass" ColumnName="GroupObjectClass" />
+          <ScalarProperty Name="GroupDisplayName" ColumnName="GroupDisplayName" />
+          <ScalarProperty Name="GroupDescription" ColumnName="GroupDescription" />
+          <ScalarProperty Name="GroupDistinguishedName" ColumnName="GroupDistinguishedName" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="Scope" ColumnName="Scope" />
+          <ScalarProperty Name="IsBusy" ColumnName="IsBusy" />
+          <ScalarProperty Name="IsVisited" ColumnName="IsVisited" />
+          <ScalarProperty Name="IsExpanded" ColumnName="IsExpanded" />
+          <ScalarProperty Name="IsFaulty" ColumnName="IsFaulty" />
+          <ScalarProperty Name="MemberId" ColumnName="MemberId" />
+          <ScalarProperty Name="MemberObjectClass" ColumnName="MemberObjectClass" />
+          <ScalarProperty Name="MemberAuthority" ColumnName="MemberAuthority" />
+          <ScalarProperty Name="MemberSid" ColumnName="MemberSid" />
+          <ScalarProperty Name="MemberName" ColumnName="MemberName" />
+          <ScalarProperty Name="MemberSamAccountName" ColumnName="MemberSamAccountName" />
+          <ScalarProperty Name="MemberDisplayName" ColumnName="MemberDisplayName" />
+          <ScalarProperty Name="MemberDescription" ColumnName="MemberDescription" />
+          <ScalarProperty Name="MemberDistinguishedName" ColumnName="MemberDistinguishedName" />
+          <ScalarProperty Name="ISDIRECT" ColumnName="ISDIRECT" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AllSPScopes">
+      <EntityTypeMapping TypeName="ACLXRAYModel.AllSPScope">
+        <MappingFragment StoreEntitySet="AllSPScopes">
+          <ScalarProperty Name="ParentName" ColumnName="ParentName" />
+          <ScalarProperty Name="ParentID" ColumnName="ParentID" />
+          <ScalarProperty Name="Url" ColumnName="Url" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ScopeTypeLabel" ColumnName="ScopeTypeLabel" />
+          <ScalarProperty Name="ScopeType" ColumnName="ScopeType" />
+          <ScalarProperty Name="PrincipalName" ColumnName="PrincipalName" />
+          <ScalarProperty Name="PrincipalDisplayName" ColumnName="PrincipalDisplayName" />
+          <ScalarProperty Name="SPPrincipalLoginName" ColumnName="SPPrincipalLoginName" />
+          <ScalarProperty Name="PrincipalAuthority" ColumnName="PrincipalAuthority" />
+          <ScalarProperty Name="PrincipalLoginName" ColumnName="PrincipalLoginName" />
+          <ScalarProperty Name="PrincipalType" ColumnName="PrincipalType" />
+          <ScalarProperty Name="PrincipalTypeLabel" ColumnName="PrincipalTypeLabel" />
+          <ScalarProperty Name="MemberName" ColumnName="MemberName" />
+          <ScalarProperty Name="MemberDisplayName" ColumnName="MemberDisplayName" />
+          <ScalarProperty Name="SPMemberLoginName" ColumnName="SPMemberLoginName" />
+          <ScalarProperty Name="MemberAuthority" ColumnName="MemberAuthority" />
+          <ScalarProperty Name="MemberLoginName" ColumnName="MemberLoginName" />
+          <ScalarProperty Name="PermissionName" ColumnName="PermissionName" />
+          <ScalarProperty Name="ADGroupSID" ColumnName="ADGroupSID" />
+          <ScalarProperty Name="IsDirectAdmin" ColumnName="IsDirectAdmin" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AllUsersInfoes">
+      <EntityTypeMapping TypeName="ACLXRAYModel.AllUsersInfo">
+        <MappingFragment StoreEntitySet="AllUsersInfo">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Authority" ColumnName="Authority" />
+          <ScalarProperty Name="Sid" ColumnName="Sid" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="SamAccountName" ColumnName="SamAccountName" />
+          <ScalarProperty Name="ObjectClass" ColumnName="ObjectClass" />
+          <ScalarProperty Name="DisplayName" ColumnName="DisplayName" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="DistinguishedName" ColumnName="DistinguishedName" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="Enabled" ColumnName="Enabled" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="LastPasswordSet" ColumnName="LastPasswordSet" />
+          <ScalarProperty Name="LastLogon" ColumnName="LastLogon" />
+          <ScalarProperty Name="PasswordNeverExpires" ColumnName="PasswordNeverExpires" />
+          <ScalarProperty Name="UserCannotChangePassword" ColumnName="UserCannotChangePassword" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AZURE_DIRECTORY_ROLES">
+      <EntityTypeMapping TypeName="ACLXRAYModel.AZURE_DIRECTORY_ROLES">
+        <MappingFragment StoreEntitySet="AZURE_DIRECTORY_ROLES">
+          <ScalarProperty Name="ServerFqdn" ColumnName="ServerFqdn" />
+          <ScalarProperty Name="ServerSID" ColumnName="ServerSID" />
+          <ScalarProperty Name="TenantName" ColumnName="TenantName" />
+          <ScalarProperty Name="Role" ColumnName="Role" />
+          <ScalarProperty Name="RoleMemberTpe" ColumnName="RoleMemberTpe" />
+          <ScalarProperty Name="ObjectSid" ColumnName="ObjectSid" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ServerID" ColumnName="ServerID" />
+          <ScalarProperty Name="Authority" ColumnName="Authority" />
+          <ScalarProperty Name="Info" ColumnName="Info" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CAs">
+      <EntityTypeMapping TypeName="ACLXRAYModel.CA">
+        <MappingFragment StoreEntitySet="CA">
+          <ScalarProperty Name="ServerFqdn" ColumnName="ServerFqdn" />
+          <ScalarProperty Name="ServerSID" ColumnName="ServerSID" />
+          <ScalarProperty Name="CAPermissions" ColumnName="CAPermissions" />
+          <ScalarProperty Name="SID" ColumnName="SID" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ServerID" ColumnName="ServerID" />
+          <ScalarProperty Name="Authority" ColumnName="Authority" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CA_ENROLLMENT_RIGHTS">
+      <EntityTypeMapping TypeName="ACLXRAYModel.CA_ENROLLMENT_RIGHTS">
+        <MappingFragment StoreEntitySet="CA_ENROLLMENT_RIGHTS">
+          <ScalarProperty Name="ServerFqdn" ColumnName="ServerFqdn" />
+          <ScalarProperty Name="ServerSID" ColumnName="ServerSID" />
+          <ScalarProperty Name="Officer" ColumnName="Officer" />
+          <ScalarProperty Name="Users" ColumnName="Users" />
+          <ScalarProperty Name="ACEType" ColumnName="ACEType" />
+          <ScalarProperty Name="Template" ColumnName="Template" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ServerID" ColumnName="ServerID" />
+          <ScalarProperty Name="Authority" ColumnName="Authority" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CA_MANAGER_RIGHTS">
+      <EntityTypeMapping TypeName="ACLXRAYModel.CA_MANAGER_RIGHTS">
+        <MappingFragment StoreEntitySet="CA_MANAGER_RIGHTS">
+          <ScalarProperty Name="ServerFqdn" ColumnName="ServerFqdn" />
+          <ScalarProperty Name="ServerSID" ColumnName="ServerSID" />
+          <ScalarProperty Name="Officer" ColumnName="Officer" />
+          <ScalarProperty Name="Users" ColumnName="Users" />
+          <ScalarProperty Name="ACEType" ColumnName="ACEType" />
+          <ScalarProperty Name="Template" ColumnName="Template" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ServerID" ColumnName="ServerID" />
+          <ScalarProperty Name="Authority" ColumnName="Authority" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Computers">
+      <EntityTypeMapping TypeName="ACLXRAYModel.Computer">
+        <MappingFragment StoreEntitySet="Computers">
+          <ScalarProperty Name="Authority" ColumnName="Authority" />
+          <ScalarProperty Name="Sid" ColumnName="Sid" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="SamAccountName" ColumnName="SamAccountName" />
+          <ScalarProperty Name="ObjectClass" ColumnName="ObjectClass" />
+          <ScalarProperty Name="DisplayName" ColumnName="DisplayName" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="DistinguishedName" ColumnName="DistinguishedName" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ComputerType" ColumnName="ComputerType" />
+          <ScalarProperty Name="Expr1" ColumnName="Expr1" />
+          <ScalarProperty Name="Enabled" ColumnName="Enabled" />
+          <ScalarProperty Name="LastPasswordSet" ColumnName="LastPasswordSet" />
+          <ScalarProperty Name="LastLogon" ColumnName="LastLogon" />
+          <ScalarProperty Name="PasswordNeverExpires" ColumnName="PasswordNeverExpires" />
+          <ScalarProperty Name="UserCannotChangePassword" ColumnName="UserCannotChangePassword" />
+          <ScalarProperty Name="UPN" ColumnName="UPN" />
+          <ScalarProperty Name="UAC" ColumnName="UAC" />
+          <ScalarProperty Name="BadPasswordTime" ColumnName="BadPasswordTime" />
+          <ScalarProperty Name="AccountExpires" ColumnName="AccountExpires" />
+          <ScalarProperty Name="AllowedToDelegateTo" ColumnName="AllowedToDelegateTo" />
+          <ScalarProperty Name="WhenCreated" ColumnName="WhenCreated" />
+          <ScalarProperty Name="WhenChanged" ColumnName="WhenChanged" />
+          <ScalarProperty Name="OS" ColumnName="OS" />
+          <ScalarProperty Name="OSServicePack" ColumnName="OSServicePack" />
+          <ScalarProperty Name="OSVersion" ColumnName="OSVersion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DCOM_DACL">
+      <EntityTypeMapping TypeName="ACLXRAYModel.DCOM_DACL">
+        <MappingFragment StoreEntitySet="DCOM_DACL">
+          <ScalarProperty Name="ServerFqdn" ColumnName="ServerFqdn" />
+          <ScalarProperty Name="ServerSID" ColumnName="ServerSID" />
+          <ScalarProperty Name="ObjectSID" ColumnName="ObjectSID" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+          <ScalarProperty Name="Info" ColumnName="Info" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ServerID" ColumnName="ServerID" />
+          <ScalarProperty Name="Access" ColumnName="Access" />
+          <ScalarProperty Name="Authority" ColumnName="Authority" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DomainControllers">
+      <EntityTypeMapping TypeName="ACLXRAYModel.DomainController">
+        <MappingFragment StoreEntitySet="DomainControllers">
+          <ScalarProperty Name="Authority" ColumnName="Authority" />
+          <ScalarProperty Name="Sid" ColumnName="Sid" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="SamAccountName" ColumnName="SamAccountName" />
+          <ScalarProperty Name="ObjectClass" ColumnName="ObjectClass" />
+          <ScalarProperty Name="DisplayName" ColumnName="DisplayName" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="DistinguishedName" ColumnName="DistinguishedName" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ComputerType" ColumnName="ComputerType" />
+          <ScalarProperty Name="Expr1" ColumnName="Expr1" />
+          <ScalarProperty Name="Enabled" ColumnName="Enabled" />
+          <ScalarProperty Name="LastPasswordSet" ColumnName="LastPasswordSet" />
+          <ScalarProperty Name="LastLogon" ColumnName="LastLogon" />
+          <ScalarProperty Name="PasswordNeverExpires" ColumnName="PasswordNeverExpires" />
+          <ScalarProperty Name="UserCannotChangePassword" ColumnName="UserCannotChangePassword" />
+          <ScalarProperty Name="UPN" ColumnName="UPN" />
+          <ScalarProperty Name="UAC" ColumnName="UAC" />
+          <ScalarProperty Name="BadPasswordTime" ColumnName="BadPasswordTime" />
+          <ScalarProperty Name="AccountExpires" ColumnName="AccountExpires" />
+          <ScalarProperty Name="AllowedToDelegateTo" ColumnName="AllowedToDelegateTo" />
+          <ScalarProperty Name="WhenCreated" ColumnName="WhenCreated" />
+          <ScalarProperty Name="WhenChanged" ColumnName="WhenChanged" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EMPTY_GROUPS">
+      <EntityTypeMapping TypeName="ACLXRAYModel.EMPTY_GROUPS">
+        <MappingFragment StoreEntitySet="EMPTY_GROUPS">
+          <ScalarProperty Name="ServerFqdn" ColumnName="ServerFqdn" />
+          <ScalarProperty Name="ServerSID" ColumnName="ServerSID" />
+          <ScalarProperty Name="ObjectSID" ColumnName="ObjectSID" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+          <ScalarProperty Name="Info" ColumnName="Info" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ServerID" ColumnName="ServerID" />
+          <ScalarProperty Name="Authority" ColumnName="Authority" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EXCHANGE_DACL">
+      <EntityTypeMapping TypeName="ACLXRAYModel.EXCHANGE_DACL">
+        <MappingFragment StoreEntitySet="EXCHANGE_DACL">
+          <ScalarProperty Name="ServerFqdn" ColumnName="ServerFqdn" />
+          <ScalarProperty Name="ServerSID" ColumnName="ServerSID" />
+          <ScalarProperty Name="ObjectSID" ColumnName="ObjectSID" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+          <ScalarProperty Name="Info" ColumnName="Info" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ServerID" ColumnName="ServerID" />
+          <ScalarProperty Name="Authority" ColumnName="Authority" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EXCHANGE_MAILBOX">
+      <EntityTypeMapping TypeName="ACLXRAYModel.EXCHANGE_MAILBOX">
+        <MappingFragment StoreEntitySet="EXCHANGE_MAILBOX">
+          <ScalarProperty Name="ServerFqdn" ColumnName="ServerFqdn" />
+          <ScalarProperty Name="ServerSID" ColumnName="ServerSID" />
+          <ScalarProperty Name="ObjectSID" ColumnName="ObjectSID" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+          <ScalarProperty Name="Info" ColumnName="Info" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ServerID" ColumnName="ServerID" />
+          <ScalarProperty Name="Authority" ColumnName="Authority" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FILE_ASSOC">
+      <EntityTypeMapping TypeName="ACLXRAYModel.FILE_ASSOC">
+        <MappingFragment StoreEntitySet="FILE_ASSOC">
+          <ScalarProperty Name="ServerFqdn" ColumnName="ServerFqdn" />
+          <ScalarProperty Name="ServerSID" ColumnName="ServerSID" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Ext" ColumnName="Ext" />
+          <ScalarProperty Name="FileType" ColumnName="FileType" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+          <ScalarProperty Name="ServerID" ColumnName="ServerID" />
+          <ScalarProperty Name="Authority" ColumnName="Authority" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FILES_DACL">
+      <EntityTypeMapping TypeName="ACLXRAYModel.FILES_DACL">
+        <MappingFragment StoreEntitySet="FILES_DACL">
+          <ScalarProperty Name="ServerFqdn" ColumnName="ServerFqdn" />
+          <ScalarProperty Name="ServerSID" ColumnName="ServerSID" />
+          <ScalarProperty Name="ObjectSID" ColumnName="ObjectSID" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+          <ScalarProperty Name="Info" ColumnName="Info" />
+          <ScalarProperty Name="LastAccessTime" ColumnName="LastAccessTime" />
+          <ScalarProperty Name="Access" ColumnName="Access" />
+          <ScalarProperty Name="AccessType" ColumnName="AccessType" />
+          <ScalarProperty Name="IsInherited" ColumnName="IsInherited" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ServerID" ColumnName="ServerID" />
+          <ScalarProperty Name="Authority" ColumnName="Authority" />
+          <ScalarProperty Name="Owner" ColumnName="Owner" />
+          <ScalarProperty Name="OwnerIsWellKnown" ColumnName="OwnerIsWellKnown" />
+          <ScalarProperty Name="OwnerRightsPresent" ColumnName="OwnerRightsPresent" />
+          <ScalarProperty Name="Size" ColumnName="Size" />
+          <ScalarProperty Name="Ext" ColumnName="Ext" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FILES_SACL">
+      <EntityTypeMapping TypeName="ACLXRAYModel.FILES_SACL">
+        <MappingFragment StoreEntitySet="FILES_SACL">
+          <ScalarProperty Name="ServerFqdn" ColumnName="ServerFqdn" />
+          <ScalarProperty Name="ServerSID" ColumnName="ServerSID" />
+          <ScalarProperty Name="ObjectSID" ColumnName="ObjectSID" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+          <ScalarProperty Name="Info" ColumnName="Info" />
+          <ScalarProperty Name="LastAccessTime" ColumnName="LastAccessTime" />
+          <ScalarProperty Name="Access" ColumnName="Access" />
+          <ScalarProperty Name="AccessType" ColumnName="AccessType" />
+          <ScalarProperty Name="IsInherited" ColumnName="IsInherited" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ServerID" ColumnName="ServerID" />
+          <ScalarProperty Name="Authority" ColumnName="Authority" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FOLDERS_DACL">
+      <EntityTypeMapping TypeName="ACLXRAYModel.FOLDERS_DACL">
+        <MappingFragment StoreEntitySet="FOLDERS_DACL">
+          <ScalarProperty Name="ServerFqdn" ColumnName="ServerFqdn" />
+          <ScalarProperty Name="ServerSID" ColumnName="ServerSID" />
+          <ScalarProperty Name="ObjectSID" ColumnName="ObjectSID" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+          <ScalarProperty Name="Info" ColumnName="Info" />
+          <ScalarProperty Name="LastAccessTime" ColumnName="LastAccessTime" />
+          <ScalarProperty Name="Access" ColumnName="Access" />
+          <ScalarProperty Name="AccessType" ColumnName="AccessType" />
+          <ScalarProperty Name="IsInherited" ColumnName="IsInherited" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ServerID" ColumnName="ServerID" />
+          <ScalarProperty Name="Authority" ColumnName="Authority" />
+          <ScalarProperty Name="Owner" ColumnName="Owner" />
+          <ScalarProperty Name="OwnerIsWellKnown" ColumnName="OwnerIsWellKnown" />
+          <ScalarProperty Name="OwnerRightsPresent" ColumnName="OwnerRightsPresent" />
+          <ScalarProperty Name="Size" ColumnName="Size" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FOLDERS_SACL">
+      <EntityTypeMapping TypeName="ACLXRAYModel.FOLDERS_SACL">
+        <MappingFragment StoreEntitySet="FOLDERS_SACL">
+          <ScalarProperty Name="ServerFqdn" ColumnName="ServerFqdn" />
+          <ScalarProperty Name="ServerSID" ColumnName="ServerSID" />
+          <ScalarProperty Name="ObjectSID" ColumnName="ObjectSID" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+          <ScalarProperty Name="Info" ColumnName="Info" />
+          <ScalarProperty Name="LastAccessTime" ColumnName="LastAccessTime" />
+          <ScalarProperty Name="Access" ColumnName="Access" />
+          <ScalarProperty Name="AccessType" ColumnName="AccessType" />
+          <ScalarProperty Name="IsInherited" ColumnName="IsInherited" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ServerID" ColumnName="ServerID" />
+          <ScalarProperty Name="Authority" ColumnName="Authority" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GPOes">
+      <EntityTypeMapping TypeName="ACLXRAYModel.GPO">
+        <MappingFragment StoreEntitySet="GPO">
+          <ScalarProperty Name="ServerFqdn" ColumnName="ServerFqdn" />
+          <ScalarProperty Name="ServerSID" ColumnName="ServerSID" />
+          <ScalarProperty Name="ObjectSID" ColumnName="ObjectSID" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+          <ScalarProperty Name="Info" ColumnName="Info" />
+          <ScalarProperty Name="AccessType" ColumnName="AccessType" />
+          <ScalarProperty Name="Access" ColumnName="Access" />
+          <ScalarProperty Name="IsInherited" ColumnName="IsInherited" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ServerID" ColumnName="ServerID" />
+          <ScalarProperty Name="Authority" ColumnName="Authority" />
+          <ScalarProperty Name="Owner" ColumnName="Owner" />
+          <ScalarProperty Name="OwnerIsWellKnown" ColumnName="OwnerIsWellKnown" />
+          <ScalarProperty Name="OwnerRightsPresent" ColumnName="OwnerRightsPresent" />
+          <ScalarProperty Name="GPOGUID" ColumnName="GPOGUID" />
+          <ScalarProperty Name="LinkedTo" ColumnName="LinkedTo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GroupExpandedGroups">
+      <EntityTypeMapping TypeName="ACLXRAYModel.GroupExpandedGroup">
+        <MappingFragment StoreEntitySet="GroupExpandedGroups">
+          <ScalarProperty Name="GroupId" ColumnName="GroupId" />
+          <ScalarProperty Name="ExpandedMemberId" ColumnName="ExpandedMemberId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GroupExpandedPrincipals">
+      <EntityTypeMapping TypeName="ACLXRAYModel.GroupExpandedPrincipal">
+        <MappingFragment StoreEntitySet="GroupExpandedPrincipals">
+          <ScalarProperty Name="GroupId" ColumnName="GroupId" />
+          <ScalarProperty Name="ExpandedMemberId" ColumnName="ExpandedMemberId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GroupMembers">
+      <EntityTypeMapping TypeName="ACLXRAYModel.GroupMember">
+        <MappingFragment StoreEntitySet="GroupMembers">
+          <ScalarProperty Name="GroupId" ColumnName="GroupId" />
+          <ScalarProperty Name="MemberId" ColumnName="MemberId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Groups">
+      <EntityTypeMapping TypeName="ACLXRAYModel.Group">
+        <MappingFragment StoreEntitySet="Groups">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Authority" ColumnName="Authority" />
+          <ScalarProperty Name="Sid" ColumnName="Sid" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="SamAccountName" ColumnName="SamAccountName" />
+          <ScalarProperty Name="ObjectClass" ColumnName="ObjectClass" />
+          <ScalarProperty Name="DisplayName" ColumnName="DisplayName" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="DistinguishedName" ColumnName="DistinguishedName" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="Scope" ColumnName="Scope" />
+          <ScalarProperty Name="IsBusy" ColumnName="IsBusy" />
+          <ScalarProperty Name="IsVisited" ColumnName="IsVisited" />
+          <ScalarProperty Name="IsExpanded" ColumnName="IsExpanded" />
+          <ScalarProperty Name="IsFaulty" ColumnName="IsFaulty" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="KRBTGT_ATTRIBUTES">
+      <EntityTypeMapping TypeName="ACLXRAYModel.KRBTGT_ATTRIBUTES">
+        <MappingFragment StoreEntitySet="KRBTGT_ATTRIBUTES">
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="SamAccountName" ColumnName="SamAccountName" />
+          <ScalarProperty Name="DistinguishedName" ColumnName="DistinguishedName" />
+          <ScalarProperty Name="Authority" ColumnName="Authority" />
+          <ScalarProperty Name="Sid" ColumnName="Sid" />
+          <ScalarProperty Name="KeyVersionNumber" ColumnName="KeyVersionNumber" />
+          <ScalarProperty Name="KrbTgtLinkBl" ColumnName="KrbTgtLinkBl" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LAST_LOGOFF">
+      <EntityTypeMapping TypeName="ACLXRAYModel.LAST_LOGOFF">
+        <MappingFragment StoreEntitySet="LAST_LOGOFF">
+          <ScalarProperty Name="ServerFqdn" ColumnName="ServerFqdn" />
+          <ScalarProperty Name="ServerSID" ColumnName="ServerSID" />
+          <ScalarProperty Name="ObjectSID" ColumnName="ObjectSID" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+          <ScalarProperty Name="Info" ColumnName="Info" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ServerID" ColumnName="ServerID" />
+          <ScalarProperty Name="Authority" ColumnName="Authority" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LOCAL_GROUPS">
+      <EntityTypeMapping TypeName="ACLXRAYModel.LOCAL_GROUPS">
+        <MappingFragment StoreEntitySet="LOCAL_GROUPS">
+          <ScalarProperty Name="ServerFqdn" ColumnName="ServerFqdn" />
+          <ScalarProperty Name="ServerSID" ColumnName="ServerSID" />
+          <ScalarProperty Name="ObjectSID" ColumnName="ObjectSID" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+          <ScalarProperty Name="Info" ColumnName="Info" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ServerID" ColumnName="ServerID" />
+          <ScalarProperty Name="GroupSID" ColumnName="GroupSID" />
+          <ScalarProperty Name="Authority" ColumnName="Authority" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LOCAL_SIDS">
+      <EntityTypeMapping TypeName="ACLXRAYModel.LOCAL_SIDS">
+        <MappingFragment StoreEntitySet="LOCAL_SIDS">
+          <ScalarProperty Name="ServerFqdn" ColumnName="ServerFqdn" />
+          <ScalarProperty Name="ServerSID" ColumnName="ServerSID" />
+          <ScalarProperty Name="ObjectSID" ColumnName="ObjectSID" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+          <ScalarProperty Name="Info" ColumnName="Info" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ServerID" ColumnName="ServerID" />
+          <ScalarProperty Name="Authority" ColumnName="Authority" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NTFS_DACL">
+      <EntityTypeMapping TypeName="ACLXRAYModel.NTFS_DACL">
+        <MappingFragment StoreEntitySet="NTFS_DACL">
+          <ScalarProperty Name="ServerFqdn" ColumnName="ServerFqdn" />
+          <ScalarProperty Name="ServerSID" ColumnName="ServerSID" />
+          <ScalarProperty Name="ObjectSID" ColumnName="ObjectSID" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+          <ScalarProperty Name="Info" ColumnName="Info" />
+          <ScalarProperty Name="LastAccessTime" ColumnName="LastAccessTime" />
+          <ScalarProperty Name="Access" ColumnName="Access" />
+          <ScalarProperty Name="AccessType" ColumnName="AccessType" />
+          <ScalarProperty Name="IsInherited" ColumnName="IsInherited" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ServerID" ColumnName="ServerID" />
+          <ScalarProperty Name="Authority" ColumnName="Authority" />
+          <ScalarProperty Name="Owner" ColumnName="Owner" />
+          <ScalarProperty Name="OwnerIsWellKnown" ColumnName="OwnerIsWellKnown" />
+          <ScalarProperty Name="OwnerRightsPresent" ColumnName="OwnerRightsPresent" />
+          <ScalarProperty Name="Size" ColumnName="Size" />
+          <ScalarProperty Name="Ext" ColumnName="Ext" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NTFS_SACL">
+      <EntityTypeMapping TypeName="ACLXRAYModel.NTFS_SACL">
+        <MappingFragment StoreEntitySet="NTFS_SACL">
+          <ScalarProperty Name="ServerFqdn" ColumnName="ServerFqdn" />
+          <ScalarProperty Name="ServerSID" ColumnName="ServerSID" />
+          <ScalarProperty Name="ObjectSID" ColumnName="ObjectSID" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+          <ScalarProperty Name="Info" ColumnName="Info" />
+          <ScalarProperty Name="LastAccessTime" ColumnName="LastAccessTime" />
+          <ScalarProperty Name="Access" ColumnName="Access" />
+          <ScalarProperty Name="AccessType" ColumnName="AccessType" />
+          <ScalarProperty Name="IsInherited" ColumnName="IsInherited" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ServerID" ColumnName="ServerID" />
+          <ScalarProperty Name="Authority" ColumnName="Authority" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ORPHANED_SIDS">
+      <EntityTypeMapping TypeName="ACLXRAYModel.ORPHANED_SIDS">
+        <MappingFragment StoreEntitySet="ORPHANED_SIDS">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="OrphanedSID" ColumnName="OrphanedSID" />
+          <ScalarProperty Name="Resource" ColumnName="Resource" />
+          <ScalarProperty Name="Server" ColumnName="Server" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Principals">
+      <EntityTypeMapping TypeName="ACLXRAYModel.Principal">
+        <MappingFragment StoreEntitySet="Principals">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Authority" ColumnName="Authority" />
+          <ScalarProperty Name="Sid" ColumnName="Sid" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="SamAccountName" ColumnName="SamAccountName" />
+          <ScalarProperty Name="ObjectClass" ColumnName="ObjectClass" />
+          <ScalarProperty Name="DisplayName" ColumnName="DisplayName" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="DistinguishedName" ColumnName="DistinguishedName" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="Enabled" ColumnName="Enabled" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="LastPasswordSet" ColumnName="LastPasswordSet" />
+          <ScalarProperty Name="LastLogon" ColumnName="LastLogon" />
+          <ScalarProperty Name="PasswordNeverExpires" ColumnName="PasswordNeverExpires" />
+          <ScalarProperty Name="UserCannotChangePassword" ColumnName="UserCannotChangePassword" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PROCESS_INFO">
+      <EntityTypeMapping TypeName="ACLXRAYModel.PROCESS_INFO">
+        <MappingFragment StoreEntitySet="PROCESS_INFO">
+          <ScalarProperty Name="ServerFqdn" ColumnName="ServerFqdn" />
+          <ScalarProperty Name="ServerSID" ColumnName="ServerSID" />
+          <ScalarProperty Name="ObjectSID" ColumnName="ObjectSID" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+          <ScalarProperty Name="Info" ColumnName="Info" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ServerID" ColumnName="ServerID" />
+          <ScalarProperty Name="Authority" ColumnName="Authority" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="REGISTRY_DACL">
+      <EntityTypeMapping TypeName="ACLXRAYModel.REGISTRY_DACL">
+        <MappingFragment StoreEntitySet="REGISTRY_DACL">
+          <ScalarProperty Name="ServerFqdn" ColumnName="ServerFqdn" />
+          <ScalarProperty Name="ServerSID" ColumnName="ServerSID" />
+          <ScalarProperty Name="ObjectSID" ColumnName="ObjectSID" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+          <ScalarProperty Name="Info" ColumnName="Info" />
+          <ScalarProperty Name="Access" ColumnName="Access" />
+          <ScalarProperty Name="AccessType" ColumnName="AccessType" />
+          <ScalarProperty Name="IsInherited" ColumnName="IsInherited" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ServerID" ColumnName="ServerID" />
+          <ScalarProperty Name="Authority" ColumnName="Authority" />
+          <ScalarProperty Name="Owner" ColumnName="Owner" />
+          <ScalarProperty Name="OwnerIsWellKnown" ColumnName="OwnerIsWellKnown" />
+          <ScalarProperty Name="OwnerRightsPresent" ColumnName="OwnerRightsPresent" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="REGISTRY_LAST_LOGOFF">
+      <EntityTypeMapping TypeName="ACLXRAYModel.REGISTRY_LAST_LOGOFF">
+        <MappingFragment StoreEntitySet="REGISTRY_LAST_LOGOFF">
+          <ScalarProperty Name="ServerFqdn" ColumnName="ServerFqdn" />
+          <ScalarProperty Name="ServerSID" ColumnName="ServerSID" />
+          <ScalarProperty Name="ObjectSID" ColumnName="ObjectSID" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+          <ScalarProperty Name="Info" ColumnName="Info" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ServerID" ColumnName="ServerID" />
+          <ScalarProperty Name="Authority" ColumnName="Authority" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="REGISTRY_PROFILES">
+      <EntityTypeMapping TypeName="ACLXRAYModel.REGISTRY_PROFILES">
+        <MappingFragment StoreEntitySet="REGISTRY_PROFILES">
+          <ScalarProperty Name="ServerFqdn" ColumnName="ServerFqdn" />
+          <ScalarProperty Name="ServerSID" ColumnName="ServerSID" />
+          <ScalarProperty Name="ObjectSID" ColumnName="ObjectSID" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+          <ScalarProperty Name="Info" ColumnName="Info" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ServerID" ColumnName="ServerID" />
+          <ScalarProperty Name="Authority" ColumnName="Authority" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="REGISTRY_SACL">
+      <EntityTypeMapping TypeName="ACLXRAYModel.REGISTRY_SACL">
+        <MappingFragment StoreEntitySet="REGISTRY_SACL">
+          <ScalarProperty Name="ServerFqdn" ColumnName="ServerFqdn" />
+          <ScalarProperty Name="ServerSID" ColumnName="ServerSID" />
+          <ScalarProperty Name="ObjectSID" ColumnName="ObjectSID" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+          <ScalarProperty Name="Info" ColumnName="Info" />
+          <ScalarProperty Name="Access" ColumnName="Access" />
+          <ScalarProperty Name="AccessType" ColumnName="AccessType" />
+          <ScalarProperty Name="IsInherited" ColumnName="IsInherited" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ServerID" ColumnName="ServerID" />
+          <ScalarProperty Name="Authority" ColumnName="Authority" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RODC_DATA">
+      <EntityTypeMapping TypeName="ACLXRAYModel.RODC_DATA">
+        <MappingFragment StoreEntitySet="RODC_DATA">
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="SamAccountName" ColumnName="SamAccountName" />
+          <ScalarProperty Name="DistinguishedName" ColumnName="DistinguishedName" />
+          <ScalarProperty Name="Authority" ColumnName="Authority" />
+          <ScalarProperty Name="Sid" ColumnName="Sid" />
+          <ScalarProperty Name="ManagedBy" ColumnName="ManagedBy" />
+          <ScalarProperty Name="PropertyName" ColumnName="PropertyName" />
+          <ScalarProperty Name="PropertyValue" ColumnName="PropertyValue" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SCHEMA_DACL">
+      <EntityTypeMapping TypeName="ACLXRAYModel.SCHEMA_DACL">
+        <MappingFragment StoreEntitySet="SCHEMA_DACL">
+          <ScalarProperty Name="ServerFqdn" ColumnName="ServerFqdn" />
+          <ScalarProperty Name="ServerSID" ColumnName="ServerSID" />
+          <ScalarProperty Name="ObjectSID" ColumnName="ObjectSID" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+          <ScalarProperty Name="Info" ColumnName="Info" />
+          <ScalarProperty Name="AccessType" ColumnName="AccessType" />
+          <ScalarProperty Name="IsInherited" ColumnName="IsInherited" />
+          <ScalarProperty Name="Access" ColumnName="Access" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ServerID" ColumnName="ServerID" />
+          <ScalarProperty Name="Authority" ColumnName="Authority" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SERVER_INFO">
+      <EntityTypeMapping TypeName="ACLXRAYModel.SERVER_INFO">
+        <MappingFragment StoreEntitySet="SERVER_INFO">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ServerFqdn" ColumnName="ServerFqdn" />
+          <ScalarProperty Name="ServerSID" ColumnName="ServerSID" />
+          <ScalarProperty Name="ServerGUID" ColumnName="ServerGUID" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+          <ScalarProperty Name="Authority" ColumnName="Authority" />
+          <ScalarProperty Name="DomainNetbiosName" ColumnName="DomainNetbiosName" />
+          <ScalarProperty Name="SamAccountName" ColumnName="SamAccountName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SERVICEs">
+      <EntityTypeMapping TypeName="ACLXRAYModel.SERVICE">
+        <MappingFragment StoreEntitySet="SERVICE">
+          <ScalarProperty Name="ServerFqdn" ColumnName="ServerFqdn" />
+          <ScalarProperty Name="ServerSID" ColumnName="ServerSID" />
+          <ScalarProperty Name="ObjectSID" ColumnName="ObjectSID" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+          <ScalarProperty Name="Info" ColumnName="Info" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ServerID" ColumnName="ServerID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Authority" ColumnName="Authority" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SHARE_CONTENT_DACL">
+      <EntityTypeMapping TypeName="ACLXRAYModel.SHARE_CONTENT_DACL">
+        <MappingFragment StoreEntitySet="SHARE_CONTENT_DACL">
+          <ScalarProperty Name="ServerFqdn" ColumnName="ServerFqdn" />
+          <ScalarProperty Name="ServerSID" ColumnName="ServerSID" />
+          <ScalarProperty Name="ObjectSID" ColumnName="ObjectSID" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+          <ScalarProperty Name="Info" ColumnName="Info" />
+          <ScalarProperty Name="Access" ColumnName="Access" />
+          <ScalarProperty Name="LastAccessTime" ColumnName="LastAccessTime" />
+          <ScalarProperty Name="AccessType" ColumnName="AccessType" />
+          <ScalarProperty Name="IsInherited" ColumnName="IsInherited" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ServerID" ColumnName="ServerID" />
+          <ScalarProperty Name="Authority" ColumnName="Authority" />
+          <ScalarProperty Name="Owner" ColumnName="Owner" />
+          <ScalarProperty Name="OwnerIsWellKnown" ColumnName="OwnerIsWellKnown" />
+          <ScalarProperty Name="OwnerRightsPresent" ColumnName="OwnerRightsPresent" />
+          <ScalarProperty Name="Size" ColumnName="Size" />
+          <ScalarProperty Name="Ext" ColumnName="Ext" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SHARE_CONTENT_SACL">
+      <EntityTypeMapping TypeName="ACLXRAYModel.SHARE_CONTENT_SACL">
+        <MappingFragment StoreEntitySet="SHARE_CONTENT_SACL">
+          <ScalarProperty Name="ServerFqdn" ColumnName="ServerFqdn" />
+          <ScalarProperty Name="ServerSID" ColumnName="ServerSID" />
+          <ScalarProperty Name="ObjectSID" ColumnName="ObjectSID" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+          <ScalarProperty Name="Info" ColumnName="Info" />
+          <ScalarProperty Name="Access" ColumnName="Access" />
+          <ScalarProperty Name="LastAccessTime" ColumnName="LastAccessTime" />
+          <ScalarProperty Name="AccessType" ColumnName="AccessType" />
+          <ScalarProperty Name="IsInherited" ColumnName="IsInherited" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ServerID" ColumnName="ServerID" />
+          <ScalarProperty Name="Authority" ColumnName="Authority" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SHARE_DACL">
+      <EntityTypeMapping TypeName="ACLXRAYModel.SHARE_DACL">
+        <MappingFragment StoreEntitySet="SHARE_DACL">
+          <ScalarProperty Name="ServerFqdn" ColumnName="ServerFqdn" />
+          <ScalarProperty Name="ServerSID" ColumnName="ServerSID" />
+          <ScalarProperty Name="ObjectSID" ColumnName="ObjectSID" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+          <ScalarProperty Name="Info" ColumnName="Info" />
+          <ScalarProperty Name="Access" ColumnName="Access" />
+          <ScalarProperty Name="LastAccessTime" ColumnName="LastAccessTime" />
+          <ScalarProperty Name="AccessType" ColumnName="AccessType" />
+          <ScalarProperty Name="IsInherited" ColumnName="IsInherited" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ServerID" ColumnName="ServerID" />
+          <ScalarProperty Name="Authority" ColumnName="Authority" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SID_HISTORY">
+      <EntityTypeMapping TypeName="ACLXRAYModel.SID_HISTORY">
+        <MappingFragment StoreEntitySet="SID_HISTORY">
+          <ScalarProperty Name="ServerFqdn" ColumnName="ServerFqdn" />
+          <ScalarProperty Name="ServerSID" ColumnName="ServerSID" />
+          <ScalarProperty Name="ObjectSID" ColumnName="ObjectSID" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+          <ScalarProperty Name="Info" ColumnName="Info" />
+          <ScalarProperty Name="ObjectDN" ColumnName="ObjectDN" />
+          <ScalarProperty Name="SIDHistory" ColumnName="SIDHistory" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ServerID" ColumnName="ServerID" />
+          <ScalarProperty Name="Authority" ColumnName="Authority" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SidHistories">
+      <EntityTypeMapping TypeName="ACLXRAYModel.SidHistory">
+        <MappingFragment StoreEntitySet="SidHistories">
+          <ScalarProperty Name="TrusteeId" ColumnName="TrusteeId" />
+          <ScalarProperty Name="OldSid" ColumnName="OldSid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SIGNED_DRIVERS">
+      <EntityTypeMapping TypeName="ACLXRAYModel.SIGNED_DRIVERS">
+        <MappingFragment StoreEntitySet="SIGNED_DRIVERS">
+          <ScalarProperty Name="ServerFqdn" ColumnName="ServerFqdn" />
+          <ScalarProperty Name="ServerSID" ColumnName="ServerSID" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="DeviceName" ColumnName="DeviceName" />
+          <ScalarProperty Name="InfName" ColumnName="InfName" />
+          <ScalarProperty Name="IsSigned" ColumnName="IsSigned" />
+          <ScalarProperty Name="Manufacturer" ColumnName="Manufacturer" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+          <ScalarProperty Name="ServerID" ColumnName="ServerID" />
+          <ScalarProperty Name="Authority" ColumnName="Authority" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SOFTWAREs">
+      <EntityTypeMapping TypeName="ACLXRAYModel.SOFTWARE">
+        <MappingFragment StoreEntitySet="SOFTWARE">
+          <ScalarProperty Name="ServerFqdn" ColumnName="ServerFqdn" />
+          <ScalarProperty Name="ServerSID" ColumnName="ServerSID" />
+          <ScalarProperty Name="DisplayName" ColumnName="DisplayName" />
+          <ScalarProperty Name="Publisher" ColumnName="Publisher" />
+          <ScalarProperty Name="InstallLocation" ColumnName="InstallLocation" />
+          <ScalarProperty Name="InstallDate" ColumnName="InstallDate" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ServerID" ColumnName="ServerID" />
+          <ScalarProperty Name="Authority" ColumnName="Authority" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SP_Principals">
+      <EntityTypeMapping TypeName="ACLXRAYModel.SP_Principals">
+        <MappingFragment StoreEntitySet="SP_Principals">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="GID" ColumnName="GID" />
+          <ScalarProperty Name="ParentID" ColumnName="ParentID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="DisplayName" ColumnName="DisplayName" />
+          <ScalarProperty Name="SID" ColumnName="SID" />
+          <ScalarProperty Name="TrusteeID" ColumnName="TrusteeID" />
+          <ScalarProperty Name="LoginName" ColumnName="LoginName" />
+          <ScalarProperty Name="ObjectType" ColumnName="ObjectType" />
+          <ScalarProperty Name="ParentPrincipalID" ColumnName="ParentPrincipalID" />
+          <ScalarProperty Name="IsDirectSiteAdmin" ColumnName="IsDirectSiteAdmin" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SP_PrincipalsAssignments">
+      <EntityTypeMapping TypeName="ACLXRAYModel.SP_PrincipalsAssignments">
+        <MappingFragment StoreEntitySet="SP_PrincipalsAssignments">
+          <ScalarProperty Name="Principals_ID" ColumnName="Principals_ID" />
+          <ScalarProperty Name="RoleAssignments_ID" ColumnName="RoleAssignments_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SP_PrincipalsPrincipals">
+      <EntityTypeMapping TypeName="ACLXRAYModel.SP_PrincipalsPrincipals">
+        <MappingFragment StoreEntitySet="SP_PrincipalsPrincipals">
+          <ScalarProperty Name="SPPrincipal_ID_1" ColumnName="SPPrincipal_ID_1" />
+          <ScalarProperty Name="SPPrincipal_ID_2" ColumnName="SPPrincipal_ID_2" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SP_RoleAssignments">
+      <EntityTypeMapping TypeName="ACLXRAYModel.SP_RoleAssignments">
+        <MappingFragment StoreEntitySet="SP_RoleAssignments">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ParentID" ColumnName="ParentID" />
+          <ScalarProperty Name="RolesPrincipals" ColumnName="RolesPrincipals" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SP_RoleBindings">
+      <EntityTypeMapping TypeName="ACLXRAYModel.SP_RoleBindings">
+        <MappingFragment StoreEntitySet="SP_RoleBindings">
+          <ScalarProperty Name="RoleAssignments_ID" ColumnName="RoleAssignments_ID" />
+          <ScalarProperty Name="RoleDefinitions_ID" ColumnName="RoleDefinitions_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SP_RoleDefinitions">
+      <EntityTypeMapping TypeName="ACLXRAYModel.SP_RoleDefinitions">
+        <MappingFragment StoreEntitySet="SP_RoleDefinitions">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="GID" ColumnName="GID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ParentID" ColumnName="ParentID" />
+          <ScalarProperty Name="RightsMask" ColumnName="RightsMask" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SP_Scopes">
+      <EntityTypeMapping TypeName="ACLXRAYModel.SP_Scopes">
+        <MappingFragment StoreEntitySet="SP_Scopes">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ParentID" ColumnName="ParentID" />
+          <ScalarProperty Name="ObjectType" ColumnName="ObjectType" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Url" ColumnName="Url" />
+          <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+          <ScalarProperty Name="HasUniqueRoleAssignments" ColumnName="HasUniqueRoleAssignments" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SP_ScopesAssignments">
+      <EntityTypeMapping TypeName="ACLXRAYModel.SP_ScopesAssignments">
+        <MappingFragment StoreEntitySet="SP_ScopesAssignments">
+          <ScalarProperty Name="RoleAssignments_ID" ColumnName="RoleAssignments_ID" />
+          <ScalarProperty Name="Scopes_ID" ColumnName="Scopes_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SPNs">
+      <EntityTypeMapping TypeName="ACLXRAYModel.SPN">
+        <MappingFragment StoreEntitySet="SPN">
+          <ScalarProperty Name="Enabled" ColumnName="Enabled" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="LastPasswordSet" ColumnName="LastPasswordSet" />
+          <ScalarProperty Name="LastLogon" ColumnName="LastLogon" />
+          <ScalarProperty Name="PasswordNeverExpires" ColumnName="PasswordNeverExpires" />
+          <ScalarProperty Name="UserCannotChangePassword" ColumnName="UserCannotChangePassword" />
+          <ScalarProperty Name="ExchMasterAccountSid" ColumnName="ExchMasterAccountSid" />
+          <ScalarProperty Name="UPN" ColumnName="UPN" />
+          <ScalarProperty Name="UAC" ColumnName="UAC" />
+          <ScalarProperty Name="BadPasswordTime" ColumnName="BadPasswordTime" />
+          <ScalarProperty Name="AccountExpires" ColumnName="AccountExpires" />
+          <ScalarProperty Name="AllowedToDelegateTo" ColumnName="AllowedToDelegateTo" />
+          <ScalarProperty Name="KeyVersionNumber" ColumnName="KeyVersionNumber" />
+          <ScalarProperty Name="Expr1" ColumnName="Expr1" />
+          <ScalarProperty Name="Authority" ColumnName="Authority" />
+          <ScalarProperty Name="Sid" ColumnName="Sid" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="SamAccountName" ColumnName="SamAccountName" />
+          <ScalarProperty Name="ObjectClass" ColumnName="ObjectClass" />
+          <ScalarProperty Name="DisplayName" ColumnName="DisplayName" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="DistinguishedName" ColumnName="DistinguishedName" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="WhenCreated" ColumnName="WhenCreated" />
+          <ScalarProperty Name="WhenChanged" ColumnName="WhenChanged" />
+          <ScalarProperty Name="SPN1" ColumnName="SPN" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SqlDatabaseObjects">
+      <EntityTypeMapping TypeName="ACLXRAYModel.SqlDatabaseObject">
+        <MappingFragment StoreEntitySet="SqlDatabaseObjects">
+          <ScalarProperty Name="SqlDatabaseId" ColumnName="SqlDatabaseId" />
+          <ScalarProperty Name="ObjectId" ColumnName="ObjectId" />
+          <ScalarProperty Name="SchemaName" ColumnName="SchemaName" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="ModifyDate" ColumnName="ModifyDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SqlDatabasePermissions">
+      <EntityTypeMapping TypeName="ACLXRAYModel.SqlDatabasePermission">
+        <MappingFragment StoreEntitySet="SqlDatabasePermissions">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="SqlDatabaseId" ColumnName="SqlDatabaseId" />
+          <ScalarProperty Name="Class" ColumnName="Class" />
+          <ScalarProperty Name="MajorId" ColumnName="MajorId" />
+          <ScalarProperty Name="MinorId" ColumnName="MinorId" />
+          <ScalarProperty Name="GranteeId" ColumnName="GranteeId" />
+          <ScalarProperty Name="GrantorId" ColumnName="GrantorId" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="State" ColumnName="State" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SqlDatabasePrincipals">
+      <EntityTypeMapping TypeName="ACLXRAYModel.SqlDatabasePrincipal">
+        <MappingFragment StoreEntitySet="SqlDatabasePrincipals">
+          <ScalarProperty Name="SqlDatabaseId" ColumnName="SqlDatabaseId" />
+          <ScalarProperty Name="SqlPrincipalId" ColumnName="SqlPrincipalId" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="SqlSid" ColumnName="SqlSid" />
+          <ScalarProperty Name="TrusteeId" ColumnName="TrusteeId" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="DefaultSchemaName" ColumnName="DefaultSchemaName" />
+          <ScalarProperty Name="IsFixedRole" ColumnName="IsFixedRole" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="ModifyDate" ColumnName="ModifyDate" />
+          <ScalarProperty Name="IsExpanded" ColumnName="IsExpanded" />
+          <ScalarProperty Name="IsBusy" ColumnName="IsBusy" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SqlDatabaseRoleExpandedMembers">
+      <EntityTypeMapping TypeName="ACLXRAYModel.SqlDatabaseRoleExpandedMember">
+        <MappingFragment StoreEntitySet="SqlDatabaseRoleExpandedMembers">
+          <ScalarProperty Name="SqlDatabaseId" ColumnName="SqlDatabaseId" />
+          <ScalarProperty Name="RoleId" ColumnName="RoleId" />
+          <ScalarProperty Name="MemberId" ColumnName="MemberId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SqlDatabaseRoleMembers">
+      <EntityTypeMapping TypeName="ACLXRAYModel.SqlDatabaseRoleMember">
+        <MappingFragment StoreEntitySet="SqlDatabaseRoleMembers">
+          <ScalarProperty Name="SqlDatabaseId" ColumnName="SqlDatabaseId" />
+          <ScalarProperty Name="RoleId" ColumnName="RoleId" />
+          <ScalarProperty Name="MemberId" ColumnName="MemberId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SqlDatabases">
+      <EntityTypeMapping TypeName="ACLXRAYModel.SqlDatabas">
+        <MappingFragment StoreEntitySet="SqlDatabases">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="SqlInstanceId" ColumnName="SqlInstanceId" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="OwnerSqlSid" ColumnName="OwnerSqlSid" />
+          <ScalarProperty Name="OwnerTrusteeId" ColumnName="OwnerTrusteeId" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="CollationName" ColumnName="CollationName" />
+          <ScalarProperty Name="RecoveryMode" ColumnName="RecoveryMode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SqlInstancePermissions">
+      <EntityTypeMapping TypeName="ACLXRAYModel.SqlInstancePermission">
+        <MappingFragment StoreEntitySet="SqlInstancePermissions">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="SqlInstanceId" ColumnName="SqlInstanceId" />
+          <ScalarProperty Name="Class" ColumnName="Class" />
+          <ScalarProperty Name="MajorId" ColumnName="MajorId" />
+          <ScalarProperty Name="MinorId" ColumnName="MinorId" />
+          <ScalarProperty Name="GranteeId" ColumnName="GranteeId" />
+          <ScalarProperty Name="GrantorId" ColumnName="GrantorId" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="State" ColumnName="State" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SqlInstancePrincipals">
+      <EntityTypeMapping TypeName="ACLXRAYModel.SqlInstancePrincipal">
+        <MappingFragment StoreEntitySet="SqlInstancePrincipals">
+          <ScalarProperty Name="SqlInstanceId" ColumnName="SqlInstanceId" />
+          <ScalarProperty Name="SqlPrincipalId" ColumnName="SqlPrincipalId" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="SqlSid" ColumnName="SqlSid" />
+          <ScalarProperty Name="TrusteeId" ColumnName="TrusteeId" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Disabled" ColumnName="Disabled" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="ModifyDate" ColumnName="ModifyDate" />
+          <ScalarProperty Name="IsExpanded" ColumnName="IsExpanded" />
+          <ScalarProperty Name="IsBusy" ColumnName="IsBusy" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SqlInstanceRoleExpandedMembers">
+      <EntityTypeMapping TypeName="ACLXRAYModel.SqlInstanceRoleExpandedMember">
+        <MappingFragment StoreEntitySet="SqlInstanceRoleExpandedMembers">
+          <ScalarProperty Name="SqlInstanceId" ColumnName="SqlInstanceId" />
+          <ScalarProperty Name="RoleId" ColumnName="RoleId" />
+          <ScalarProperty Name="MemberId" ColumnName="MemberId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SqlInstanceRoleMembers">
+      <EntityTypeMapping TypeName="ACLXRAYModel.SqlInstanceRoleMember">
+        <MappingFragment StoreEntitySet="SqlInstanceRoleMembers">
+          <ScalarProperty Name="SqlInstanceId" ColumnName="SqlInstanceId" />
+          <ScalarProperty Name="RoleId" ColumnName="RoleId" />
+          <ScalarProperty Name="MemberId" ColumnName="MemberId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SqlInstances">
+      <EntityTypeMapping TypeName="ACLXRAYModel.SqlInstance">
+        <MappingFragment StoreEntitySet="SqlInstances">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Server" ColumnName="Server" />
+          <ScalarProperty Name="Edition" ColumnName="Edition" />
+          <ScalarProperty Name="Version" ColumnName="Version" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SqlTrusteeInfoes">
+      <EntityTypeMapping TypeName="ACLXRAYModel.SqlTrusteeInfo">
+        <MappingFragment StoreEntitySet="SqlTrusteeInfo">
+          <ScalarProperty Name="SqlInstanceId" ColumnName="SqlInstanceId" />
+          <ScalarProperty Name="InstanceName" ColumnName="InstanceName" />
+          <ScalarProperty Name="LoginId" ColumnName="LoginId" />
+          <ScalarProperty Name="LoginSid" ColumnName="LoginSid" />
+          <ScalarProperty Name="LoginName" ColumnName="LoginName" />
+          <ScalarProperty Name="LoginType" ColumnName="LoginType" />
+          <ScalarProperty Name="LoginTrusteeId" ColumnName="LoginTrusteeId" />
+          <ScalarProperty Name="LoginDisabled" ColumnName="LoginDisabled" />
+          <ScalarProperty Name="LoginIsFixedRole" ColumnName="LoginIsFixedRole" />
+          <ScalarProperty Name="LoginRoleMemberId" ColumnName="LoginRoleMemberId" />
+          <ScalarProperty Name="LoginRoleMemberSqlId" ColumnName="LoginRoleMemberSqlId" />
+          <ScalarProperty Name="LoginRoleMemberName" ColumnName="LoginRoleMemberName" />
+          <ScalarProperty Name="LoginRoleMemberTrusteeId" ColumnName="LoginRoleMemberTrusteeId" />
+          <ScalarProperty Name="LoginRoleMemberType" ColumnName="LoginRoleMemberType" />
+          <ScalarProperty Name="CanConnectToInstance" ColumnName="CanConnectToInstance" />
+          <ScalarProperty Name="DenyRevokeConnectToInstance" ColumnName="DenyRevokeConnectToInstance" />
+          <ScalarProperty Name="HasControlServer" ColumnName="HasControlServer" />
+          <ScalarProperty Name="NrInstanceGrants" ColumnName="NrInstanceGrants" />
+          <ScalarProperty Name="NrInstanceGrantWithOption" ColumnName="NrInstanceGrantWithOption" />
+          <ScalarProperty Name="NrInstanceDenyRevoke" ColumnName="NrInstanceDenyRevoke" />
+          <ScalarProperty Name="SqlDatabaseId" ColumnName="SqlDatabaseId" />
+          <ScalarProperty Name="DbName" ColumnName="DbName" />
+          <ScalarProperty Name="OwnerSqlSid" ColumnName="OwnerSqlSid" />
+          <ScalarProperty Name="DbUserSqlSid" ColumnName="DbUserSqlSid" />
+          <ScalarProperty Name="DbUserId" ColumnName="DbUserId" />
+          <ScalarProperty Name="DbUserName" ColumnName="DbUserName" />
+          <ScalarProperty Name="DbUserType" ColumnName="DbUserType" />
+          <ScalarProperty Name="DbUserTrusteeId" ColumnName="DbUserTrusteeId" />
+          <ScalarProperty Name="DbUserIsFixedRole" ColumnName="DbUserIsFixedRole" />
+          <ScalarProperty Name="DbUserRoleMemberId" ColumnName="DbUserRoleMemberId" />
+          <ScalarProperty Name="DbUserRoleMemberSqlId" ColumnName="DbUserRoleMemberSqlId" />
+          <ScalarProperty Name="DbUserRoleMemberName" ColumnName="DbUserRoleMemberName" />
+          <ScalarProperty Name="DbUserRoleMemberTrusteeId" ColumnName="DbUserRoleMemberTrusteeId" />
+          <ScalarProperty Name="DbUserRoleMemberType" ColumnName="DbUserRoleMemberType" />
+          <ScalarProperty Name="CanConnectToDb" ColumnName="CanConnectToDb" />
+          <ScalarProperty Name="DenyRevokeConnectToDb" ColumnName="DenyRevokeConnectToDb" />
+          <ScalarProperty Name="NrDbGrants" ColumnName="NrDbGrants" />
+          <ScalarProperty Name="NrDbGrantWithOption" ColumnName="NrDbGrantWithOption" />
+          <ScalarProperty Name="NrDbDenyRevoke" ColumnName="NrDbDenyRevoke" />
+          <ScalarProperty Name="IsDbOwner" ColumnName="IsDbOwner" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SqlTrusteeInfoAdExpandeds">
+      <EntityTypeMapping TypeName="ACLXRAYModel.SqlTrusteeInfoAdExpanded">
+        <MappingFragment StoreEntitySet="SqlTrusteeInfoAdExpanded">
+          <ScalarProperty Name="SqlInstanceId" ColumnName="SqlInstanceId" />
+          <ScalarProperty Name="InstanceName" ColumnName="InstanceName" />
+          <ScalarProperty Name="LoginId" ColumnName="LoginId" />
+          <ScalarProperty Name="LoginSid" ColumnName="LoginSid" />
+          <ScalarProperty Name="LoginName" ColumnName="LoginName" />
+          <ScalarProperty Name="LoginType" ColumnName="LoginType" />
+          <ScalarProperty Name="LoginTrusteeId" ColumnName="LoginTrusteeId" />
+          <ScalarProperty Name="LoginDisabled" ColumnName="LoginDisabled" />
+          <ScalarProperty Name="LoginIsFixedRole" ColumnName="LoginIsFixedRole" />
+          <ScalarProperty Name="LoginRoleMemberId" ColumnName="LoginRoleMemberId" />
+          <ScalarProperty Name="LoginRoleMemberSqlId" ColumnName="LoginRoleMemberSqlId" />
+          <ScalarProperty Name="LoginRoleMemberName" ColumnName="LoginRoleMemberName" />
+          <ScalarProperty Name="LoginRoleMemberTrusteeId" ColumnName="LoginRoleMemberTrusteeId" />
+          <ScalarProperty Name="LoginRoleMemberType" ColumnName="LoginRoleMemberType" />
+          <ScalarProperty Name="CanConnectToInstance" ColumnName="CanConnectToInstance" />
+          <ScalarProperty Name="DenyRevokeConnectToInstance" ColumnName="DenyRevokeConnectToInstance" />
+          <ScalarProperty Name="HasControlServer" ColumnName="HasControlServer" />
+          <ScalarProperty Name="NrInstanceGrants" ColumnName="NrInstanceGrants" />
+          <ScalarProperty Name="NrInstanceGrantWithOption" ColumnName="NrInstanceGrantWithOption" />
+          <ScalarProperty Name="NrInstanceDenyRevoke" ColumnName="NrInstanceDenyRevoke" />
+          <ScalarProperty Name="SqlDatabaseId" ColumnName="SqlDatabaseId" />
+          <ScalarProperty Name="DbName" ColumnName="DbName" />
+          <ScalarProperty Name="OwnerSqlSid" ColumnName="OwnerSqlSid" />
+          <ScalarProperty Name="DbUserSqlSid" ColumnName="DbUserSqlSid" />
+          <ScalarProperty Name="DbUserId" ColumnName="DbUserId" />
+          <ScalarProperty Name="DbUserName" ColumnName="DbUserName" />
+          <ScalarProperty Name="DbUserType" ColumnName="DbUserType" />
+          <ScalarProperty Name="DbUserTrusteeId" ColumnName="DbUserTrusteeId" />
+          <ScalarProperty Name="DbUserIsFixedRole" ColumnName="DbUserIsFixedRole" />
+          <ScalarProperty Name="DbUserRoleMemberId" ColumnName="DbUserRoleMemberId" />
+          <ScalarProperty Name="DbUserRoleMemberSqlId" ColumnName="DbUserRoleMemberSqlId" />
+          <ScalarProperty Name="DbUserRoleMemberName" ColumnName="DbUserRoleMemberName" />
+          <ScalarProperty Name="DbUserRoleMemberTrusteeId" ColumnName="DbUserRoleMemberTrusteeId" />
+          <ScalarProperty Name="DbUserRoleMemberType" ColumnName="DbUserRoleMemberType" />
+          <ScalarProperty Name="CanConnectToDb" ColumnName="CanConnectToDb" />
+          <ScalarProperty Name="DenyRevokeConnectToDb" ColumnName="DenyRevokeConnectToDb" />
+          <ScalarProperty Name="NrDbGrants" ColumnName="NrDbGrants" />
+          <ScalarProperty Name="NrDbGrantWithOption" ColumnName="NrDbGrantWithOption" />
+          <ScalarProperty Name="NrDbDenyRevoke" ColumnName="NrDbDenyRevoke" />
+          <ScalarProperty Name="IsDbOwner" ColumnName="IsDbOwner" />
+          <ScalarProperty Name="AdUserId" ColumnName="AdUserId" />
+          <ScalarProperty Name="AdUserAuthority" ColumnName="AdUserAuthority" />
+          <ScalarProperty Name="AdUserSid" ColumnName="AdUserSid" />
+          <ScalarProperty Name="AdUserName" ColumnName="AdUserName" />
+          <ScalarProperty Name="AdUserSamAccountName" ColumnName="AdUserSamAccountName" />
+          <ScalarProperty Name="AdUserObjectClass" ColumnName="AdUserObjectClass" />
+          <ScalarProperty Name="AdUserDisplayName" ColumnName="AdUserDisplayName" />
+          <ScalarProperty Name="AdUserDescription" ColumnName="AdUserDescription" />
+          <ScalarProperty Name="AdUserDistinguishedName" ColumnName="AdUserDistinguishedName" />
+          <ScalarProperty Name="AdUserModifiedDate" ColumnName="AdUserModifiedDate" />
+          <ScalarProperty Name="AdUserEnabled" ColumnName="AdUserEnabled" />
+          <ScalarProperty Name="AdUserFirstName" ColumnName="AdUserFirstName" />
+          <ScalarProperty Name="AdUserLastName" ColumnName="AdUserLastName" />
+          <ScalarProperty Name="AdUserLastPasswordSet" ColumnName="AdUserLastPasswordSet" />
+          <ScalarProperty Name="AdUserLastLogon" ColumnName="AdUserLastLogon" />
+          <ScalarProperty Name="AdUserPasswordNeverExpires" ColumnName="AdUserPasswordNeverExpires" />
+          <ScalarProperty Name="AdUserUserCannotChangePassword" ColumnName="AdUserUserCannotChangePassword" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_AD_CONFIG">
+      <EntityTypeMapping TypeName="ACLXRAYModel.T_AD_CONFIG">
+        <MappingFragment StoreEntitySet="T_AD_CONFIG">
+          <ScalarProperty Name="ObjectSID" ColumnName="ObjectSID" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+          <ScalarProperty Name="Info" ColumnName="Info" />
+          <ScalarProperty Name="Access" ColumnName="Access" />
+          <ScalarProperty Name="AccessType" ColumnName="AccessType" />
+          <ScalarProperty Name="IsInherited" ColumnName="IsInherited" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ServerID" ColumnName="ServerID" />
+          <ScalarProperty Name="Owner" ColumnName="Owner" />
+          <ScalarProperty Name="OwnerIsWellKnown" ColumnName="OwnerIsWellKnown" />
+          <ScalarProperty Name="OwnerRightsPresent" ColumnName="OwnerRightsPresent" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_AD_DOMAIN_ROOT">
+      <EntityTypeMapping TypeName="ACLXRAYModel.T_AD_DOMAIN_ROOT">
+        <MappingFragment StoreEntitySet="T_AD_DOMAIN_ROOT">
+          <ScalarProperty Name="ObjectSID" ColumnName="ObjectSID" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+          <ScalarProperty Name="Info" ColumnName="Info" />
+          <ScalarProperty Name="AccessType" ColumnName="AccessType" />
+          <ScalarProperty Name="Access" ColumnName="Access" />
+          <ScalarProperty Name="IsInherited" ColumnName="IsInherited" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ServerID" ColumnName="ServerID" />
+          <ScalarProperty Name="Owner" ColumnName="Owner" />
+          <ScalarProperty Name="OwnerIsWellKnown" ColumnName="OwnerIsWellKnown" />
+          <ScalarProperty Name="OwnerRightsPresent" ColumnName="OwnerRightsPresent" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_AD_OBJECT_ACCESS">
+      <EntityTypeMapping TypeName="ACLXRAYModel.T_AD_OBJECT_ACCESS">
+        <MappingFragment StoreEntitySet="T_AD_OBJECT_ACCESS">
+          <ScalarProperty Name="ObjectSID" ColumnName="ObjectSID" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+          <ScalarProperty Name="Info" ColumnName="Info" />
+          <ScalarProperty Name="Access" ColumnName="Access" />
+          <ScalarProperty Name="AccessType" ColumnName="AccessType" />
+          <ScalarProperty Name="IsInherited" ColumnName="IsInherited" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ServerID" ColumnName="ServerID" />
+          <ScalarProperty Name="Owner" ColumnName="Owner" />
+          <ScalarProperty Name="OwnerIsWellKnown" ColumnName="OwnerIsWellKnown" />
+          <ScalarProperty Name="OwnerRightsPresent" ColumnName="OwnerRightsPresent" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_AD_OBJECT_AUDIT">
+      <EntityTypeMapping TypeName="ACLXRAYModel.T_AD_OBJECT_AUDIT">
+        <MappingFragment StoreEntitySet="T_AD_OBJECT_AUDIT">
+          <ScalarProperty Name="ObjectSID" ColumnName="ObjectSID" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+          <ScalarProperty Name="Info" ColumnName="Info" />
+          <ScalarProperty Name="Access" ColumnName="Access" />
+          <ScalarProperty Name="AccessType" ColumnName="AccessType" />
+          <ScalarProperty Name="IsInherited" ColumnName="IsInherited" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ServerID" ColumnName="ServerID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_ADMIN_COUNT">
+      <EntityTypeMapping TypeName="ACLXRAYModel.T_ADMIN_COUNT">
+        <MappingFragment StoreEntitySet="T_ADMIN_COUNT">
+          <ScalarProperty Name="Info" ColumnName="Info" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+          <ScalarProperty Name="CanBeDelegated" ColumnName="CanBeDelegated" />
+          <ScalarProperty Name="ObjectSID" ColumnName="ObjectSID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ServerID" ColumnName="ServerID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_ADMIN_SDHOLDER">
+      <EntityTypeMapping TypeName="ACLXRAYModel.T_ADMIN_SDHOLDER">
+        <MappingFragment StoreEntitySet="T_ADMIN_SDHOLDER">
+          <ScalarProperty Name="ObjectSID" ColumnName="ObjectSID" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+          <ScalarProperty Name="Info" ColumnName="Info" />
+          <ScalarProperty Name="AccessType" ColumnName="AccessType" />
+          <ScalarProperty Name="Access" ColumnName="Access" />
+          <ScalarProperty Name="IsInherited" ColumnName="IsInherited" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ServerID" ColumnName="ServerID" />
+          <ScalarProperty Name="Owner" ColumnName="Owner" />
+          <ScalarProperty Name="OwnerIsWellKnown" ColumnName="OwnerIsWellKnown" />
+          <ScalarProperty Name="OwnerRightsPresent" ColumnName="OwnerRightsPresent" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_ALL_DRIVERS">
+      <EntityTypeMapping TypeName="ACLXRAYModel.T_ALL_DRIVERS">
+        <MappingFragment StoreEntitySet="T_ALL_DRIVERS">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ModuleName" ColumnName="ModuleName" />
+          <ScalarProperty Name="DisplayName" ColumnName="DisplayName" />
+          <ScalarProperty Name="DriverType" ColumnName="DriverType" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="LinkDate" ColumnName="LinkDate" />
+          <ScalarProperty Name="Path" ColumnName="Path" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+          <ScalarProperty Name="ServerID" ColumnName="ServerID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_AZURE_DIRECTORY_ROLES">
+      <EntityTypeMapping TypeName="ACLXRAYModel.T_AZURE_DIRECTORY_ROLES">
+        <MappingFragment StoreEntitySet="T_AZURE_DIRECTORY_ROLES">
+          <ScalarProperty Name="TenantName" ColumnName="TenantName" />
+          <ScalarProperty Name="Role" ColumnName="Role" />
+          <ScalarProperty Name="Info" ColumnName="Info" />
+          <ScalarProperty Name="RoleMemberTpe" ColumnName="RoleMemberTpe" />
+          <ScalarProperty Name="ObjectSid" ColumnName="ObjectSid" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ServerID" ColumnName="ServerID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_CA">
+      <EntityTypeMapping TypeName="ACLXRAYModel.T_CA">
+        <MappingFragment StoreEntitySet="T_CA">
+          <ScalarProperty Name="CAPermissions" ColumnName="CAPermissions" />
+          <ScalarProperty Name="SID" ColumnName="SID" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ServerID" ColumnName="ServerID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_CA_ENROLLMENT_RIGHTS">
+      <EntityTypeMapping TypeName="ACLXRAYModel.T_CA_ENROLLMENT_RIGHTS">
+        <MappingFragment StoreEntitySet="T_CA_ENROLLMENT_RIGHTS">
+          <ScalarProperty Name="Officer" ColumnName="Officer" />
+          <ScalarProperty Name="Users" ColumnName="Users" />
+          <ScalarProperty Name="ACEType" ColumnName="ACEType" />
+          <ScalarProperty Name="Template" ColumnName="Template" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ServerID" ColumnName="ServerID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_CA_MANAGER_RIGHTS">
+      <EntityTypeMapping TypeName="ACLXRAYModel.T_CA_MANAGER_RIGHTS">
+        <MappingFragment StoreEntitySet="T_CA_MANAGER_RIGHTS">
+          <ScalarProperty Name="Officer" ColumnName="Officer" />
+          <ScalarProperty Name="Users" ColumnName="Users" />
+          <ScalarProperty Name="ACEType" ColumnName="ACEType" />
+          <ScalarProperty Name="Template" ColumnName="Template" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ServerID" ColumnName="ServerID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_DCOM_DACL">
+      <EntityTypeMapping TypeName="ACLXRAYModel.T_DCOM_DACL">
+        <MappingFragment StoreEntitySet="T_DCOM_DACL">
+          <ScalarProperty Name="ObjectSID" ColumnName="ObjectSID" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+          <ScalarProperty Name="Info" ColumnName="Info" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ServerID" ColumnName="ServerID" />
+          <ScalarProperty Name="Access" ColumnName="Access" />
+          <ScalarProperty Name="AccessType" ColumnName="AccessType" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_DIAGNOSTICS">
+      <EntityTypeMapping TypeName="ACLXRAYModel.T_DIAGNOSTICS">
+        <MappingFragment StoreEntitySet="T_DIAGNOSTICS">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="OpId" ColumnName="OpId" />
+          <ScalarProperty Name="OpName" ColumnName="OpName" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+          <ScalarProperty Name="N1" ColumnName="N1" />
+          <ScalarProperty Name="N2" ColumnName="N2" />
+          <ScalarProperty Name="N3" ColumnName="N3" />
+          <ScalarProperty Name="N4" ColumnName="N4" />
+          <ScalarProperty Name="N5" ColumnName="N5" />
+          <ScalarProperty Name="S1" ColumnName="S1" />
+          <ScalarProperty Name="S2" ColumnName="S2" />
+          <ScalarProperty Name="S3" ColumnName="S3" />
+          <ScalarProperty Name="S4" ColumnName="S4" />
+          <ScalarProperty Name="S5" ColumnName="S5" />
+          <ScalarProperty Name="OpStep" ColumnName="OpStep" />
+          <ScalarProperty Name="N6" ColumnName="N6" />
+          <ScalarProperty Name="N7" ColumnName="N7" />
+          <ScalarProperty Name="N8" ColumnName="N8" />
+          <ScalarProperty Name="N9" ColumnName="N9" />
+          <ScalarProperty Name="N10" ColumnName="N10" />
+          <ScalarProperty Name="S6" ColumnName="S6" />
+          <ScalarProperty Name="S7" ColumnName="S7" />
+          <ScalarProperty Name="S8" ColumnName="S8" />
+          <ScalarProperty Name="S9" ColumnName="S9" />
+          <ScalarProperty Name="S10" ColumnName="S10" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_EMPTY_GROUPS">
+      <EntityTypeMapping TypeName="ACLXRAYModel.T_EMPTY_GROUPS">
+        <MappingFragment StoreEntitySet="T_EMPTY_GROUPS">
+          <ScalarProperty Name="ObjectSID" ColumnName="ObjectSID" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+          <ScalarProperty Name="Info" ColumnName="Info" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ServerID" ColumnName="ServerID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_EVENT_4663_LOG">
+      <EntityTypeMapping TypeName="ACLXRAYModel.T_EVENT_4663_LOG">
+        <MappingFragment StoreEntitySet="T_EVENT_4663_LOG">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="TimeCreated" ColumnName="TimeCreated" />
+          <ScalarProperty Name="SubjectUserSid" ColumnName="SubjectUserSid" />
+          <ScalarProperty Name="SubjectUserName" ColumnName="SubjectUserName" />
+          <ScalarProperty Name="SubjectDomainName" ColumnName="SubjectDomainName" />
+          <ScalarProperty Name="SubjectLogonId" ColumnName="SubjectLogonId" />
+          <ScalarProperty Name="ObjectServer" ColumnName="ObjectServer" />
+          <ScalarProperty Name="ObjectType" ColumnName="ObjectType" />
+          <ScalarProperty Name="ObjectName" ColumnName="ObjectName" />
+          <ScalarProperty Name="HandleId" ColumnName="HandleId" />
+          <ScalarProperty Name="AccessList" ColumnName="AccessList" />
+          <ScalarProperty Name="AccessMask" ColumnName="AccessMask" />
+          <ScalarProperty Name="ProcessId" ColumnName="ProcessId" />
+          <ScalarProperty Name="ProcessName" ColumnName="ProcessName" />
+          <ScalarProperty Name="ResourceAttributes" ColumnName="ResourceAttributes" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+          <ScalarProperty Name="ServerId" ColumnName="ServerId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_EXCHANGE_DACL">
+      <EntityTypeMapping TypeName="ACLXRAYModel.T_EXCHANGE_DACL">
+        <MappingFragment StoreEntitySet="T_EXCHANGE_DACL">
+          <ScalarProperty Name="ObjectSID" ColumnName="ObjectSID" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+          <ScalarProperty Name="Info" ColumnName="Info" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ServerID" ColumnName="ServerID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_EXCHANGE_MAILBOX">
+      <EntityTypeMapping TypeName="ACLXRAYModel.T_EXCHANGE_MAILBOX">
+        <MappingFragment StoreEntitySet="T_EXCHANGE_MAILBOX">
+          <ScalarProperty Name="ObjectSID" ColumnName="ObjectSID" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+          <ScalarProperty Name="Info" ColumnName="Info" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ServerID" ColumnName="ServerID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_FILE_ASSOC">
+      <EntityTypeMapping TypeName="ACLXRAYModel.T_FILE_ASSOC">
+        <MappingFragment StoreEntitySet="T_FILE_ASSOC">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Ext" ColumnName="Ext" />
+          <ScalarProperty Name="FileType" ColumnName="FileType" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+          <ScalarProperty Name="ServerID" ColumnName="ServerID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_FILES_DACL">
+      <EntityTypeMapping TypeName="ACLXRAYModel.T_FILES_DACL">
+        <MappingFragment StoreEntitySet="T_FILES_DACL">
+          <ScalarProperty Name="ObjectSID" ColumnName="ObjectSID" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+          <ScalarProperty Name="Info" ColumnName="Info" />
+          <ScalarProperty Name="LastAccessTime" ColumnName="LastAccessTime" />
+          <ScalarProperty Name="Access" ColumnName="Access" />
+          <ScalarProperty Name="AccessType" ColumnName="AccessType" />
+          <ScalarProperty Name="IsInherited" ColumnName="IsInherited" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ServerID" ColumnName="ServerID" />
+          <ScalarProperty Name="Owner" ColumnName="Owner" />
+          <ScalarProperty Name="OwnerIsWellKnown" ColumnName="OwnerIsWellKnown" />
+          <ScalarProperty Name="OwnerRightsPresent" ColumnName="OwnerRightsPresent" />
+          <ScalarProperty Name="Size" ColumnName="Size" />
+          <ScalarProperty Name="Ext" ColumnName="Ext" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_FILES_SACL">
+      <EntityTypeMapping TypeName="ACLXRAYModel.T_FILES_SACL">
+        <MappingFragment StoreEntitySet="T_FILES_SACL">
+          <ScalarProperty Name="ObjectSID" ColumnName="ObjectSID" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+          <ScalarProperty Name="Info" ColumnName="Info" />
+          <ScalarProperty Name="LastAccessTime" ColumnName="LastAccessTime" />
+          <ScalarProperty Name="Access" ColumnName="Access" />
+          <ScalarProperty Name="AccessType" ColumnName="AccessType" />
+          <ScalarProperty Name="IsInherited" ColumnName="IsInherited" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ServerID" ColumnName="ServerID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_FOLDERS_DACL">
+      <EntityTypeMapping TypeName="ACLXRAYModel.T_FOLDERS_DACL">
+        <MappingFragment StoreEntitySet="T_FOLDERS_DACL">
+          <ScalarProperty Name="ObjectSID" ColumnName="ObjectSID" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+          <ScalarProperty Name="Info" ColumnName="Info" />
+          <ScalarProperty Name="LastAccessTime" ColumnName="LastAccessTime" />
+          <ScalarProperty Name="Access" ColumnName="Access" />
+          <ScalarProperty Name="AccessType" ColumnName="AccessType" />
+          <ScalarProperty Name="IsInherited" ColumnName="IsInherited" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ServerID" ColumnName="ServerID" />
+          <ScalarProperty Name="Owner" ColumnName="Owner" />
+          <ScalarProperty Name="OwnerIsWellKnown" ColumnName="OwnerIsWellKnown" />
+          <ScalarProperty Name="OwnerRightsPresent" ColumnName="OwnerRightsPresent" />
+          <ScalarProperty Name="Size" ColumnName="Size" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_FOLDERS_SACL">
+      <EntityTypeMapping TypeName="ACLXRAYModel.T_FOLDERS_SACL">
+        <MappingFragment StoreEntitySet="T_FOLDERS_SACL">
+          <ScalarProperty Name="ObjectSID" ColumnName="ObjectSID" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+          <ScalarProperty Name="Info" ColumnName="Info" />
+          <ScalarProperty Name="LastAccessTime" ColumnName="LastAccessTime" />
+          <ScalarProperty Name="Access" ColumnName="Access" />
+          <ScalarProperty Name="AccessType" ColumnName="AccessType" />
+          <ScalarProperty Name="IsInherited" ColumnName="IsInherited" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ServerID" ColumnName="ServerID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_GLB_GROUP_COUNT">
+      <EntityTypeMapping TypeName="ACLXRAYModel.T_GLB_GROUP_COUNT">
+        <MappingFragment StoreEntitySet="T_GLB_GROUP_COUNT">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="GroupDN" ColumnName="GroupDN" />
+          <ScalarProperty Name="GroupScope" ColumnName="GroupScope" />
+          <ScalarProperty Name="GroupCount" ColumnName="GroupCount" />
+          <ScalarProperty Name="GlobalCount" ColumnName="GlobalCount" />
+          <ScalarProperty Name="LocalCount" ColumnName="LocalCount" />
+          <ScalarProperty Name="UniversalCount" ColumnName="UniversalCount" />
+          <ScalarProperty Name="SIDHistoryCount" ColumnName="SIDHistoryCount" />
+          <ScalarProperty Name="EstTokenSize" ColumnName="EstTokenSize" />
+          <ScalarProperty Name="LoopDetected" ColumnName="LoopDetected" />
+          <ScalarProperty Name="LoopDetectedOn" ColumnName="LoopDetectedOn" />
+          <ScalarProperty Name="ServerID" ColumnName="ServerID" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_GPO">
+      <EntityTypeMapping TypeName="ACLXRAYModel.T_GPO">
+        <MappingFragment StoreEntitySet="T_GPO">
+          <ScalarProperty Name="ObjectSID" ColumnName="ObjectSID" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+          <ScalarProperty Name="Info" ColumnName="Info" />
+          <ScalarProperty Name="AccessType" ColumnName="AccessType" />
+          <ScalarProperty Name="Access" ColumnName="Access" />
+          <ScalarProperty Name="IsInherited" ColumnName="IsInherited" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ServerID" ColumnName="ServerID" />
+          <ScalarProperty Name="Owner" ColumnName="Owner" />
+          <ScalarProperty Name="OwnerIsWellKnown" ColumnName="OwnerIsWellKnown" />
+          <ScalarProperty Name="OwnerRightsPresent" ColumnName="OwnerRightsPresent" />
+          <ScalarProperty Name="GPOGUID" ColumnName="GPOGUID" />
+          <ScalarProperty Name="LinkedTo" ColumnName="LinkedTo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_GPO_PREFS">
+      <EntityTypeMapping TypeName="ACLXRAYModel.T_GPO_PREFS">
+        <MappingFragment StoreEntitySet="T_GPO_PREFS">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="GPOIdentifier" ColumnName="GPOIdentifier" />
+          <ScalarProperty Name="GPOName" ColumnName="GPOName" />
+          <ScalarProperty Name="DomainName" ColumnName="DomainName" />
+          <ScalarProperty Name="Scope" ColumnName="Scope" />
+          <ScalarProperty Name="Action" ColumnName="Action" />
+          <ScalarProperty Name="GroupName" ColumnName="GroupName" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="NewName" ColumnName="NewName" />
+          <ScalarProperty Name="GroupSID" ColumnName="GroupSID" />
+          <ScalarProperty Name="Setting" ColumnName="Setting" />
+          <ScalarProperty Name="Member" ColumnName="Member" />
+          <ScalarProperty Name="MemberSID" ColumnName="MemberSID" />
+          <ScalarProperty Name="MemberAction" ColumnName="MemberAction" />
+          <ScalarProperty Name="Filter" ColumnName="Filter" />
+          <ScalarProperty Name="LinksTo" ColumnName="LinksTo" />
+          <ScalarProperty Name="FilterName" ColumnName="FilterName" />
+          <ScalarProperty Name="FilterQuery" ColumnName="FilterQuery" />
+          <ScalarProperty Name="ApplyGPOTo" ColumnName="ApplyGPOTo" />
+          <ScalarProperty Name="ApplyGPOToSID" ColumnName="ApplyGPOToSID" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+          <ScalarProperty Name="ServerID" ColumnName="ServerID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_GPO_RESTRICTED_GROUPS">
+      <EntityTypeMapping TypeName="ACLXRAYModel.T_GPO_RESTRICTED_GROUPS">
+        <MappingFragment StoreEntitySet="T_GPO_RESTRICTED_GROUPS">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="GPOIdentifier" ColumnName="GPOIdentifier" />
+          <ScalarProperty Name="GPOName" ColumnName="GPOName" />
+          <ScalarProperty Name="DomainName" ColumnName="DomainName" />
+          <ScalarProperty Name="GroupName" ColumnName="GroupName" />
+          <ScalarProperty Name="GroupNameSID" ColumnName="GroupNameSID" />
+          <ScalarProperty Name="Member" ColumnName="Member" />
+          <ScalarProperty Name="MemberSID" ColumnName="MemberSID" />
+          <ScalarProperty Name="MemberOf" ColumnName="MemberOf" />
+          <ScalarProperty Name="MemberOfSID" ColumnName="MemberOfSID" />
+          <ScalarProperty Name="LinksTo" ColumnName="LinksTo" />
+          <ScalarProperty Name="FilterName" ColumnName="FilterName" />
+          <ScalarProperty Name="FilterQuery" ColumnName="FilterQuery" />
+          <ScalarProperty Name="ApplyGPOTo" ColumnName="ApplyGPOTo" />
+          <ScalarProperty Name="ApplyGPOToSID" ColumnName="ApplyGPOToSID" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+          <ScalarProperty Name="ServerID" ColumnName="ServerID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_KRBTGT_ATTRIBUTES">
+      <EntityTypeMapping TypeName="ACLXRAYModel.T_KRBTGT_ATTRIBUTES">
+        <MappingFragment StoreEntitySet="T_KRBTGT_ATTRIBUTES">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="SID" ColumnName="SID" />
+          <ScalarProperty Name="Authority" ColumnName="Authority" />
+          <ScalarProperty Name="msDS_KrbTgtLinkBl" ColumnName="msDS-KrbTgtLinkBl" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_LAST_LOGOFF">
+      <EntityTypeMapping TypeName="ACLXRAYModel.T_LAST_LOGOFF">
+        <MappingFragment StoreEntitySet="T_LAST_LOGOFF">
+          <ScalarProperty Name="ObjectSID" ColumnName="ObjectSID" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+          <ScalarProperty Name="Info" ColumnName="Info" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ServerID" ColumnName="ServerID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_LOC_FIREWALL_RULES">
+      <EntityTypeMapping TypeName="ACLXRAYModel.T_LOC_FIREWALL_RULES">
+        <MappingFragment StoreEntitySet="T_LOC_FIREWALL_RULES">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+          <ScalarProperty Name="RuleName" ColumnName="RuleName" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Enabled" ColumnName="Enabled" />
+          <ScalarProperty Name="Direction" ColumnName="Direction" />
+          <ScalarProperty Name="Profiles" ColumnName="Profiles" />
+          <ScalarProperty Name="Grouping" ColumnName="Grouping" />
+          <ScalarProperty Name="LocalIP" ColumnName="LocalIP" />
+          <ScalarProperty Name="RemoteIP" ColumnName="RemoteIP" />
+          <ScalarProperty Name="Protocol" ColumnName="Protocol" />
+          <ScalarProperty Name="LocalPort" ColumnName="LocalPort" />
+          <ScalarProperty Name="RemotePort" ColumnName="RemotePort" />
+          <ScalarProperty Name="EdgeTraversal" ColumnName="EdgeTraversal" />
+          <ScalarProperty Name="Program" ColumnName="Program" />
+          <ScalarProperty Name="Service" ColumnName="Service" />
+          <ScalarProperty Name="InterfaceTypes" ColumnName="InterfaceTypes" />
+          <ScalarProperty Name="Security" ColumnName="Security" />
+          <ScalarProperty Name="RuleSource" ColumnName="RuleSource" />
+          <ScalarProperty Name="Action" ColumnName="Action" />
+          <ScalarProperty Name="ServerID" ColumnName="ServerID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_LOCAL_GROUPS">
+      <EntityTypeMapping TypeName="ACLXRAYModel.T_LOCAL_GROUPS">
+        <MappingFragment StoreEntitySet="T_LOCAL_GROUPS">
+          <ScalarProperty Name="ObjectSID" ColumnName="ObjectSID" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+          <ScalarProperty Name="Info" ColumnName="Info" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ServerID" ColumnName="ServerID" />
+          <ScalarProperty Name="GroupSID" ColumnName="GroupSID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_LOCAL_SIDS">
+      <EntityTypeMapping TypeName="ACLXRAYModel.T_LOCAL_SIDS">
+        <MappingFragment StoreEntitySet="T_LOCAL_SIDS">
+          <ScalarProperty Name="ObjectSID" ColumnName="ObjectSID" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+          <ScalarProperty Name="Info" ColumnName="Info" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ServerID" ColumnName="ServerID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_NTFS_DACL">
+      <EntityTypeMapping TypeName="ACLXRAYModel.T_NTFS_DACL">
+        <MappingFragment StoreEntitySet="T_NTFS_DACL">
+          <ScalarProperty Name="ObjectSID" ColumnName="ObjectSID" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+          <ScalarProperty Name="Info" ColumnName="Info" />
+          <ScalarProperty Name="LastAccessTime" ColumnName="LastAccessTime" />
+          <ScalarProperty Name="Access" ColumnName="Access" />
+          <ScalarProperty Name="AccessType" ColumnName="AccessType" />
+          <ScalarProperty Name="IsInherited" ColumnName="IsInherited" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ServerID" ColumnName="ServerID" />
+          <ScalarProperty Name="Owner" ColumnName="Owner" />
+          <ScalarProperty Name="OwnerIsWellKnown" ColumnName="OwnerIsWellKnown" />
+          <ScalarProperty Name="OwnerRightsPresent" ColumnName="OwnerRightsPresent" />
+          <ScalarProperty Name="Size" ColumnName="Size" />
+          <ScalarProperty Name="Ext" ColumnName="Ext" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_NTFS_SACL">
+      <EntityTypeMapping TypeName="ACLXRAYModel.T_NTFS_SACL">
+        <MappingFragment StoreEntitySet="T_NTFS_SACL">
+          <ScalarProperty Name="ObjectSID" ColumnName="ObjectSID" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+          <ScalarProperty Name="Info" ColumnName="Info" />
+          <ScalarProperty Name="LastAccessTime" ColumnName="LastAccessTime" />
+          <ScalarProperty Name="Access" ColumnName="Access" />
+          <ScalarProperty Name="AccessType" ColumnName="AccessType" />
+          <ScalarProperty Name="IsInherited" ColumnName="IsInherited" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ServerID" ColumnName="ServerID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_PRE_WINDOWS_2000">
+      <EntityTypeMapping TypeName="ACLXRAYModel.T_PRE_WINDOWS_2000">
+        <MappingFragment StoreEntitySet="T_PRE_WINDOWS_2000">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="DN" ColumnName="DN" />
+          <ScalarProperty Name="SID" ColumnName="SID" />
+          <ScalarProperty Name="ObjectClass" ColumnName="ObjectClass" />
+          <ScalarProperty Name="ServerID" ColumnName="ServerID" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_PROCESS_INFO">
+      <EntityTypeMapping TypeName="ACLXRAYModel.T_PROCESS_INFO">
+        <MappingFragment StoreEntitySet="T_PROCESS_INFO">
+          <ScalarProperty Name="ObjectSID" ColumnName="ObjectSID" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+          <ScalarProperty Name="Info" ColumnName="Info" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ServerID" ColumnName="ServerID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_REGISTRY_DACL">
+      <EntityTypeMapping TypeName="ACLXRAYModel.T_REGISTRY_DACL">
+        <MappingFragment StoreEntitySet="T_REGISTRY_DACL">
+          <ScalarProperty Name="ObjectSID" ColumnName="ObjectSID" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+          <ScalarProperty Name="Info" ColumnName="Info" />
+          <ScalarProperty Name="Access" ColumnName="Access" />
+          <ScalarProperty Name="AccessType" ColumnName="AccessType" />
+          <ScalarProperty Name="IsInherited" ColumnName="IsInherited" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ServerID" ColumnName="ServerID" />
+          <ScalarProperty Name="Owner" ColumnName="Owner" />
+          <ScalarProperty Name="OwnerIsWellKnown" ColumnName="OwnerIsWellKnown" />
+          <ScalarProperty Name="OwnerRightsPresent" ColumnName="OwnerRightsPresent" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_REGISTRY_LAST_LOGOFF">
+      <EntityTypeMapping TypeName="ACLXRAYModel.T_REGISTRY_LAST_LOGOFF">
+        <MappingFragment StoreEntitySet="T_REGISTRY_LAST_LOGOFF">
+          <ScalarProperty Name="ObjectSID" ColumnName="ObjectSID" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+          <ScalarProperty Name="Info" ColumnName="Info" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ServerID" ColumnName="ServerID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_REGISTRY_PROFILES">
+      <EntityTypeMapping TypeName="ACLXRAYModel.T_REGISTRY_PROFILES">
+        <MappingFragment StoreEntitySet="T_REGISTRY_PROFILES">
+          <ScalarProperty Name="ObjectSID" ColumnName="ObjectSID" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+          <ScalarProperty Name="Info" ColumnName="Info" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ServerID" ColumnName="ServerID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_REGISTRY_SACL">
+      <EntityTypeMapping TypeName="ACLXRAYModel.T_REGISTRY_SACL">
+        <MappingFragment StoreEntitySet="T_REGISTRY_SACL">
+          <ScalarProperty Name="ObjectSID" ColumnName="ObjectSID" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+          <ScalarProperty Name="Info" ColumnName="Info" />
+          <ScalarProperty Name="Access" ColumnName="Access" />
+          <ScalarProperty Name="AccessType" ColumnName="AccessType" />
+          <ScalarProperty Name="IsInherited" ColumnName="IsInherited" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ServerID" ColumnName="ServerID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_RODC_DATA">
+      <EntityTypeMapping TypeName="ACLXRAYModel.T_RODC_DATA">
+        <MappingFragment StoreEntitySet="T_RODC_DATA">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="SID" ColumnName="SID" />
+          <ScalarProperty Name="ManagedBy" ColumnName="ManagedBy" />
+          <ScalarProperty Name="PropertyName" ColumnName="PropertyName" />
+          <ScalarProperty Name="PropertyValue" ColumnName="PropertyValue" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_SCAN_FILES">
+      <EntityTypeMapping TypeName="ACLXRAYModel.T_SCAN_FILES">
+        <MappingFragment StoreEntitySet="T_SCAN_FILES">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="SessionGUID" ColumnName="SessionGUID" />
+          <ScalarProperty Name="ObjectType" ColumnName="ObjectType" />
+          <ScalarProperty Name="Import_Timestamp" ColumnName="Import_Timestamp" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_SCAN_SESSIONS">
+      <EntityTypeMapping TypeName="ACLXRAYModel.T_SCAN_SESSIONS">
+        <MappingFragment StoreEntitySet="T_SCAN_SESSIONS">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="SessionGUID" ColumnName="SessionGUID" />
+          <ScalarProperty Name="ServerFQDN" ColumnName="ServerFQDN" />
+          <ScalarProperty Name="Collection_Timestamp" ColumnName="Collection_Timestamp" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_SCHEMA_DACL">
+      <EntityTypeMapping TypeName="ACLXRAYModel.T_SCHEMA_DACL">
+        <MappingFragment StoreEntitySet="T_SCHEMA_DACL">
+          <ScalarProperty Name="ObjectSID" ColumnName="ObjectSID" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+          <ScalarProperty Name="Info" ColumnName="Info" />
+          <ScalarProperty Name="AccessType" ColumnName="AccessType" />
+          <ScalarProperty Name="IsInherited" ColumnName="IsInherited" />
+          <ScalarProperty Name="Access" ColumnName="Access" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ServerID" ColumnName="ServerID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_SERVICE">
+      <EntityTypeMapping TypeName="ACLXRAYModel.T_SERVICE">
+        <MappingFragment StoreEntitySet="T_SERVICE">
+          <ScalarProperty Name="ObjectSID" ColumnName="ObjectSID" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+          <ScalarProperty Name="Info" ColumnName="Info" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ServerID" ColumnName="ServerID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_SHARE_CONTENT_DACL">
+      <EntityTypeMapping TypeName="ACLXRAYModel.T_SHARE_CONTENT_DACL">
+        <MappingFragment StoreEntitySet="T_SHARE_CONTENT_DACL">
+          <ScalarProperty Name="ObjectSID" ColumnName="ObjectSID" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+          <ScalarProperty Name="Info" ColumnName="Info" />
+          <ScalarProperty Name="Access" ColumnName="Access" />
+          <ScalarProperty Name="LastAccessTime" ColumnName="LastAccessTime" />
+          <ScalarProperty Name="AccessType" ColumnName="AccessType" />
+          <ScalarProperty Name="IsInherited" ColumnName="IsInherited" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ServerID" ColumnName="ServerID" />
+          <ScalarProperty Name="Owner" ColumnName="Owner" />
+          <ScalarProperty Name="OwnerIsWellKnown" ColumnName="OwnerIsWellKnown" />
+          <ScalarProperty Name="OwnerRightsPresent" ColumnName="OwnerRightsPresent" />
+          <ScalarProperty Name="Size" ColumnName="Size" />
+          <ScalarProperty Name="Ext" ColumnName="Ext" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_SHARE_CONTENT_SACL">
+      <EntityTypeMapping TypeName="ACLXRAYModel.T_SHARE_CONTENT_SACL">
+        <MappingFragment StoreEntitySet="T_SHARE_CONTENT_SACL">
+          <ScalarProperty Name="ObjectSID" ColumnName="ObjectSID" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+          <ScalarProperty Name="Info" ColumnName="Info" />
+          <ScalarProperty Name="Access" ColumnName="Access" />
+          <ScalarProperty Name="LastAccessTime" ColumnName="LastAccessTime" />
+          <ScalarProperty Name="AccessType" ColumnName="AccessType" />
+          <ScalarProperty Name="IsInherited" ColumnName="IsInherited" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ServerID" ColumnName="ServerID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_SHARE_DACL">
+      <EntityTypeMapping TypeName="ACLXRAYModel.T_SHARE_DACL">
+        <MappingFragment StoreEntitySet="T_SHARE_DACL">
+          <ScalarProperty Name="ObjectSID" ColumnName="ObjectSID" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+          <ScalarProperty Name="Info" ColumnName="Info" />
+          <ScalarProperty Name="Access" ColumnName="Access" />
+          <ScalarProperty Name="LastAccessTime" ColumnName="LastAccessTime" />
+          <ScalarProperty Name="AccessType" ColumnName="AccessType" />
+          <ScalarProperty Name="IsInherited" ColumnName="IsInherited" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ServerID" ColumnName="ServerID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_SID_HISTORY">
+      <EntityTypeMapping TypeName="ACLXRAYModel.T_SID_HISTORY">
+        <MappingFragment StoreEntitySet="T_SID_HISTORY">
+          <ScalarProperty Name="ObjectSID" ColumnName="ObjectSID" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+          <ScalarProperty Name="Info" ColumnName="Info" />
+          <ScalarProperty Name="ObjectDN" ColumnName="ObjectDN" />
+          <ScalarProperty Name="SIDHistory" ColumnName="SIDHistory" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ServerID" ColumnName="ServerID" />
+          <ScalarProperty Name="SIDHistorySamAccountName" ColumnName="SIDHistorySamAccountName" />
+          <ScalarProperty Name="SIDHistoryDN" ColumnName="SIDHistoryDN" />
+          <ScalarProperty Name="IsSameDomain" ColumnName="IsSameDomain" />
+          <ScalarProperty Name="IsWellKnownSID" ColumnName="IsWellKnownSID" />
+          <ScalarProperty Name="WellKnownAccount" ColumnName="WellKnownAccount" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_SIGNED_DRIVERS">
+      <EntityTypeMapping TypeName="ACLXRAYModel.T_SIGNED_DRIVERS">
+        <MappingFragment StoreEntitySet="T_SIGNED_DRIVERS">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="DeviceName" ColumnName="DeviceName" />
+          <ScalarProperty Name="InfName" ColumnName="InfName" />
+          <ScalarProperty Name="IsSigned" ColumnName="IsSigned" />
+          <ScalarProperty Name="Manufacturer" ColumnName="Manufacturer" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+          <ScalarProperty Name="ServerID" ColumnName="ServerID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_SOFTWARE">
+      <EntityTypeMapping TypeName="ACLXRAYModel.T_SOFTWARE">
+        <MappingFragment StoreEntitySet="T_SOFTWARE">
+          <ScalarProperty Name="DisplayName" ColumnName="DisplayName" />
+          <ScalarProperty Name="Publisher" ColumnName="Publisher" />
+          <ScalarProperty Name="InstallLocation" ColumnName="InstallLocation" />
+          <ScalarProperty Name="InstallDate" ColumnName="InstallDate" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ServerID" ColumnName="ServerID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_SPN">
+      <EntityTypeMapping TypeName="ACLXRAYModel.T_SPN">
+        <MappingFragment StoreEntitySet="T_SPN">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="TrusteeId" ColumnName="TrusteeId" />
+          <ScalarProperty Name="SPN" ColumnName="SPN" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_TASKS_DACL">
+      <EntityTypeMapping TypeName="ACLXRAYModel.T_TASKS_DACL">
+        <MappingFragment StoreEntitySet="T_TASKS_DACL">
+          <ScalarProperty Name="ObjectSID" ColumnName="ObjectSID" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+          <ScalarProperty Name="Info" ColumnName="Info" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ServerID" ColumnName="ServerID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_TRUSTS">
+      <EntityTypeMapping TypeName="ACLXRAYModel.T_TRUSTS">
+        <MappingFragment StoreEntitySet="T_TRUSTS">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ForestName" ColumnName="ForestName" />
+          <ScalarProperty Name="DomainName" ColumnName="DomainName" />
+          <ScalarProperty Name="TrustName" ColumnName="TrustName" />
+          <ScalarProperty Name="TrustPartner" ColumnName="TrustPartner" />
+          <ScalarProperty Name="TrustType" ColumnName="TrustType" />
+          <ScalarProperty Name="TrustDirection" ColumnName="TrustDirection" />
+          <ScalarProperty Name="TrustAttributes" ColumnName="TrustAttributes" />
+          <ScalarProperty Name="SupportedEncryptionTypes" ColumnName="SupportedEncryptionTypes" />
+          <ScalarProperty Name="TrustSID" ColumnName="TrustSID" />
+          <ScalarProperty Name="RecordType" ColumnName="RecordType" />
+          <ScalarProperty Name="DNSName" ColumnName="DNSName" />
+          <ScalarProperty Name="NetBIOS" ColumnName="NetBIOS" />
+          <ScalarProperty Name="SID" ColumnName="SID" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+          <ScalarProperty Name="ServerID" ColumnName="ServerID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_UNC_FILES_DACL">
+      <EntityTypeMapping TypeName="ACLXRAYModel.T_UNC_FILES_DACL">
+        <MappingFragment StoreEntitySet="T_UNC_FILES_DACL">
+          <ScalarProperty Name="ObjectSID" ColumnName="ObjectSID" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+          <ScalarProperty Name="Info" ColumnName="Info" />
+          <ScalarProperty Name="LastAccessTime" ColumnName="LastAccessTime" />
+          <ScalarProperty Name="Access" ColumnName="Access" />
+          <ScalarProperty Name="AccessType" ColumnName="AccessType" />
+          <ScalarProperty Name="IsInherited" ColumnName="IsInherited" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ServerID" ColumnName="ServerID" />
+          <ScalarProperty Name="Owner" ColumnName="Owner" />
+          <ScalarProperty Name="OwnerIsWellKnown" ColumnName="OwnerIsWellKnown" />
+          <ScalarProperty Name="OwnerRightsPresent" ColumnName="OwnerRightsPresent" />
+          <ScalarProperty Name="Size" ColumnName="Size" />
+          <ScalarProperty Name="Ext" ColumnName="Ext" />
+          <ScalarProperty Name="UNCServer" ColumnName="UNCServer" />
+          <ScalarProperty Name="UNCShare" ColumnName="UNCShare" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_UNC_FILES_SACL">
+      <EntityTypeMapping TypeName="ACLXRAYModel.T_UNC_FILES_SACL">
+        <MappingFragment StoreEntitySet="T_UNC_FILES_SACL">
+          <ScalarProperty Name="ObjectSID" ColumnName="ObjectSID" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+          <ScalarProperty Name="Info" ColumnName="Info" />
+          <ScalarProperty Name="LastAccessTime" ColumnName="LastAccessTime" />
+          <ScalarProperty Name="Access" ColumnName="Access" />
+          <ScalarProperty Name="AccessType" ColumnName="AccessType" />
+          <ScalarProperty Name="IsInherited" ColumnName="IsInherited" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ServerID" ColumnName="ServerID" />
+          <ScalarProperty Name="UNCServer" ColumnName="UNCServer" />
+          <ScalarProperty Name="UNCShare" ColumnName="UNCShare" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_UNC_FOLDERS_DACL">
+      <EntityTypeMapping TypeName="ACLXRAYModel.T_UNC_FOLDERS_DACL">
+        <MappingFragment StoreEntitySet="T_UNC_FOLDERS_DACL">
+          <ScalarProperty Name="ObjectSID" ColumnName="ObjectSID" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+          <ScalarProperty Name="Info" ColumnName="Info" />
+          <ScalarProperty Name="LastAccessTime" ColumnName="LastAccessTime" />
+          <ScalarProperty Name="Access" ColumnName="Access" />
+          <ScalarProperty Name="AccessType" ColumnName="AccessType" />
+          <ScalarProperty Name="IsInherited" ColumnName="IsInherited" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ServerID" ColumnName="ServerID" />
+          <ScalarProperty Name="Owner" ColumnName="Owner" />
+          <ScalarProperty Name="OwnerIsWellKnown" ColumnName="OwnerIsWellKnown" />
+          <ScalarProperty Name="OwnerRightsPresent" ColumnName="OwnerRightsPresent" />
+          <ScalarProperty Name="Size" ColumnName="Size" />
+          <ScalarProperty Name="UNCServer" ColumnName="UNCServer" />
+          <ScalarProperty Name="UNCShare" ColumnName="UNCShare" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_UNC_FOLDERS_SACL">
+      <EntityTypeMapping TypeName="ACLXRAYModel.T_UNC_FOLDERS_SACL">
+        <MappingFragment StoreEntitySet="T_UNC_FOLDERS_SACL">
+          <ScalarProperty Name="ObjectSID" ColumnName="ObjectSID" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+          <ScalarProperty Name="Info" ColumnName="Info" />
+          <ScalarProperty Name="LastAccessTime" ColumnName="LastAccessTime" />
+          <ScalarProperty Name="Access" ColumnName="Access" />
+          <ScalarProperty Name="AccessType" ColumnName="AccessType" />
+          <ScalarProperty Name="IsInherited" ColumnName="IsInherited" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ServerID" ColumnName="ServerID" />
+          <ScalarProperty Name="UNCServer" ColumnName="UNCServer" />
+          <ScalarProperty Name="UNCShare" ColumnName="UNCShare" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_USER_RIGHTS">
+      <EntityTypeMapping TypeName="ACLXRAYModel.T_USER_RIGHTS">
+        <MappingFragment StoreEntitySet="T_USER_RIGHTS">
+          <ScalarProperty Name="ObjectSID" ColumnName="ObjectSID" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+          <ScalarProperty Name="Info" ColumnName="Info" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ServerID" ColumnName="ServerID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_USER_TOKENS">
+      <EntityTypeMapping TypeName="ACLXRAYModel.T_USER_TOKENS">
+        <MappingFragment StoreEntitySet="T_USER_TOKENS">
+          <ScalarProperty Name="Info" ColumnName="Info" />
+          <ScalarProperty Name="SidCount" ColumnName="SidCount" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+          <ScalarProperty Name="CanBeDelegated" ColumnName="CanBeDelegated" />
+          <ScalarProperty Name="ObjectSID" ColumnName="ObjectSID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ServerID" ColumnName="ServerID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_WMI_DACL">
+      <EntityTypeMapping TypeName="ACLXRAYModel.T_WMI_DACL">
+        <MappingFragment StoreEntitySet="T_WMI_DACL">
+          <ScalarProperty Name="ObjectSID" ColumnName="ObjectSID" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+          <ScalarProperty Name="Info" ColumnName="Info" />
+          <ScalarProperty Name="Access" ColumnName="Access" />
+          <ScalarProperty Name="AccessType" ColumnName="AccessType" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ServerID" ColumnName="ServerID" />
+          <ScalarProperty Name="Owner" ColumnName="Owner" />
+          <ScalarProperty Name="OwnerIsWellKnown" ColumnName="OwnerIsWellKnown" />
+          <ScalarProperty Name="OwnerRightsPresent" ColumnName="OwnerRightsPresent" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TASKS_DACL">
+      <EntityTypeMapping TypeName="ACLXRAYModel.TASKS_DACL">
+        <MappingFragment StoreEntitySet="TASKS_DACL">
+          <ScalarProperty Name="ServerFqdn" ColumnName="ServerFqdn" />
+          <ScalarProperty Name="ServerSID" ColumnName="ServerSID" />
+          <ScalarProperty Name="ObjectSID" ColumnName="ObjectSID" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+          <ScalarProperty Name="Info" ColumnName="Info" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ServerID" ColumnName="ServerID" />
+          <ScalarProperty Name="Authority" ColumnName="Authority" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Trustees">
+      <EntityTypeMapping TypeName="ACLXRAYModel.Trustee">
+        <MappingFragment StoreEntitySet="Trustees">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Authority" ColumnName="Authority" />
+          <ScalarProperty Name="Sid" ColumnName="Sid" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="SamAccountName" ColumnName="SamAccountName" />
+          <ScalarProperty Name="ObjectClass" ColumnName="ObjectClass" />
+          <ScalarProperty Name="DisplayName" ColumnName="DisplayName" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="DistinguishedName" ColumnName="DistinguishedName" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="WhenCreated" ColumnName="WhenCreated" />
+          <ScalarProperty Name="WhenChanged" ColumnName="WhenChanged" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TrusteesAsComputers">
+      <EntityTypeMapping TypeName="ACLXRAYModel.TrusteesAsComputer">
+        <MappingFragment StoreEntitySet="TrusteesAsComputers">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ComputerType" ColumnName="ComputerType" />
+          <ScalarProperty Name="OS" ColumnName="OS" />
+          <ScalarProperty Name="OSServicePack" ColumnName="OSServicePack" />
+          <ScalarProperty Name="OSVersion" ColumnName="OSVersion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TrusteesAsGroups">
+      <EntityTypeMapping TypeName="ACLXRAYModel.TrusteesAsGroup">
+        <MappingFragment StoreEntitySet="TrusteesAsGroups">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Scope" ColumnName="Scope" />
+          <ScalarProperty Name="IsBusy" ColumnName="IsBusy" />
+          <ScalarProperty Name="IsVisited" ColumnName="IsVisited" />
+          <ScalarProperty Name="IsExpanded" ColumnName="IsExpanded" />
+          <ScalarProperty Name="IsFaulty" ColumnName="IsFaulty" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TrusteesAsPrincipals">
+      <EntityTypeMapping TypeName="ACLXRAYModel.TrusteesAsPrincipal">
+        <MappingFragment StoreEntitySet="TrusteesAsPrincipals">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Enabled" ColumnName="Enabled" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="LastPasswordSet" ColumnName="LastPasswordSet" />
+          <ScalarProperty Name="LastLogon" ColumnName="LastLogon" />
+          <ScalarProperty Name="PasswordNeverExpires" ColumnName="PasswordNeverExpires" />
+          <ScalarProperty Name="UserCannotChangePassword" ColumnName="UserCannotChangePassword" />
+          <ScalarProperty Name="ExchMasterAccountSid" ColumnName="ExchMasterAccountSid" />
+          <ScalarProperty Name="UPN" ColumnName="UPN" />
+          <ScalarProperty Name="UAC" ColumnName="UAC" />
+          <ScalarProperty Name="BadPasswordTime" ColumnName="BadPasswordTime" />
+          <ScalarProperty Name="AccountExpires" ColumnName="AccountExpires" />
+          <ScalarProperty Name="AllowedToDelegateTo" ColumnName="AllowedToDelegateTo" />
+          <ScalarProperty Name="KeyVersionNumber" ColumnName="KeyVersionNumber" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TRUSTS">
+      <EntityTypeMapping TypeName="ACLXRAYModel.TRUST">
+        <MappingFragment StoreEntitySet="TRUSTS">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ForestName" ColumnName="ForestName" />
+          <ScalarProperty Name="DomainName" ColumnName="DomainName" />
+          <ScalarProperty Name="TrustName" ColumnName="TrustName" />
+          <ScalarProperty Name="TrustPartner" ColumnName="TrustPartner" />
+          <ScalarProperty Name="TrustType" ColumnName="TrustType" />
+          <ScalarProperty Name="TrustDirection" ColumnName="TrustDirection" />
+          <ScalarProperty Name="TrustAttributes" ColumnName="TrustAttributes" />
+          <ScalarProperty Name="SupportedEncryptionTypes" ColumnName="SupportedEncryptionTypes" />
+          <ScalarProperty Name="TrustSID" ColumnName="TrustSID" />
+          <ScalarProperty Name="RecordType" ColumnName="RecordType" />
+          <ScalarProperty Name="DNSName" ColumnName="DNSName" />
+          <ScalarProperty Name="NetBIOS" ColumnName="NetBIOS" />
+          <ScalarProperty Name="SID" ColumnName="SID" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+          <ScalarProperty Name="ServerID" ColumnName="ServerID" />
+          <ScalarProperty Name="ServerFqdn" ColumnName="ServerFqdn" />
+          <ScalarProperty Name="ServerSID" ColumnName="ServerSID" />
+          <ScalarProperty Name="Authority" ColumnName="Authority" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UNC_FILES_DACL">
+      <EntityTypeMapping TypeName="ACLXRAYModel.UNC_FILES_DACL">
+        <MappingFragment StoreEntitySet="UNC_FILES_DACL">
+          <ScalarProperty Name="ServerFqdn" ColumnName="ServerFqdn" />
+          <ScalarProperty Name="ServerSID" ColumnName="ServerSID" />
+          <ScalarProperty Name="ObjectSID" ColumnName="ObjectSID" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+          <ScalarProperty Name="Info" ColumnName="Info" />
+          <ScalarProperty Name="LastAccessTime" ColumnName="LastAccessTime" />
+          <ScalarProperty Name="Access" ColumnName="Access" />
+          <ScalarProperty Name="AccessType" ColumnName="AccessType" />
+          <ScalarProperty Name="IsInherited" ColumnName="IsInherited" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ServerID" ColumnName="ServerID" />
+          <ScalarProperty Name="Authority" ColumnName="Authority" />
+          <ScalarProperty Name="Owner" ColumnName="Owner" />
+          <ScalarProperty Name="OwnerIsWellKnown" ColumnName="OwnerIsWellKnown" />
+          <ScalarProperty Name="OwnerRightsPresent" ColumnName="OwnerRightsPresent" />
+          <ScalarProperty Name="Size" ColumnName="Size" />
+          <ScalarProperty Name="Ext" ColumnName="Ext" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UNC_FILES_SACL">
+      <EntityTypeMapping TypeName="ACLXRAYModel.UNC_FILES_SACL">
+        <MappingFragment StoreEntitySet="UNC_FILES_SACL">
+          <ScalarProperty Name="ServerFqdn" ColumnName="ServerFqdn" />
+          <ScalarProperty Name="ServerSID" ColumnName="ServerSID" />
+          <ScalarProperty Name="ObjectSID" ColumnName="ObjectSID" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+          <ScalarProperty Name="Info" ColumnName="Info" />
+          <ScalarProperty Name="LastAccessTime" ColumnName="LastAccessTime" />
+          <ScalarProperty Name="Access" ColumnName="Access" />
+          <ScalarProperty Name="AccessType" ColumnName="AccessType" />
+          <ScalarProperty Name="IsInherited" ColumnName="IsInherited" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ServerID" ColumnName="ServerID" />
+          <ScalarProperty Name="Authority" ColumnName="Authority" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UNC_FOLDERS_DACL">
+      <EntityTypeMapping TypeName="ACLXRAYModel.UNC_FOLDERS_DACL">
+        <MappingFragment StoreEntitySet="UNC_FOLDERS_DACL">
+          <ScalarProperty Name="ServerFqdn" ColumnName="ServerFqdn" />
+          <ScalarProperty Name="ServerSID" ColumnName="ServerSID" />
+          <ScalarProperty Name="ObjectSID" ColumnName="ObjectSID" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+          <ScalarProperty Name="Info" ColumnName="Info" />
+          <ScalarProperty Name="LastAccessTime" ColumnName="LastAccessTime" />
+          <ScalarProperty Name="Access" ColumnName="Access" />
+          <ScalarProperty Name="AccessType" ColumnName="AccessType" />
+          <ScalarProperty Name="IsInherited" ColumnName="IsInherited" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ServerID" ColumnName="ServerID" />
+          <ScalarProperty Name="Authority" ColumnName="Authority" />
+          <ScalarProperty Name="Owner" ColumnName="Owner" />
+          <ScalarProperty Name="OwnerIsWellKnown" ColumnName="OwnerIsWellKnown" />
+          <ScalarProperty Name="OwnerRightsPresent" ColumnName="OwnerRightsPresent" />
+          <ScalarProperty Name="Size" ColumnName="Size" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UNC_FOLDERS_SACL">
+      <EntityTypeMapping TypeName="ACLXRAYModel.UNC_FOLDERS_SACL">
+        <MappingFragment StoreEntitySet="UNC_FOLDERS_SACL">
+          <ScalarProperty Name="ServerFqdn" ColumnName="ServerFqdn" />
+          <ScalarProperty Name="ServerSID" ColumnName="ServerSID" />
+          <ScalarProperty Name="ObjectSID" ColumnName="ObjectSID" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+          <ScalarProperty Name="Info" ColumnName="Info" />
+          <ScalarProperty Name="LastAccessTime" ColumnName="LastAccessTime" />
+          <ScalarProperty Name="Access" ColumnName="Access" />
+          <ScalarProperty Name="AccessType" ColumnName="AccessType" />
+          <ScalarProperty Name="IsInherited" ColumnName="IsInherited" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ServerID" ColumnName="ServerID" />
+          <ScalarProperty Name="Authority" ColumnName="Authority" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UNRESOLVED_MEMBERSHIP">
+      <EntityTypeMapping TypeName="ACLXRAYModel.UNRESOLVED_MEMBERSHIP">
+        <MappingFragment StoreEntitySet="UNRESOLVED_MEMBERSHIP">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="MemberId" ColumnName="MemberId" />
+          <ScalarProperty Name="GroupDN" ColumnName="GroupDN" />
+          <ScalarProperty Name="Resolved" ColumnName="Resolved" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="USER_RIGHTS">
+      <EntityTypeMapping TypeName="ACLXRAYModel.USER_RIGHTS">
+        <MappingFragment StoreEntitySet="USER_RIGHTS">
+          <ScalarProperty Name="ServerFqdn" ColumnName="ServerFqdn" />
+          <ScalarProperty Name="ServerSID" ColumnName="ServerSID" />
+          <ScalarProperty Name="ObjectSID" ColumnName="ObjectSID" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+          <ScalarProperty Name="Info" ColumnName="Info" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ServerID" ColumnName="ServerID" />
+          <ScalarProperty Name="Authority" ColumnName="Authority" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="USER_TOKENS">
+      <EntityTypeMapping TypeName="ACLXRAYModel.USER_TOKENS">
+        <MappingFragment StoreEntitySet="USER_TOKENS">
+          <ScalarProperty Name="ServerFqdn" ColumnName="ServerFqdn" />
+          <ScalarProperty Name="ServerSID" ColumnName="ServerSID" />
+          <ScalarProperty Name="SidCount" ColumnName="SidCount" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+          <ScalarProperty Name="CanBeDelegated" ColumnName="CanBeDelegated" />
+          <ScalarProperty Name="ObjectSID" ColumnName="ObjectSID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ServerID" ColumnName="ServerID" />
+          <ScalarProperty Name="Authority" ColumnName="Authority" />
+          <ScalarProperty Name="Info" ColumnName="Info" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WMI_DACL">
+      <EntityTypeMapping TypeName="ACLXRAYModel.WMI_DACL">
+        <MappingFragment StoreEntitySet="WMI_DACL">
+          <ScalarProperty Name="ServerFqdn" ColumnName="ServerFqdn" />
+          <ScalarProperty Name="ServerSID" ColumnName="ServerSID" />
+          <ScalarProperty Name="ObjectSID" ColumnName="ObjectSID" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+          <ScalarProperty Name="Info" ColumnName="Info" />
+          <ScalarProperty Name="Access" ColumnName="Access" />
+          <ScalarProperty Name="AccessType" ColumnName="AccessType" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ServerID" ColumnName="ServerID" />
+          <ScalarProperty Name="Authority" ColumnName="Authority" />
+          <ScalarProperty Name="Owner" ColumnName="Owner" />
+          <ScalarProperty Name="OwnerIsWellKnown" ColumnName="OwnerIsWellKnown" />
+          <ScalarProperty Name="OwnerRightsPresent" ColumnName="OwnerRightsPresent" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ADAdminSDHolderReports">
+      <EntityTypeMapping TypeName="ACLXRAYModel.ADAdminSDHolderReport">
+        <MappingFragment StoreEntitySet="ADAdminSDHolderReport">
+          <ScalarProperty Name="ServerFqdn" ColumnName="ServerFqdn" />
+          <ScalarProperty Name="Info" ColumnName="Info" />
+          <ScalarProperty Name="AccessType" ColumnName="AccessType" />
+          <ScalarProperty Name="Access" ColumnName="Access" />
+          <ScalarProperty Name="IsInherited" ColumnName="IsInherited" />
+          <ScalarProperty Name="ObjectSid" ColumnName="ObjectSid" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Authority" ColumnName="Authority" />
+          <ScalarProperty Name="ObjectClass" ColumnName="ObjectClass" />
+          <ScalarProperty Name="SamAccountName" ColumnName="SamAccountName" />
+          <ScalarProperty Name="DistinguishedName" ColumnName="DistinguishedName" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="WhenCreated" ColumnName="WhenCreated" />
+          <ScalarProperty Name="WhenChanged" ColumnName="WhenChanged" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AdminCountReports">
+      <EntityTypeMapping TypeName="ACLXRAYModel.AdminCountReport">
+        <MappingFragment StoreEntitySet="AdminCountReport">
+          <ScalarProperty Name="ServerFqdn" ColumnName="ServerFqdn" />
+          <ScalarProperty Name="CanBeDelegated" ColumnName="CanBeDelegated" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Authority" ColumnName="Authority" />
+          <ScalarProperty Name="ObjectClass" ColumnName="ObjectClass" />
+          <ScalarProperty Name="SamAccountName" ColumnName="SamAccountName" />
+          <ScalarProperty Name="DistinguishedName" ColumnName="DistinguishedName" />
+          <ScalarProperty Name="ObjectSID" ColumnName="ObjectSID" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="WhenCreated" ColumnName="WhenCreated" />
+          <ScalarProperty Name="WhenChanged" ColumnName="WhenChanged" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="database_firewall_rules">
+      <EntityTypeMapping TypeName="ACLXRAYModel.database_firewall_rules">
+        <MappingFragment StoreEntitySet="database_firewall_rules">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="start_ip_address" ColumnName="start_ip_address" />
+          <ScalarProperty Name="end_ip_address" ColumnName="end_ip_address" />
+          <ScalarProperty Name="create_date" ColumnName="create_date" />
+          <ScalarProperty Name="modify_date" ColumnName="modify_date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="AdExpandedGroupsExplorer" FunctionName="ACLXRAYModel.Store.AdExpandedGroupsExplorer">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ACLXRAYModel.AdExpandedGroupsExplorer_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Sid" ColumnName="Sid" />
+          <ScalarProperty Name="ObjectClass" ColumnName="ObjectClass" />
+          <ScalarProperty Name="Authority" ColumnName="Authority" />
+          <ScalarProperty Name="SamAccountName" ColumnName="SamAccountName" />
+          <ScalarProperty Name="DistinguishedName" ColumnName="DistinguishedName" />
+          <ScalarProperty Name="DisplayName" ColumnName="DisplayName" />
+          <ScalarProperty Name="Scope" ColumnName="Scope" />
+          <ScalarProperty Name="ExpandedGroupsCount" ColumnName="ExpandedGroupsCount" />
+          <ScalarProperty Name="ExpandedPricipalsCount" ColumnName="ExpandedPricipalsCount" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="AdExpandedGroupsExplorerXRay" FunctionName="ACLXRAYModel.Store.AdExpandedGroupsExplorerXRay">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ACLXRAYModel.AdExpandedGroupsExplorerXRay_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Sid" ColumnName="Sid" />
+          <ScalarProperty Name="ObjectClass" ColumnName="ObjectClass" />
+          <ScalarProperty Name="Authority" ColumnName="Authority" />
+          <ScalarProperty Name="SamAccountName" ColumnName="SamAccountName" />
+          <ScalarProperty Name="DistinguishedName" ColumnName="DistinguishedName" />
+          <ScalarProperty Name="DisplayName" ColumnName="DisplayName" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Scope" ColumnName="Scope" />
+          <ScalarProperty Name="ExpandedGroupsCount" ColumnName="ExpandedGroupsCount" />
+          <ScalarProperty Name="ExpandedPricipalsCount" ColumnName="ExpandedPricipalsCount" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="AdExpandedPrincipalsExplorer" FunctionName="ACLXRAYModel.Store.AdExpandedPrincipalsExplorer">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ACLXRAYModel.AdExpandedPrincipalsExplorer_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Sid" ColumnName="Sid" />
+          <ScalarProperty Name="Authority" ColumnName="Authority" />
+          <ScalarProperty Name="SamAccountName" ColumnName="SamAccountName" />
+          <ScalarProperty Name="DistinguishedName" ColumnName="DistinguishedName" />
+          <ScalarProperty Name="DisplayName" ColumnName="DisplayName" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="LastLogon" ColumnName="LastLogon" />
+          <ScalarProperty Name="LastPasswordSet" ColumnName="LastPasswordSet" />
+          <ScalarProperty Name="PasswordNeverExpires" ColumnName="PasswordNeverExpires" />
+          <ScalarProperty Name="UserCannotChangePassword" ColumnName="UserCannotChangePassword" />
+          <ScalarProperty Name="ExpandedGroupsCount" ColumnName="ExpandedGroupsCount" />
+          <ScalarProperty Name="Enabled" ColumnName="Enabled" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="AdTrusteesExplorer" FunctionName="ACLXRAYModel.Store.AdTrusteesExplorer" />
+    <FunctionImportMapping FunctionImportName="sp_ClearADTables" FunctionName="ACLXRAYModel.Store.sp_ClearADTables" />
+    <FunctionImportMapping FunctionImportName="sp_ClearAllClientTables" FunctionName="ACLXRAYModel.Store.sp_ClearAllClientTables" />
+    <FunctionImportMapping FunctionImportName="sp_ClearClientTable" FunctionName="ACLXRAYModel.Store.sp_ClearClientTable" />
+    <FunctionImportMapping FunctionImportName="sp_ClearSQLTables" FunctionName="ACLXRAYModel.Store.sp_ClearSQLTables" />
+    <FunctionImportMapping FunctionImportName="sp_GetOrphanedSids" FunctionName="ACLXRAYModel.Store.sp_GetOrphanedSids" />
+    <FunctionImportMapping FunctionImportName="sp_GetSidForServer" FunctionName="ACLXRAYModel.Store.sp_GetSidForServer" />
+    <FunctionImportMapping FunctionImportName="sp_GetSidForTrustee" FunctionName="ACLXRAYModel.Store.sp_GetSidForTrustee" />
+    <FunctionImportMapping FunctionImportName="sp_ResolveAD" FunctionName="ACLXRAYModel.Store.sp_ResolveAD" />
+    <FunctionImportMapping FunctionImportName="sp_ResolveLocalGroups" FunctionName="ACLXRAYModel.Store.sp_ResolveLocalGroups" />
+    <FunctionImportMapping FunctionImportName="sp_WriteADDiagnosticInfo" FunctionName="ACLXRAYModel.Store.sp_WriteADDiagnosticInfo" />
+    <FunctionImportMapping FunctionImportName="sp_WriteDiagnostics" FunctionName="ACLXRAYModel.Store.sp_WriteDiagnostics" />
+    <FunctionImportMapping FunctionImportName="SPGetSitePermissions" FunctionName="ACLXRAYModel.Store.SPGetSitePermissions">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ACLXRAYModel.SPGetSitePermissions_Result">
+          <ScalarProperty Name="ParentName" ColumnName="ParentName" />
+          <ScalarProperty Name="ParentID" ColumnName="ParentID" />
+          <ScalarProperty Name="Url" ColumnName="Url" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ScopeTypeLabel" ColumnName="ScopeTypeLabel" />
+          <ScalarProperty Name="ScopeType" ColumnName="ScopeType" />
+          <ScalarProperty Name="PrincipalName" ColumnName="PrincipalName" />
+          <ScalarProperty Name="PrincipalDisplayName" ColumnName="PrincipalDisplayName" />
+          <ScalarProperty Name="SPPrincipalLoginName" ColumnName="SPPrincipalLoginName" />
+          <ScalarProperty Name="PrincipalAuthority" ColumnName="PrincipalAuthority" />
+          <ScalarProperty Name="PrincipalLoginName" ColumnName="PrincipalLoginName" />
+          <ScalarProperty Name="PrincipalType" ColumnName="PrincipalType" />
+          <ScalarProperty Name="PrincipalTypeLabel" ColumnName="PrincipalTypeLabel" />
+          <ScalarProperty Name="MemberName" ColumnName="MemberName" />
+          <ScalarProperty Name="MemberDisplayName" ColumnName="MemberDisplayName" />
+          <ScalarProperty Name="SPMemberLoginName" ColumnName="SPMemberLoginName" />
+          <ScalarProperty Name="MemberAuthority" ColumnName="MemberAuthority" />
+          <ScalarProperty Name="MemberLoginName" ColumnName="MemberLoginName" />
+          <ScalarProperty Name="PermissionName" ColumnName="PermissionName" />
+          <ScalarProperty Name="ADGroupSID" ColumnName="ADGroupSID" />
+          <ScalarProperty Name="IsDirectAdmin" ColumnName="IsDirectAdmin" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SPGetUserPermissions" FunctionName="ACLXRAYModel.Store.SPGetUserPermissions">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ACLXRAYModel.SPGetUserPermissions_Result">
+          <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+          <ScalarProperty Name="ParentName" ColumnName="ParentName" />
+          <ScalarProperty Name="ParentID" ColumnName="ParentID" />
+          <ScalarProperty Name="ScopeID" ColumnName="ScopeID" />
+          <ScalarProperty Name="ScopeName" ColumnName="ScopeName" />
+          <ScalarProperty Name="ScopeUrl" ColumnName="ScopeUrl" />
+          <ScalarProperty Name="ScopeTypeLabel" ColumnName="ScopeTypeLabel" />
+          <ScalarProperty Name="ScopeType" ColumnName="ScopeType" />
+          <ScalarProperty Name="RoleAssignmentID" ColumnName="RoleAssignmentID" />
+          <ScalarProperty Name="RoleDefinitionName" ColumnName="RoleDefinitionName" />
+          <ScalarProperty Name="SPGroup" ColumnName="SPGroup" />
+          <ScalarProperty Name="PrincName" ColumnName="PrincName" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SqlDbPermissionsByUserReport" FunctionName="ACLXRAYModel.Store.SqlDbPermissionsByUserReport">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ACLXRAYModel.SqlDbPermissionsByUserReport_Result">
+          <ScalarProperty Name="InstanceName" ColumnName="InstanceName" />
+          <ScalarProperty Name="DbName" ColumnName="DbName" />
+          <ScalarProperty Name="AdUserid" ColumnName="AdUserid" />
+          <ScalarProperty Name="AdUserAuthority" ColumnName="AdUserAuthority" />
+          <ScalarProperty Name="AdUserName" ColumnName="AdUserName" />
+          <ScalarProperty Name="AdUserDisplayName" ColumnName="AdUserDisplayName" />
+          <ScalarProperty Name="LoginType" ColumnName="LoginType" />
+          <ScalarProperty Name="LoginName" ColumnName="LoginName" />
+          <ScalarProperty Name="LoginIsMember" ColumnName="LoginIsMember" />
+          <ScalarProperty Name="LoginDisabled" ColumnName="LoginDisabled" />
+          <ScalarProperty Name="LoginIsFixedRole" ColumnName="LoginIsFixedRole" />
+          <ScalarProperty Name="CanConnectToInstance" ColumnName="CanConnectToInstance" />
+          <ScalarProperty Name="DenyRevokeConnectToInstance" ColumnName="DenyRevokeConnectToInstance" />
+          <ScalarProperty Name="HasControlServer" ColumnName="HasControlServer" />
+          <ScalarProperty Name="NrInstanceGrants" ColumnName="NrInstanceGrants" />
+          <ScalarProperty Name="NrInstanceGrantWithOption" ColumnName="NrInstanceGrantWithOption" />
+          <ScalarProperty Name="NrInstanceDenyRevoke" ColumnName="NrInstanceDenyRevoke" />
+          <ScalarProperty Name="InstanceWarning" ColumnName="InstanceWarning" />
+          <ScalarProperty Name="DbUserType" ColumnName="DbUserType" />
+          <ScalarProperty Name="DbUserName" ColumnName="DbUserName" />
+          <ScalarProperty Name="DbUserIsMember" ColumnName="DbUserIsMember" />
+          <ScalarProperty Name="CanConnectToDb" ColumnName="CanConnectToDb" />
+          <ScalarProperty Name="DenyRevokeConnectToDb" ColumnName="DenyRevokeConnectToDb" />
+          <ScalarProperty Name="DbUserIsFixedRole" ColumnName="DbUserIsFixedRole" />
+          <ScalarProperty Name="OwnerSqlSid" ColumnName="OwnerSqlSid" />
+          <ScalarProperty Name="LoginSid" ColumnName="LoginSid" />
+          <ScalarProperty Name="DbUserSqlSid" ColumnName="DbUserSqlSid" />
+          <ScalarProperty Name="IsDbOwner" ColumnName="IsDbOwner" />
+          <ScalarProperty Name="NrDbGrants" ColumnName="NrDbGrants" />
+          <ScalarProperty Name="NrDbGrantWithOption" ColumnName="NrDbGrantWithOption" />
+          <ScalarProperty Name="NrDbDenyRevoke" ColumnName="NrDbDenyRevoke" />
+          <ScalarProperty Name="DbWarning" ColumnName="DbWarning" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SqlDbPermissionsReport" FunctionName="ACLXRAYModel.Store.SqlDbPermissionsReport">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ACLXRAYModel.SqlDbPermissionsReport_Result">
+          <ScalarProperty Name="AdUserId" ColumnName="AdUserId" />
+          <ScalarProperty Name="AdUserAuthority" ColumnName="AdUserAuthority" />
+          <ScalarProperty Name="AdUserName" ColumnName="AdUserName" />
+          <ScalarProperty Name="AdUserDisplayName" ColumnName="AdUserDisplayName" />
+          <ScalarProperty Name="LoginDisabled" ColumnName="LoginDisabled" />
+          <ScalarProperty Name="HasInstanceDirectPermission" ColumnName="HasInstanceDirectPermission" />
+          <ScalarProperty Name="HasDbDirectPermission" ColumnName="HasDbDirectPermission" />
+          <ScalarProperty Name="CanConnectToInstance" ColumnName="CanConnectToInstance" />
+          <ScalarProperty Name="DenyRevokeConnectToInstance" ColumnName="DenyRevokeConnectToInstance" />
+          <ScalarProperty Name="CanConnectToDb" ColumnName="CanConnectToDb" />
+          <ScalarProperty Name="DenyRevokeConnectToDb" ColumnName="DenyRevokeConnectToDb" />
+          <ScalarProperty Name="HasControlServer" ColumnName="HasControlServer" />
+          <ScalarProperty Name="LoginIsFixedRole" ColumnName="LoginIsFixedRole" />
+          <ScalarProperty Name="DirectLoginIsFixedRole" ColumnName="DirectLoginIsFixedRole" />
+          <ScalarProperty Name="DirectHasControlServer" ColumnName="DirectHasControlServer" />
+          <ScalarProperty Name="DirectNrInstanceGrants" ColumnName="DirectNrInstanceGrants" />
+          <ScalarProperty Name="DirectNrInstanceGrantWithOption" ColumnName="DirectNrInstanceGrantWithOption" />
+          <ScalarProperty Name="NrInstanceDenyRevoke" ColumnName="NrInstanceDenyRevoke" />
+          <ScalarProperty Name="DirectDbUserIsFixedRole" ColumnName="DirectDbUserIsFixedRole" />
+          <ScalarProperty Name="DirectNrDbGrants" ColumnName="DirectNrDbGrants" />
+          <ScalarProperty Name="DirectNrDbGrantWithOption" ColumnName="DirectNrDbGrantWithOption" />
+          <ScalarProperty Name="DirectNrDbDenyRevoke" ColumnName="DirectNrDbDenyRevoke" />
+          <ScalarProperty Name="IsDbOwner" ColumnName="IsDbOwner" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SqlDbPermissionsSummaryReport" FunctionName="ACLXRAYModel.Store.SqlDbPermissionsSummaryReport">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ACLXRAYModel.SqlDbPermissionsSummaryReport_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="UsersWithDirectPermissions" ColumnName="UsersWithDirectPermissions" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+  </EntityContainerMapping>
+</Mapping>

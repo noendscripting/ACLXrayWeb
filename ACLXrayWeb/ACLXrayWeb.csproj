@@ -1,0 +1,747 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props')" />
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.2.6.1\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.2.6.1\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C7CE2886-2458-470D-B794-303C39022E1C}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ACLXrayWeb</RootNamespace>
+    <AssemblyName>ACLXrayWeb</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TypeScriptToolsVersion>2.8</TypeScriptToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Web.Razor">
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.4\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.4\lib\net45\System.Web.Webpages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages.Deployment">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.4\lib\net45\System.Web.Webpages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages.Razor">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.4\lib\net45\System.Web.Webpages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Helpers">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.4\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure">
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc">
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.4\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\bootstrap-grid.css" />
+    <Content Include="Content\bootstrap-grid.min.css" />
+    <Content Include="Content\bootstrap-reboot.css" />
+    <Content Include="Content\bootstrap-reboot.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Global.asax" />
+    <Content Include="Models\ACLXray.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ACLXray.edmx</DependentUpon>
+      <LastGenOutput>ACLXray.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\ACLXray.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ACLXray.edmx</DependentUpon>
+      <LastGenOutput>ACLXray.cs</LastGenOutput>
+    </Content>
+    <Content Include="Scripts\bootstrap.bundle.js" />
+    <Content Include="Scripts\bootstrap.bundle.min.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\esm\popper-utils.js" />
+    <Content Include="Scripts\esm\popper-utils.min.js" />
+    <Content Include="Scripts\esm\popper.js" />
+    <Content Include="Scripts\esm\popper.min.js" />
+    <Content Include="Scripts\esm\popper.min.js.map" />
+    <Content Include="Scripts\esm\popper.js.map" />
+    <Content Include="Scripts\esm\popper-utils.min.js.map" />
+    <Content Include="Scripts\esm\popper-utils.js.map" />
+    <Content Include="Scripts\bootstrap.min.js.map" />
+    <Content Include="Scripts\bootstrap.js.map" />
+    <Content Include="Scripts\bootstrap.bundle.min.js.map" />
+    <Content Include="Scripts\bootstrap.bundle.js.map" />
+    <Content Include="Content\bootstrap.min.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Content\bootstrap-reboot.min.css.map" />
+    <Content Include="Content\bootstrap-reboot.css.map" />
+    <Content Include="Content\bootstrap-grid.min.css.map" />
+    <Content Include="Content\bootstrap-grid.css.map" />
+    <None Include="Scripts\jquery-3.0.0-vsdoc.js" />
+    <Content Include="Scripts\jquery-3.0.0.js" />
+    <Content Include="Scripts\jquery-3.0.0.min.js" />
+    <Content Include="Scripts\jquery-3.0.0.slim.js" />
+    <Content Include="Scripts\jquery-3.0.0.slim.min.js" />
+    <Content Include="Scripts\popper-utils.js" />
+    <Content Include="Scripts\popper-utils.min.js" />
+    <Content Include="Scripts\popper.js" />
+    <Content Include="Scripts\popper.min.js" />
+    <Content Include="Scripts\SearchScript.js" />
+    <Content Include="Scripts\umd\popper-utils.js" />
+    <Content Include="Scripts\umd\popper-utils.min.js" />
+    <Content Include="Scripts\umd\popper.js" />
+    <Content Include="Scripts\umd\popper.min.js" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\SearchController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ACLXray.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ACLXray.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ACLXray.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ACLXray.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ACLXray.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ACLXray.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ADAdminSDHolderReport.cs">
+      <DependentUpon>ACLXray.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AdExpandedGroupsExplorerXRay_Result.cs">
+      <DependentUpon>ACLXray.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AdExpandedGroupsExplorer_Result.cs">
+      <DependentUpon>ACLXray.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AdExpandedPrincipalsExplorer_Result.cs">
+      <DependentUpon>ACLXray.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AdminCountReport.cs">
+      <DependentUpon>ACLXray.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ADMIN_COUNT.cs">
+      <DependentUpon>ACLXray.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ADMIN_SDHOLDER.cs">
+      <DependentUpon>ACLXray.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AD_CONFIG.cs">
+      <DependentUpon>ACLXray.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AD_DOMAIN_ROOT.cs">
+      <DependentUpon>ACLXray.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AD_OBJECT_ACCESS.cs">
+      <DependentUpon>ACLXray.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AD_OBJECT_AUDIT.cs">
+      <DependentUpon>ACLXray.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AllGroupsInfo.cs">
+      <DependentUpon>ACLXray.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AllSPScope.cs">
+      <DependentUpon>ACLXray.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AllUsersInfo.cs">
+      <DependentUpon>ACLXray.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ALL_DRIVERS.cs">
+      <DependentUpon>ACLXray.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AZURE_DIRECTORY_ROLES.cs">
+      <DependentUpon>ACLXray.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CA.cs">
+      <DependentUpon>ACLXray.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CA_ENROLLMENT_RIGHTS.cs">
+      <DependentUpon>ACLXray.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CA_MANAGER_RIGHTS.cs">
+      <DependentUpon>ACLXray.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Computer.cs">
+      <DependentUpon>ACLXray.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\database_firewall_rules.cs">
+      <DependentUpon>ACLXray.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\DCOM_DACL.cs">
+      <DependentUpon>ACLXray.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\DomainController.cs">
+      <DependentUpon>ACLXray.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\EMPTY_GROUPS.cs">
+      <DependentUpon>ACLXray.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\EXCHANGE_DACL.cs">
+      <DependentUpon>ACLXray.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\EXCHANGE_MAILBOX.cs">
+      <DependentUpon>ACLXray.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\FILES_DACL.cs">
+      <DependentUpon>ACLXray.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\FILES_SACL.cs">
+      <DependentUpon>ACLXray.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\FILE_ASSOC.cs">
+      <DependentUpon>ACLXray.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\FOLDERS_DACL.cs">
+      <DependentUpon>ACLXray.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\FOLDERS_SACL.cs">
+      <DependentUpon>ACLXray.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\GPO.cs">
+      <DependentUpon>ACLXray.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Group.cs">
+      <DependentUpon>ACLXray.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\GroupExpandedGroup.cs">
+      <DependentUpon>ACLXray.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\GroupExpandedPrincipal.cs">
+      <DependentUpon>ACLXray.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\GroupMember.cs">
+      <DependentUpon>ACLXray.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\KRBTGT_ATTRIBUTES.cs">
+      <DependentUpon>ACLXray.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\LAST_LOGOFF.cs">
+      <DependentUpon>ACLXray.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\LOCAL_GROUPS.cs">
+      <DependentUpon>ACLXray.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\LOCAL_SIDS.cs">
+      <DependentUpon>ACLXray.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\NTFS_DACL.cs">
+      <DependentUpon>ACLXray.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\NTFS_SACL.cs">
+      <DependentUpon>ACLXray.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ORPHANED_SIDS.cs">
+      <DependentUpon>ACLXray.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Principal.cs">
+      <DependentUpon>ACLXray.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PROCESS_INFO.cs">
+      <DependentUpon>ACLXray.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\REGISTRY_DACL.cs">
+      <DependentUpon>ACLXray.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\REGISTRY_LAST_LOGOFF.cs">
+      <DependentUpon>ACLXray.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\REGISTRY_PROFILES.cs">
+      <DependentUpon>ACLXray.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\REGISTRY_SACL.cs">
+      <DependentUpon>ACLXray.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\RODC_DATA.cs">
+      <DependentUpon>ACLXray.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SCHEMA_DACL.cs">
+      <DependentUpon>ACLXray.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SERVER_INFO.cs">
+      <DependentUpon>ACLXray.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SERVICE.cs">
+      <DependentUpon>ACLXray.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SHARE_CONTENT_DACL.cs">
+      <DependentUpon>ACLXray.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SHARE_CONTENT_SACL.cs">
+      <DependentUpon>ACLXray.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SHARE_DACL.cs">
+      <DependentUpon>ACLXray.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SidHistory.cs">
+      <DependentUpon>ACLXray.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SID_HISTORY.cs">
+      <DependentUpon>ACLXray.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SIGNED_DRIVERS.cs">
+      <DependentUpon>ACLXray.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SOFTWARE.cs">
+      <DependentUpon>ACLXray.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SPGetSitePermissions_Result.cs">
+      <DependentUpon>ACLXray.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SPGetUserPermissions_Result.cs">
+      <DependentUpon>ACLXray.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SPN.cs">
+      <DependentUpon>ACLXray.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SP_Principals.cs">
+      <DependentUpon>ACLXray.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SP_PrincipalsAssignments.cs">
+      <DependentUpon>ACLXray.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SP_PrincipalsPrincipals.cs">
+      <DependentUpon>ACLXray.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SP_RoleAssignments.cs">
+      <DependentUpon>ACLXray.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SP_RoleBindings.cs">
+      <DependentUpon>ACLXray.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SP_RoleDefinitions.cs">
+      <DependentUpon>ACLXray.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SP_Scopes.cs">
+      <DependentUpon>ACLXray.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SP_ScopesAssignments.cs">
+      <DependentUpon>ACLXray.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SqlDatabas.cs">
+      <DependentUpon>ACLXray.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SqlDatabaseObject.cs">
+      <DependentUpon>ACLXray.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SqlDatabasePermission.cs">
+      <DependentUpon>ACLXray.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SqlDatabasePrincipal.cs">
+      <DependentUpon>ACLXray.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SqlDatabaseRoleExpandedMember.cs">
+      <DependentUpon>ACLXray.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SqlDatabaseRoleMember.cs">
+      <DependentUpon>ACLXray.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SqlDbPermissionsByUserReport_Result.cs">
+      <DependentUpon>ACLXray.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SqlDbPermissionsReport_Result.cs">
+      <DependentUpon>ACLXray.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SqlDbPermissionsSummaryReport_Result.cs">
+      <DependentUpon>ACLXray.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SqlInstance.cs">
+      <DependentUpon>ACLXray.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SqlInstancePermission.cs">
+      <DependentUpon>ACLXray.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SqlInstancePrincipal.cs">
+      <DependentUpon>ACLXray.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SqlInstanceRoleExpandedMember.cs">
+      <DependentUpon>ACLXray.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SqlInstanceRoleMember.cs">
+      <DependentUpon>ACLXray.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SqlTrusteeInfo.cs">
+      <DependentUpon>ACLXray.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SqlTrusteeInfoAdExpanded.cs">
+      <DependentUpon>ACLXray.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\TASKS_DACL.cs">
+      <DependentUpon>ACLXray.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\TRUST.cs">
+      <DependentUpon>ACLXray.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Trustee.cs">
+      <DependentUpon>ACLXray.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\TrusteesAsComputer.cs">
+      <DependentUpon>ACLXray.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\TrusteesAsGroup.cs">
+      <DependentUpon>ACLXray.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\TrusteesAsPrincipal.cs">
+      <DependentUpon>ACLXray.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\T_ADMIN_COUNT.cs">
+      <DependentUpon>ACLXray.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\T_ADMIN_SDHOLDER.cs">
+      <DependentUpon>ACLXray.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\T_AD_CONFIG.cs">
+      <DependentUpon>ACLXray.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\T_AD_DOMAIN_ROOT.cs">
+      <DependentUpon>ACLXray.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\T_AD_OBJECT_ACCESS.cs">
+      <DependentUpon>ACLXray.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\T_AD_OBJECT_AUDIT.cs">
+      <DependentUpon>ACLXray.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\T_ALL_DRIVERS.cs">
+      <DependentUpon>ACLXray.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\T_AZURE_DIRECTORY_ROLES.cs">
+      <DependentUpon>ACLXray.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\T_CA.cs">
+      <DependentUpon>ACLXray.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\T_CA_ENROLLMENT_RIGHTS.cs">
+      <DependentUpon>ACLXray.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\T_CA_MANAGER_RIGHTS.cs">
+      <DependentUpon>ACLXray.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\T_DCOM_DACL.cs">
+      <DependentUpon>ACLXray.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\T_DIAGNOSTICS.cs">
+      <DependentUpon>ACLXray.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\T_EMPTY_GROUPS.cs">
+      <DependentUpon>ACLXray.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\T_EVENT_4663_LOG.cs">
+      <DependentUpon>ACLXray.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\T_EXCHANGE_DACL.cs">
+      <DependentUpon>ACLXray.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\T_EXCHANGE_MAILBOX.cs">
+      <DependentUpon>ACLXray.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\T_FILES_DACL.cs">
+      <DependentUpon>ACLXray.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\T_FILES_SACL.cs">
+      <DependentUpon>ACLXray.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\T_FILE_ASSOC.cs">
+      <DependentUpon>ACLXray.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\T_FOLDERS_DACL.cs">
+      <DependentUpon>ACLXray.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\T_FOLDERS_SACL.cs">
+      <DependentUpon>ACLXray.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\T_GLB_GROUP_COUNT.cs">
+      <DependentUpon>ACLXray.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\T_GPO.cs">
+      <DependentUpon>ACLXray.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\T_GPO_PREFS.cs">
+      <DependentUpon>ACLXray.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\T_GPO_RESTRICTED_GROUPS.cs">
+      <DependentUpon>ACLXray.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\T_KRBTGT_ATTRIBUTES.cs">
+      <DependentUpon>ACLXray.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\T_LAST_LOGOFF.cs">
+      <DependentUpon>ACLXray.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\T_LOCAL_GROUPS.cs">
+      <DependentUpon>ACLXray.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\T_LOCAL_SIDS.cs">
+      <DependentUpon>ACLXray.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\T_LOC_FIREWALL_RULES.cs">
+      <DependentUpon>ACLXray.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\T_NTFS_DACL.cs">
+      <DependentUpon>ACLXray.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\T_NTFS_SACL.cs">
+      <DependentUpon>ACLXray.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\T_PRE_WINDOWS_2000.cs">
+      <DependentUpon>ACLXray.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\T_PROCESS_INFO.cs">
+      <DependentUpon>ACLXray.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\T_REGISTRY_DACL.cs">
+      <DependentUpon>ACLXray.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\T_REGISTRY_LAST_LOGOFF.cs">
+      <DependentUpon>ACLXray.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\T_REGISTRY_PROFILES.cs">
+      <DependentUpon>ACLXray.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\T_REGISTRY_SACL.cs">
+      <DependentUpon>ACLXray.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\T_RODC_DATA.cs">
+      <DependentUpon>ACLXray.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\T_SCAN_FILES.cs">
+      <DependentUpon>ACLXray.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\T_SCAN_SESSIONS.cs">
+      <DependentUpon>ACLXray.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\T_SCHEMA_DACL.cs">
+      <DependentUpon>ACLXray.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\T_SERVICE.cs">
+      <DependentUpon>ACLXray.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\T_SHARE_CONTENT_DACL.cs">
+      <DependentUpon>ACLXray.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\T_SHARE_CONTENT_SACL.cs">
+      <DependentUpon>ACLXray.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\T_SHARE_DACL.cs">
+      <DependentUpon>ACLXray.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\T_SID_HISTORY.cs">
+      <DependentUpon>ACLXray.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\T_SIGNED_DRIVERS.cs">
+      <DependentUpon>ACLXray.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\T_SOFTWARE.cs">
+      <DependentUpon>ACLXray.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\T_SPN.cs">
+      <DependentUpon>ACLXray.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\T_TASKS_DACL.cs">
+      <DependentUpon>ACLXray.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\T_TRUSTS.cs">
+      <DependentUpon>ACLXray.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\T_UNC_FILES_DACL.cs">
+      <DependentUpon>ACLXray.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\T_UNC_FILES_SACL.cs">
+      <DependentUpon>ACLXray.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\T_UNC_FOLDERS_DACL.cs">
+      <DependentUpon>ACLXray.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\T_UNC_FOLDERS_SACL.cs">
+      <DependentUpon>ACLXray.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\T_USER_RIGHTS.cs">
+      <DependentUpon>ACLXray.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\T_USER_TOKENS.cs">
+      <DependentUpon>ACLXray.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\T_WMI_DACL.cs">
+      <DependentUpon>ACLXray.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\UNC_FILES_DACL.cs">
+      <DependentUpon>ACLXray.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\UNC_FILES_SACL.cs">
+      <DependentUpon>ACLXray.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\UNC_FOLDERS_DACL.cs">
+      <DependentUpon>ACLXray.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\UNC_FOLDERS_SACL.cs">
+      <DependentUpon>ACLXray.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\UNRESOLVED_MEMBERSHIP.cs">
+      <DependentUpon>ACLXray.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\USER_RIGHTS.cs">
+      <DependentUpon>ACLXray.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\USER_TOKENS.cs">
+      <DependentUpon>ACLXray.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\WMI_DACL.cs">
+      <DependentUpon>ACLXray.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\web.config" />
+    <EntityDeploy Include="Models\ACLXray.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>ACLXray.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\ACLXray.edmx.diagram">
+      <DependentUpon>ACLXray.edmx</DependentUpon>
+    </Content>
+    <None Include="packages.config" />
+    <Content Include="Views\Shared\_MainLayout.cshtml" />
+    <Content Include="Views\Shared\_SearchLayout.cshtml" />
+    <Content Include="Scripts\jquery-3.0.0.slim.min.map" />
+    <Content Include="Scripts\jquery-3.0.0.min.map" />
+    <Content Include="Scripts\umd\popper.min.js.map" />
+    <Content Include="Scripts\umd\popper.js.map" />
+    <Content Include="Scripts\umd\popper-utils.min.js.map" />
+    <Content Include="Scripts\umd\popper-utils.js.map" />
+    <Content Include="Scripts\README.md" />
+    <Content Include="Scripts\popper.min.js.map" />
+    <Content Include="Scripts\popper.js.map" />
+    <Content Include="Scripts\popper-utils.min.js.map" />
+    <Content Include="Scripts\popper-utils.js.map" />
+    <Content Include="Views\Search\Index.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Search\TrusteeSearch.cshtml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="Scripts\index.d.ts" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets')" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>51770</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:51770/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.2.6.1\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.2.6.1\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

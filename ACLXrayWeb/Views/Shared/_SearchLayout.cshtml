@@ -1,0 +1,155 @@
+﻿
+
+
+
+<script>
+    $(document).ready(function () {
+
+        $("#CheckAll").click(function () {
+
+            var checkboxes = $('.check').not(this)
+            if ($(this).prop('checked')) {
+                checkboxes.prop('checked', true);
+
+            } else {
+
+                checkboxes.prop('checked', false);
+
+            }
+        });
+        $('.check').change(function () {
+            if ($(this).prop('checked') == false) {
+                $('.checkAll').prop('checked',false)
+            }
+        }
+
+        );
+    });
+</script>
+
+  @{ 
+      var reportNames = new List<string>
+      {
+          "Tier-0 Access Path Report",
+          "AD AdminSDHolder Report",
+          "AD Config Access Report",
+          "AD Domain Access Report",
+          "AD Domain Audit Report",
+          "AD Domain Root Report",
+          "AD Schema Access Report",
+          "AD User Token Report",
+          "AD User Token Report",
+          "DCOM Report",
+          "Empty Group Reference Report",
+          "Exchange Access Report",
+          "Exchange Mailbox Report",
+          "File Access Report",
+          "File Audit Report",
+          "Folder Access Report",
+          "Folder Audit Report",
+          "Group Policy Object Report",
+          "Group Reference Report",
+          "Last Logoff Report",
+          "Local Group Membership Report",
+          "Password Rights Report",
+          "Process Information Report",
+          "Profile Report",
+          "Registry Access Report",
+          "Registry Audit Report",
+          "Services Report",
+          "Share Content Access Report",
+          "SID History Reference Report",
+          "Tasks Report",
+          "UNC File Access Report",
+          "UNC File Audit Report",
+          "UNC Folder Access Report",
+          "UNC Folder Audit Report",
+          "User Reference Report",
+          "User Rights Report",
+          "WMI Report",
+          "AD Admin Count Report"
+
+      };
+  reportNames.Sort();
+
+
+  }
+
+<div class="row">
+     <div class="col-md-8">
+         @Html.Label("Select Report")
+     </div>
+    <div class="col-md-10">
+        @Html.CheckBox("CheckAll", true, new { @class = "checkAll" })
+        @Html.Label("Check All")
+    </div>
+    @for (int i = 0; i < reportNames.Count;i++)
+    {
+
+
+    <div class="col-md-3">
+        @Html.CheckBox(i.ToString(), true, new { @class = "check",@name="ReportOptions" })
+        @Html.Label(reportNames[i])
+    </div>
+
+     
+    }
+</div>
+    @*<table>
+        <tr>
+            <td>@Html.CheckBox("CheckAll", true, new { @class = "checkAll" }) Check All</td>
+        </tr>
+            <tr>    
+                <td>@Html.CheckBox("AD AdminSDHolder Report", true, new { @class = "check" }) AD AdminSDHolder Report</td>
+                <td>@Html.CheckBox("AD Config Access Report", true, new { @class = "check" }) AD Config Access Report</td>
+                <td>@Html.CheckBox("AD Domain Access Report", true, new { @class = "check" }) AD Domain Access Report</td>
+                <td>@Html.CheckBox("AD Domain Audit Report", true, new { @class = "check" }) AD Domain Audit Report</td>
+                <td>@Html.CheckBox("AD Domain Root Report", true, new { @class = "check" }) AD Domain Root Report</td>
+                <td>@Html.CheckBox("AD Schema Access Report", true, new { @class = "check" }) AD Schema Access Report</td>
+            </tr>
+            <tr>
+                <td>@Html.CheckBox("AD User Token Report", true, new { @class = "check" }) AD User Token Report</td>
+                <td>@Html.CheckBox("DCOM Report", true, new { @class = "check" }) DCOM Report</td>
+                <td>@Html.CheckBox("Empty Group Reference Report", true, new { @class = "check" }) Empty Group Reference Report</td>
+                <td>@Html.CheckBox("Exchange Access Report", true, new { @class = "check" }) Exchange Access Report</td>
+                <td>@Html.CheckBox("Exchange Mailbox Report", true, new { @class = "check" }) Exchange Mailbox Report</td>
+                <td>@Html.CheckBox("File Access Report", true, new { @class = "check" }) File Access Report</td>
+            </tr>
+            <tr>
+                <td>@Html.CheckBox("File Audit Report", true, new { @class = "check" }) File Audit Report</td>
+                <td>@Html.CheckBox("Folder Access Report", true, new { @class = "check" }) Folder Access Report</td>
+                <td>@Html.CheckBox("Folder Audit Report", true, new { @class = "check" }) Folder Audit Report</td>
+                <td>@Html.CheckBox("Group Policy Object Report", true, new { @class = "check" }) Group Policy Object Report</td>
+                <td>@Html.CheckBox("Group Reference Report", true, new { @class = "check" }) Group Reference Report</td>
+                <td>@Html.CheckBox("Last Logoff Report", true, new { @class = "check" }) Last Logoff Report</td>
+            </tr>
+            <tr>
+                <td>@Html.CheckBox("Local Group Membership Report", true, new { @class = "check" }) Local Group Membership Report</td>
+                <td>@Html.CheckBox("Password Rights Report", true, new { @class = "check" }) Password Rights Report</td>
+                <td>@Html.CheckBox("Process Information Report", true, new { @class = "check" }) Process Information Report</td>
+                <td>@Html.CheckBox("Profile Report", true, new { @class = "check" }) Profile Report</td>
+                <td>@Html.CheckBox("Registry Access Report", true, new { @class = "check" }) Registry Access Report</td>
+                <td>@Html.CheckBox("Registry Audit Report", true, new { @class = "check" }) Registry Audit Report</td>
+            </tr>
+            <tr>
+                <td>@Html.CheckBox("Services Report", true, new { @class = "check" }) Services Report</td>
+                <td>@Html.CheckBox("Share Content Access Report", true, new { @class = "check" }) Share Content Access Report</td>
+                <td>@Html.CheckBox("Share Content Audit Report", true, new { @class = "check" }) Share Content Audit Report</td>
+                <td>@Html.CheckBox("SID History Reference Report", true, new { @class = "check" }) SID History Reference Report</td>
+                <td>@Html.CheckBox("Tasks Report", true, new { @class = "check" }) Tasks Report</td>
+                <td>@Html.CheckBox("Tier-0 Access Path Report", true, new { @class = "check" }) Tier-0 Access Path Report</td>
+            </tr>
+            <tr>
+                <td>@Html.CheckBox("UNC File Access Report", true, new { @class = "check" }) UNC File Access Report</td>
+                <td>@Html.CheckBox("UNC File Audit Report", true, new { @class = "check" }) UNC File Audit Report</td>
+                <td>@Html.CheckBox("UNC Folder Access Report", true, new { @class = "check" }) UNC Folder Access Report</td>
+                <td>@Html.CheckBox("UNC Folder Audit Report", true, new { @class = "check" }) UNC Folder Audit Report</td>
+                <td>@Html.CheckBox("User Reference Report", true, new { @class = "check" }) User Reference Report</td>
+                <td>@Html.CheckBox("User Rights Report", true, new { @class = "check" }) User Rights Report</td>
+            </tr>
+            <tr>
+                <td>@Html.CheckBox("WMI Report", true, new { @class = "check" }) WMI Report</td>
+                <td>@Html.CheckBox("AD Admin Count Report", true, new { @class = "check" }) AD Admin Count Report</td>
+            </tr>
+        </table>*@
+

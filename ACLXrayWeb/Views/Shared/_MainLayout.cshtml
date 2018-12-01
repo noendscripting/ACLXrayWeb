@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <script src="~/Scripts/jquery-3.0.0.min.js">
+    </script>
+    @*<script src="~/Scripts/SearchScript.js">*@
+    </script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="navbar-expand-xl">
+        @Html.ActionLink("Home","Index","Home")
+        @Html.ActionLink("Search", "Index", "Search")
+    </div>
+    <div>
+        @RenderBody()
+    </div>
+</body>
+</html>

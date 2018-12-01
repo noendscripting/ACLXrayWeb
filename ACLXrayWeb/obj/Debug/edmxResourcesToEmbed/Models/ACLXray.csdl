@@ -1,0 +1,3004 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ACLXRAYModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="AD_CONFIG">
+    <Key>
+      <PropertyRef Name="ObjectSID" />
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ServerFqdn" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="ServerSID" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="ObjectSID" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Timestamp" Type="DateTime" Precision="0" />
+    <Property Name="Info" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Access" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="AccessType" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="IsInherited" Type="Boolean" />
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="ServerID" Type="Int32" />
+    <Property Name="Authority" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="Owner" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="OwnerIsWellKnown" Type="Boolean" />
+    <Property Name="OwnerRightsPresent" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="AD_DOMAIN_ROOT">
+    <Key>
+      <PropertyRef Name="ObjectSID" />
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ServerFqdn" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="ServerSID" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="ObjectSID" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Timestamp" Type="DateTime" Precision="0" />
+    <Property Name="Info" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="AccessType" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="Access" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="IsInherited" Type="Boolean" />
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="ServerID" Type="Int32" />
+    <Property Name="Authority" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="AD_OBJECT_ACCESS">
+    <Key>
+      <PropertyRef Name="ObjectSID" />
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ServerFqdn" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="ServerSID" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="ObjectSID" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Timestamp" Type="DateTime" Precision="0" />
+    <Property Name="Info" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Access" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="AccessType" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="IsInherited" Type="Boolean" />
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="ServerID" Type="Int32" />
+    <Property Name="Authority" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="Owner" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="OwnerIsWellKnown" Type="Boolean" />
+    <Property Name="OwnerRightsPresent" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="AD_OBJECT_AUDIT">
+    <Key>
+      <PropertyRef Name="ObjectSID" />
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ServerFqdn" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="ServerSID" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="ObjectSID" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Timestamp" Type="DateTime" Precision="0" />
+    <Property Name="Info" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Access" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="AccessType" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="IsInherited" Type="Boolean" />
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="ServerID" Type="Int32" />
+    <Property Name="Authority" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="ADMIN_COUNT">
+    <Key>
+      <PropertyRef Name="ObjectSID" />
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ServerFqdn" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="ServerSID" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="Timestamp" Type="DateTime" Precision="0" />
+    <Property Name="CanBeDelegated" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ObjectSID" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="ServerID" Type="Int32" />
+    <Property Name="Authority" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="Info" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="ADMIN_SDHOLDER">
+    <Key>
+      <PropertyRef Name="ObjectSID" />
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ServerFqdn" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="ServerSID" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="ObjectSID" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Timestamp" Type="DateTime" Precision="0" />
+    <Property Name="Info" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="AccessType" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="Access" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="IsInherited" Type="Boolean" />
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="ServerID" Type="Int32" />
+    <Property Name="Authority" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="ALL_DRIVERS">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="ServerFqdn" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="ServerSID" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="ModuleName" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="DisplayName" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="DriverType" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="State" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="LinkDate" Type="DateTime" Precision="0" />
+    <Property Name="Path" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Timestamp" Type="DateTime" Precision="0" />
+    <Property Name="ServerID" Type="Int32" />
+    <Property Name="Authority" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="AllGroupsInfo">
+    <Key>
+      <PropertyRef Name="GroupId" />
+      <PropertyRef Name="GroupAuthority" />
+      <PropertyRef Name="GroupSid" />
+      <PropertyRef Name="GroupName" />
+      <PropertyRef Name="GroupSamAccountName" />
+      <PropertyRef Name="ModifiedDate" />
+      <PropertyRef Name="IsBusy" />
+      <PropertyRef Name="IsVisited" />
+      <PropertyRef Name="IsExpanded" />
+      <PropertyRef Name="IsFaulty" />
+      <PropertyRef Name="MemberId" />
+      <PropertyRef Name="MemberAuthority" />
+      <PropertyRef Name="MemberSid" />
+      <PropertyRef Name="MemberName" />
+      <PropertyRef Name="MemberSamAccountName" />
+    </Key>
+    <Property Name="GroupId" Type="Int32" Nullable="false" />
+    <Property Name="GroupAuthority" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="GroupSid" Type="String" MaxLength="64" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="GroupName" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="GroupSamAccountName" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="GroupObjectClass" Type="String" MaxLength="64" FixedLength="false" Unicode="true" />
+    <Property Name="GroupDisplayName" Type="String" MaxLength="2048" FixedLength="false" Unicode="true" />
+    <Property Name="GroupDescription" Type="String" MaxLength="2048" FixedLength="false" Unicode="true" />
+    <Property Name="GroupDistinguishedName" Type="String" MaxLength="2048" FixedLength="false" Unicode="true" />
+    <Property Name="ModifiedDate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="Scope" Type="String" MaxLength="32" FixedLength="false" Unicode="true" />
+    <Property Name="IsBusy" Type="Boolean" Nullable="false" />
+    <Property Name="IsVisited" Type="Boolean" Nullable="false" />
+    <Property Name="IsExpanded" Type="Boolean" Nullable="false" />
+    <Property Name="IsFaulty" Type="Boolean" Nullable="false" />
+    <Property Name="MemberId" Type="Int32" Nullable="false" />
+    <Property Name="MemberObjectClass" Type="String" MaxLength="64" FixedLength="false" Unicode="true" />
+    <Property Name="MemberAuthority" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="MemberSid" Type="String" MaxLength="64" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="MemberName" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="MemberSamAccountName" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="MemberDisplayName" Type="String" MaxLength="2048" FixedLength="false" Unicode="true" />
+    <Property Name="MemberDescription" Type="String" MaxLength="2048" FixedLength="false" Unicode="true" />
+    <Property Name="MemberDistinguishedName" Type="String" MaxLength="2048" FixedLength="false" Unicode="true" />
+    <Property Name="ISDIRECT" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="AllSPScope">
+    <Key>
+      <PropertyRef Name="ParentName" />
+      <PropertyRef Name="ID" />
+      <PropertyRef Name="ScopeType" />
+      <PropertyRef Name="PrincipalTypeLabel" />
+    </Key>
+    <Property Name="ParentName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ParentID" Type="Guid" />
+    <Property Name="Url" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ID" Type="Guid" Nullable="false" />
+    <Property Name="ScopeTypeLabel" Type="String" MaxLength="6" FixedLength="false" Unicode="false" />
+    <Property Name="ScopeType" Type="Int32" Nullable="false" />
+    <Property Name="PrincipalName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="PrincipalDisplayName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="SPPrincipalLoginName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="PrincipalAuthority" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="PrincipalLoginName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="PrincipalType" Type="Int32" />
+    <Property Name="PrincipalTypeLabel" Type="String" MaxLength="22" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="MemberName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="MemberDisplayName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="SPMemberLoginName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="MemberAuthority" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="MemberLoginName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="PermissionName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ADGroupSID" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="IsDirectAdmin" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="AllUsersInfo">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="Authority" />
+      <PropertyRef Name="Sid" />
+      <PropertyRef Name="Name" />
+      <PropertyRef Name="SamAccountName" />
+      <PropertyRef Name="ModifiedDate" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="Authority" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Sid" Type="String" MaxLength="64" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="SamAccountName" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ObjectClass" Type="String" MaxLength="64" FixedLength="false" Unicode="true" />
+    <Property Name="DisplayName" Type="String" MaxLength="2048" FixedLength="false" Unicode="true" />
+    <Property Name="Description" Type="String" MaxLength="2048" FixedLength="false" Unicode="true" />
+    <Property Name="DistinguishedName" Type="String" MaxLength="2048" FixedLength="false" Unicode="true" />
+    <Property Name="ModifiedDate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="Enabled" Type="Boolean" />
+    <Property Name="FirstName" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="LastName" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="LastPasswordSet" Type="DateTime" Precision="0" />
+    <Property Name="LastLogon" Type="DateTime" Precision="0" />
+    <Property Name="PasswordNeverExpires" Type="Boolean" />
+    <Property Name="UserCannotChangePassword" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="AZURE_DIRECTORY_ROLES">
+    <Key>
+      <PropertyRef Name="ObjectSid" />
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ServerFqdn" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="ServerSID" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="TenantName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Role" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="RoleMemberTpe" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ObjectSid" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Timestamp" Type="DateTime" Precision="0" />
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="ServerID" Type="Int32" />
+    <Property Name="Authority" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="Info" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="CA">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ServerFqdn" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="ServerSID" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="CAPermissions" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="SID" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Timestamp" Type="DateTime" Precision="0" />
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="ServerID" Type="Int32" />
+    <Property Name="Authority" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="CA_ENROLLMENT_RIGHTS">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ServerFqdn" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="ServerSID" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="Officer" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Users" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ACEType" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Template" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Timestamp" Type="DateTime" Precision="0" />
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="ServerID" Type="Int32" />
+    <Property Name="Authority" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="CA_MANAGER_RIGHTS">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ServerFqdn" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="ServerSID" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="Officer" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Users" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ACEType" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Template" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Timestamp" Type="DateTime" Precision="0" />
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="ServerID" Type="Int32" />
+    <Property Name="Authority" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Computer">
+    <Key>
+      <PropertyRef Name="Authority" />
+      <PropertyRef Name="Sid" />
+      <PropertyRef Name="Name" />
+      <PropertyRef Name="SamAccountName" />
+      <PropertyRef Name="ModifiedDate" />
+      <PropertyRef Name="Expr1" />
+      <PropertyRef Name="PasswordNeverExpires" />
+      <PropertyRef Name="UserCannotChangePassword" />
+    </Key>
+    <Property Name="Authority" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Sid" Type="String" MaxLength="64" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="SamAccountName" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ObjectClass" Type="String" MaxLength="64" FixedLength="false" Unicode="true" />
+    <Property Name="DisplayName" Type="String" MaxLength="2048" FixedLength="false" Unicode="true" />
+    <Property Name="Description" Type="String" MaxLength="2048" FixedLength="false" Unicode="true" />
+    <Property Name="DistinguishedName" Type="String" MaxLength="2048" FixedLength="false" Unicode="true" />
+    <Property Name="ModifiedDate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="ComputerType" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="Expr1" Type="Int32" Nullable="false" />
+    <Property Name="Enabled" Type="Boolean" />
+    <Property Name="LastPasswordSet" Type="DateTime" Precision="0" />
+    <Property Name="LastLogon" Type="DateTime" Precision="0" />
+    <Property Name="PasswordNeverExpires" Type="Boolean" Nullable="false" />
+    <Property Name="UserCannotChangePassword" Type="Boolean" Nullable="false" />
+    <Property Name="UPN" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="UAC" Type="Int32" />
+    <Property Name="BadPasswordTime" Type="DateTime" Precision="0" />
+    <Property Name="AccountExpires" Type="DateTime" Precision="0" />
+    <Property Name="AllowedToDelegateTo" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="WhenCreated" Type="DateTime" Precision="0" />
+    <Property Name="WhenChanged" Type="DateTime" Precision="0" />
+    <Property Name="OS" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="OSServicePack" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="OSVersion" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="DCOM_DACL">
+    <Key>
+      <PropertyRef Name="ObjectSID" />
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ServerFqdn" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="ServerSID" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="ObjectSID" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Timestamp" Type="DateTime" Precision="0" />
+    <Property Name="Info" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="ServerID" Type="Int32" />
+    <Property Name="Access" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="Authority" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="DomainController">
+    <Key>
+      <PropertyRef Name="Authority" />
+      <PropertyRef Name="Sid" />
+      <PropertyRef Name="Name" />
+      <PropertyRef Name="SamAccountName" />
+      <PropertyRef Name="ModifiedDate" />
+      <PropertyRef Name="Expr1" />
+      <PropertyRef Name="PasswordNeverExpires" />
+      <PropertyRef Name="UserCannotChangePassword" />
+    </Key>
+    <Property Name="Authority" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Sid" Type="String" MaxLength="64" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="SamAccountName" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ObjectClass" Type="String" MaxLength="64" FixedLength="false" Unicode="true" />
+    <Property Name="DisplayName" Type="String" MaxLength="2048" FixedLength="false" Unicode="true" />
+    <Property Name="Description" Type="String" MaxLength="2048" FixedLength="false" Unicode="true" />
+    <Property Name="DistinguishedName" Type="String" MaxLength="2048" FixedLength="false" Unicode="true" />
+    <Property Name="ModifiedDate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="ComputerType" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="Expr1" Type="Int32" Nullable="false" />
+    <Property Name="Enabled" Type="Boolean" />
+    <Property Name="LastPasswordSet" Type="DateTime" Precision="0" />
+    <Property Name="LastLogon" Type="DateTime" Precision="0" />
+    <Property Name="PasswordNeverExpires" Type="Boolean" Nullable="false" />
+    <Property Name="UserCannotChangePassword" Type="Boolean" Nullable="false" />
+    <Property Name="UPN" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="UAC" Type="Int32" />
+    <Property Name="BadPasswordTime" Type="DateTime" Precision="0" />
+    <Property Name="AccountExpires" Type="DateTime" Precision="0" />
+    <Property Name="AllowedToDelegateTo" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="WhenCreated" Type="DateTime" Precision="0" />
+    <Property Name="WhenChanged" Type="DateTime" Precision="0" />
+  </EntityType>
+  <EntityType Name="EMPTY_GROUPS">
+    <Key>
+      <PropertyRef Name="ObjectSID" />
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ServerFqdn" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="ServerSID" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="ObjectSID" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Timestamp" Type="DateTime" Precision="0" />
+    <Property Name="Info" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="ServerID" Type="Int32" />
+    <Property Name="Authority" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="EXCHANGE_DACL">
+    <Key>
+      <PropertyRef Name="ObjectSID" />
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ServerFqdn" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="ServerSID" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="ObjectSID" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Timestamp" Type="DateTime" Precision="0" />
+    <Property Name="Info" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="ServerID" Type="Int32" />
+    <Property Name="Authority" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="EXCHANGE_MAILBOX">
+    <Key>
+      <PropertyRef Name="ObjectSID" />
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ServerFqdn" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="ServerSID" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="ObjectSID" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Timestamp" Type="DateTime" Precision="0" />
+    <Property Name="Info" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="ServerID" Type="Int32" />
+    <Property Name="Authority" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="FILE_ASSOC">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="ServerFqdn" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="ServerSID" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="Ext" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="FileType" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="Timestamp" Type="DateTime" Precision="0" />
+    <Property Name="ServerID" Type="Int32" />
+    <Property Name="Authority" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="FILES_DACL">
+    <Key>
+      <PropertyRef Name="ObjectSID" />
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ServerFqdn" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="ServerSID" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="ObjectSID" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Timestamp" Type="DateTime" Precision="0" />
+    <Property Name="Info" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="LastAccessTime" Type="DateTime" Precision="0" />
+    <Property Name="Access" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="AccessType" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="IsInherited" Type="Boolean" />
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="ServerID" Type="Int32" />
+    <Property Name="Authority" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="Owner" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="OwnerIsWellKnown" Type="Boolean" />
+    <Property Name="OwnerRightsPresent" Type="Boolean" />
+    <Property Name="Size" Type="Int64" />
+    <Property Name="Ext" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="FILES_SACL">
+    <Key>
+      <PropertyRef Name="ObjectSID" />
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ServerFqdn" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="ServerSID" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="ObjectSID" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Timestamp" Type="DateTime" Precision="0" />
+    <Property Name="Info" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="LastAccessTime" Type="DateTime" Precision="0" />
+    <Property Name="Access" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="AccessType" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="IsInherited" Type="Boolean" />
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="ServerID" Type="Int32" />
+    <Property Name="Authority" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="FOLDERS_DACL">
+    <Key>
+      <PropertyRef Name="ObjectSID" />
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ServerFqdn" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="ServerSID" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="ObjectSID" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Timestamp" Type="DateTime" Precision="0" />
+    <Property Name="Info" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="LastAccessTime" Type="DateTime" Precision="0" />
+    <Property Name="Access" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="AccessType" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="IsInherited" Type="Boolean" />
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="ServerID" Type="Int32" />
+    <Property Name="Authority" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="Owner" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="OwnerIsWellKnown" Type="Boolean" />
+    <Property Name="OwnerRightsPresent" Type="Boolean" />
+    <Property Name="Size" Type="Int64" />
+  </EntityType>
+  <EntityType Name="FOLDERS_SACL">
+    <Key>
+      <PropertyRef Name="ObjectSID" />
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ServerFqdn" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="ServerSID" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="ObjectSID" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Timestamp" Type="DateTime" Precision="0" />
+    <Property Name="Info" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="LastAccessTime" Type="DateTime" Precision="0" />
+    <Property Name="Access" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="AccessType" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="IsInherited" Type="Boolean" />
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="ServerID" Type="Int32" />
+    <Property Name="Authority" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="GPO">
+    <Key>
+      <PropertyRef Name="ObjectSID" />
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ServerFqdn" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="ServerSID" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="ObjectSID" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Timestamp" Type="DateTime" Precision="0" />
+    <Property Name="Info" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="AccessType" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="Access" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="IsInherited" Type="Boolean" />
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="ServerID" Type="Int32" />
+    <Property Name="Authority" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="Owner" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="OwnerIsWellKnown" Type="Boolean" />
+    <Property Name="OwnerRightsPresent" Type="Boolean" />
+    <Property Name="GPOGUID" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="LinkedTo" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="GroupExpandedGroup">
+    <Key>
+      <PropertyRef Name="GroupId" />
+      <PropertyRef Name="ExpandedMemberId" />
+    </Key>
+    <Property Name="GroupId" Type="Int32" Nullable="false" />
+    <Property Name="ExpandedMemberId" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="GroupExpandedPrincipal">
+    <Key>
+      <PropertyRef Name="GroupId" />
+      <PropertyRef Name="ExpandedMemberId" />
+    </Key>
+    <Property Name="GroupId" Type="Int32" Nullable="false" />
+    <Property Name="ExpandedMemberId" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="GroupMember">
+    <Key>
+      <PropertyRef Name="GroupId" />
+      <PropertyRef Name="MemberId" />
+    </Key>
+    <Property Name="GroupId" Type="Int32" Nullable="false" />
+    <Property Name="MemberId" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Group">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="Authority" />
+      <PropertyRef Name="Sid" />
+      <PropertyRef Name="Name" />
+      <PropertyRef Name="SamAccountName" />
+      <PropertyRef Name="ModifiedDate" />
+      <PropertyRef Name="IsBusy" />
+      <PropertyRef Name="IsVisited" />
+      <PropertyRef Name="IsExpanded" />
+      <PropertyRef Name="IsFaulty" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="Authority" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Sid" Type="String" MaxLength="64" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="SamAccountName" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ObjectClass" Type="String" MaxLength="64" FixedLength="false" Unicode="true" />
+    <Property Name="DisplayName" Type="String" MaxLength="2048" FixedLength="false" Unicode="true" />
+    <Property Name="Description" Type="String" MaxLength="2048" FixedLength="false" Unicode="true" />
+    <Property Name="DistinguishedName" Type="String" MaxLength="2048" FixedLength="false" Unicode="true" />
+    <Property Name="ModifiedDate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="Scope" Type="String" MaxLength="32" FixedLength="false" Unicode="true" />
+    <Property Name="IsBusy" Type="Boolean" Nullable="false" />
+    <Property Name="IsVisited" Type="Boolean" Nullable="false" />
+    <Property Name="IsExpanded" Type="Boolean" Nullable="false" />
+    <Property Name="IsFaulty" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="KRBTGT_ATTRIBUTES">
+    <Key>
+      <PropertyRef Name="Name" />
+      <PropertyRef Name="SamAccountName" />
+      <PropertyRef Name="Authority" />
+      <PropertyRef Name="Sid" />
+    </Key>
+    <Property Name="Name" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="SamAccountName" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="DistinguishedName" Type="String" MaxLength="2048" FixedLength="false" Unicode="true" />
+    <Property Name="Authority" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Sid" Type="String" MaxLength="64" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="KeyVersionNumber" Type="Int32" />
+    <Property Name="KrbTgtLinkBl" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="LAST_LOGOFF">
+    <Key>
+      <PropertyRef Name="ObjectSID" />
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ServerFqdn" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="ServerSID" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="ObjectSID" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Timestamp" Type="DateTime" Precision="0" />
+    <Property Name="Info" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="ServerID" Type="Int32" />
+    <Property Name="Authority" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="LOCAL_GROUPS">
+    <Key>
+      <PropertyRef Name="ObjectSID" />
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ServerFqdn" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="ServerSID" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="ObjectSID" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Timestamp" Type="DateTime" Precision="0" />
+    <Property Name="Info" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="ServerID" Type="Int32" />
+    <Property Name="GroupSID" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="Authority" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="LOCAL_SIDS">
+    <Key>
+      <PropertyRef Name="ObjectSID" />
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ServerFqdn" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="ServerSID" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="ObjectSID" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Timestamp" Type="DateTime" Precision="0" />
+    <Property Name="Info" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="ServerID" Type="Int32" />
+    <Property Name="Authority" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="NTFS_DACL">
+    <Key>
+      <PropertyRef Name="ObjectSID" />
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ServerFqdn" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="ServerSID" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="ObjectSID" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Timestamp" Type="DateTime" Precision="0" />
+    <Property Name="Info" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="LastAccessTime" Type="DateTime" Precision="0" />
+    <Property Name="Access" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="AccessType" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="IsInherited" Type="Boolean" />
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="ServerID" Type="Int32" />
+    <Property Name="Authority" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="Owner" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="OwnerIsWellKnown" Type="Boolean" />
+    <Property Name="OwnerRightsPresent" Type="Boolean" />
+    <Property Name="Size" Type="Int64" />
+    <Property Name="Ext" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="NTFS_SACL">
+    <Key>
+      <PropertyRef Name="ObjectSID" />
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ServerFqdn" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="ServerSID" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="ObjectSID" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Timestamp" Type="DateTime" Precision="0" />
+    <Property Name="Info" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="LastAccessTime" Type="DateTime" Precision="0" />
+    <Property Name="Access" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="AccessType" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="IsInherited" Type="Boolean" />
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="ServerID" Type="Int32" />
+    <Property Name="Authority" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="ORPHANED_SIDS">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="OrphanedSID" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Resource" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Server" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Principal">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="Authority" />
+      <PropertyRef Name="Sid" />
+      <PropertyRef Name="Name" />
+      <PropertyRef Name="SamAccountName" />
+      <PropertyRef Name="ModifiedDate" />
+      <PropertyRef Name="PasswordNeverExpires" />
+      <PropertyRef Name="UserCannotChangePassword" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="Authority" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Sid" Type="String" MaxLength="64" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="SamAccountName" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ObjectClass" Type="String" MaxLength="64" FixedLength="false" Unicode="true" />
+    <Property Name="DisplayName" Type="String" MaxLength="2048" FixedLength="false" Unicode="true" />
+    <Property Name="Description" Type="String" MaxLength="2048" FixedLength="false" Unicode="true" />
+    <Property Name="DistinguishedName" Type="String" MaxLength="2048" FixedLength="false" Unicode="true" />
+    <Property Name="ModifiedDate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="Enabled" Type="Boolean" />
+    <Property Name="FirstName" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="LastName" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="LastPasswordSet" Type="DateTime" Precision="0" />
+    <Property Name="LastLogon" Type="DateTime" Precision="0" />
+    <Property Name="PasswordNeverExpires" Type="Boolean" Nullable="false" />
+    <Property Name="UserCannotChangePassword" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PROCESS_INFO">
+    <Key>
+      <PropertyRef Name="ObjectSID" />
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ServerFqdn" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="ServerSID" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="ObjectSID" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Timestamp" Type="DateTime" Precision="0" />
+    <Property Name="Info" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="ServerID" Type="Int32" />
+    <Property Name="Authority" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="REGISTRY_DACL">
+    <Key>
+      <PropertyRef Name="ObjectSID" />
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ServerFqdn" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="ServerSID" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="ObjectSID" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Timestamp" Type="DateTime" Precision="0" />
+    <Property Name="Info" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Access" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="AccessType" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="IsInherited" Type="Boolean" />
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="ServerID" Type="Int32" />
+    <Property Name="Authority" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="Owner" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="OwnerIsWellKnown" Type="Boolean" />
+    <Property Name="OwnerRightsPresent" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="REGISTRY_LAST_LOGOFF">
+    <Key>
+      <PropertyRef Name="ObjectSID" />
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ServerFqdn" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="ServerSID" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="ObjectSID" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Timestamp" Type="DateTime" Precision="0" />
+    <Property Name="Info" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="ServerID" Type="Int32" />
+    <Property Name="Authority" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="REGISTRY_PROFILES">
+    <Key>
+      <PropertyRef Name="ObjectSID" />
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ServerFqdn" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="ServerSID" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="ObjectSID" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Timestamp" Type="DateTime" Precision="0" />
+    <Property Name="Info" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="ServerID" Type="Int32" />
+    <Property Name="Authority" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="REGISTRY_SACL">
+    <Key>
+      <PropertyRef Name="ObjectSID" />
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ServerFqdn" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="ServerSID" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="ObjectSID" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Timestamp" Type="DateTime" Precision="0" />
+    <Property Name="Info" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Access" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="AccessType" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="IsInherited" Type="Boolean" />
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="ServerID" Type="Int32" />
+    <Property Name="Authority" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="RODC_DATA">
+    <Key>
+      <PropertyRef Name="Name" />
+      <PropertyRef Name="SamAccountName" />
+      <PropertyRef Name="Authority" />
+      <PropertyRef Name="Sid" />
+    </Key>
+    <Property Name="Name" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="SamAccountName" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="DistinguishedName" Type="String" MaxLength="2048" FixedLength="false" Unicode="true" />
+    <Property Name="Authority" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Sid" Type="String" MaxLength="64" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ManagedBy" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="PropertyName" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="PropertyValue" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="SCHEMA_DACL">
+    <Key>
+      <PropertyRef Name="ObjectSID" />
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ServerFqdn" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="ServerSID" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="ObjectSID" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Timestamp" Type="DateTime" Precision="0" />
+    <Property Name="Info" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="AccessType" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="IsInherited" Type="Boolean" />
+    <Property Name="Access" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="ServerID" Type="Int32" />
+    <Property Name="Authority" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="SERVER_INFO">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="ServerFqdn" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="ServerSID" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="ServerGUID" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Timestamp" Type="DateTime" Precision="0" />
+    <Property Name="Authority" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="DomainNetbiosName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="SamAccountName" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="SERVICE">
+    <Key>
+      <PropertyRef Name="ObjectSID" />
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ServerFqdn" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="ServerSID" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="ObjectSID" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Timestamp" Type="DateTime" Precision="0" />
+    <Property Name="Info" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="ServerID" Type="Int32" />
+    <Property Name="Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Authority" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="SHARE_CONTENT_DACL">
+    <Key>
+      <PropertyRef Name="ObjectSID" />
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ServerFqdn" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="ServerSID" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="ObjectSID" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Timestamp" Type="DateTime" Precision="0" />
+    <Property Name="Info" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Access" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="LastAccessTime" Type="DateTime" Precision="0" />
+    <Property Name="AccessType" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="IsInherited" Type="Boolean" />
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="ServerID" Type="Int32" />
+    <Property Name="Authority" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="Owner" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="OwnerIsWellKnown" Type="Boolean" />
+    <Property Name="OwnerRightsPresent" Type="Boolean" />
+    <Property Name="Size" Type="Int64" />
+    <Property Name="Ext" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="SHARE_CONTENT_SACL">
+    <Key>
+      <PropertyRef Name="ObjectSID" />
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ServerFqdn" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="ServerSID" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="ObjectSID" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Timestamp" Type="DateTime" Precision="0" />
+    <Property Name="Info" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Access" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="LastAccessTime" Type="DateTime" Precision="0" />
+    <Property Name="AccessType" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="IsInherited" Type="Boolean" />
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="ServerID" Type="Int32" />
+    <Property Name="Authority" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="SHARE_DACL">
+    <Key>
+      <PropertyRef Name="ObjectSID" />
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ServerFqdn" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="ServerSID" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="ObjectSID" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Timestamp" Type="DateTime" Precision="0" />
+    <Property Name="Info" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Access" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="LastAccessTime" Type="DateTime" Precision="0" />
+    <Property Name="AccessType" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="IsInherited" Type="Boolean" />
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="ServerID" Type="Int32" />
+    <Property Name="Authority" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="SID_HISTORY">
+    <Key>
+      <PropertyRef Name="ObjectSID" />
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ServerFqdn" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="ServerSID" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="ObjectSID" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Timestamp" Type="DateTime" Precision="0" />
+    <Property Name="Info" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ObjectDN" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="SIDHistory" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="ServerID" Type="Int32" />
+    <Property Name="Authority" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="SidHistory">
+    <Key>
+      <PropertyRef Name="TrusteeId" />
+      <PropertyRef Name="OldSid" />
+    </Key>
+    <Property Name="TrusteeId" Type="Int32" Nullable="false" />
+    <Property Name="OldSid" Type="String" MaxLength="64" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SIGNED_DRIVERS">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="ServerFqdn" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="ServerSID" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="DeviceName" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="InfName" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="IsSigned" Type="Boolean" />
+    <Property Name="Manufacturer" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="Timestamp" Type="DateTime" Precision="0" />
+    <Property Name="ServerID" Type="Int32" />
+    <Property Name="Authority" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="SOFTWARE">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ServerFqdn" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="ServerSID" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="DisplayName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Publisher" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="InstallLocation" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="InstallDate" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="Timestamp" Type="DateTime" Precision="0" />
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="ServerID" Type="Int32" />
+    <Property Name="Authority" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="SP_Principals">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Guid" Nullable="false" />
+    <Property Name="GID" Type="Int32" />
+    <Property Name="ParentID" Type="Guid" />
+    <Property Name="Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="DisplayName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="SID" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="TrusteeID" Type="Int32" />
+    <Property Name="LoginName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ObjectType" Type="Int32" />
+    <Property Name="ParentPrincipalID" Type="Guid" />
+    <Property Name="IsDirectSiteAdmin" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="SP_PrincipalsAssignments">
+    <Key>
+      <PropertyRef Name="Principals_ID" />
+      <PropertyRef Name="RoleAssignments_ID" />
+    </Key>
+    <Property Name="Principals_ID" Type="Guid" Nullable="false" />
+    <Property Name="RoleAssignments_ID" Type="Guid" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SP_PrincipalsPrincipals">
+    <Key>
+      <PropertyRef Name="SPPrincipal_ID_1" />
+      <PropertyRef Name="SPPrincipal_ID_2" />
+    </Key>
+    <Property Name="SPPrincipal_ID_1" Type="Guid" Nullable="false" />
+    <Property Name="SPPrincipal_ID_2" Type="Guid" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SP_RoleAssignments">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Guid" Nullable="false" />
+    <Property Name="ParentID" Type="Guid" />
+    <Property Name="RolesPrincipals" Type="Guid" />
+  </EntityType>
+  <EntityType Name="SP_RoleBindings">
+    <Key>
+      <PropertyRef Name="RoleAssignments_ID" />
+      <PropertyRef Name="RoleDefinitions_ID" />
+    </Key>
+    <Property Name="RoleAssignments_ID" Type="Guid" Nullable="false" />
+    <Property Name="RoleDefinitions_ID" Type="Guid" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SP_RoleDefinitions">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Guid" Nullable="false" />
+    <Property Name="GID" Type="Int32" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ParentID" Type="Guid" />
+    <Property Name="RightsMask" Type="Int32" />
+  </EntityType>
+  <EntityType Name="SP_Scopes">
+    <Key>
+      <PropertyRef Name="ID" />
+      <PropertyRef Name="ObjectType" />
+      <PropertyRef Name="HasUniqueRoleAssignments" />
+    </Key>
+    <Property Name="ID" Type="Guid" Nullable="false" />
+    <Property Name="ParentID" Type="Guid" />
+    <Property Name="ObjectType" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Url" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="SiteID" Type="Guid" />
+    <Property Name="HasUniqueRoleAssignments" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SP_ScopesAssignments">
+    <Key>
+      <PropertyRef Name="RoleAssignments_ID" />
+      <PropertyRef Name="Scopes_ID" />
+    </Key>
+    <Property Name="RoleAssignments_ID" Type="Guid" Nullable="false" />
+    <Property Name="Scopes_ID" Type="Guid" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SPN">
+    <Key>
+      <PropertyRef Name="PasswordNeverExpires" />
+      <PropertyRef Name="UserCannotChangePassword" />
+      <PropertyRef Name="Expr1" />
+      <PropertyRef Name="Authority" />
+      <PropertyRef Name="Sid" />
+      <PropertyRef Name="Name" />
+      <PropertyRef Name="SamAccountName" />
+      <PropertyRef Name="ModifiedDate" />
+    </Key>
+    <Property Name="Enabled" Type="Boolean" />
+    <Property Name="FirstName" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="LastName" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="LastPasswordSet" Type="DateTime" Precision="0" />
+    <Property Name="LastLogon" Type="DateTime" Precision="0" />
+    <Property Name="PasswordNeverExpires" Type="Boolean" Nullable="false" />
+    <Property Name="UserCannotChangePassword" Type="Boolean" Nullable="false" />
+    <Property Name="ExchMasterAccountSid" Type="String" MaxLength="64" FixedLength="false" Unicode="false" />
+    <Property Name="UPN" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="UAC" Type="Int32" />
+    <Property Name="BadPasswordTime" Type="DateTime" Precision="0" />
+    <Property Name="AccountExpires" Type="DateTime" Precision="0" />
+    <Property Name="AllowedToDelegateTo" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="KeyVersionNumber" Type="Int32" />
+    <Property Name="Expr1" Type="Int32" Nullable="false" />
+    <Property Name="Authority" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Sid" Type="String" MaxLength="64" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="SamAccountName" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ObjectClass" Type="String" MaxLength="64" FixedLength="false" Unicode="true" />
+    <Property Name="DisplayName" Type="String" MaxLength="2048" FixedLength="false" Unicode="true" />
+    <Property Name="Description" Type="String" MaxLength="2048" FixedLength="false" Unicode="true" />
+    <Property Name="DistinguishedName" Type="String" MaxLength="2048" FixedLength="false" Unicode="true" />
+    <Property Name="ModifiedDate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="WhenCreated" Type="DateTime" Precision="0" />
+    <Property Name="WhenChanged" Type="DateTime" Precision="0" />
+    <Property Name="SPN1" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="SqlDatabaseObject">
+    <Key>
+      <PropertyRef Name="SqlDatabaseId" />
+      <PropertyRef Name="ObjectId" />
+      <PropertyRef Name="SchemaName" />
+      <PropertyRef Name="Name" />
+      <PropertyRef Name="Type" />
+      <PropertyRef Name="CreateDate" />
+      <PropertyRef Name="ModifyDate" />
+    </Key>
+    <Property Name="SqlDatabaseId" Type="Int32" Nullable="false" />
+    <Property Name="ObjectId" Type="Int32" Nullable="false" />
+    <Property Name="SchemaName" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Type" Type="String" MaxLength="64" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CreateDate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="ModifyDate" Type="DateTime" Nullable="false" Precision="0" />
+  </EntityType>
+  <EntityType Name="SqlDatabasePermission">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="SqlDatabaseId" />
+      <PropertyRef Name="Class" />
+      <PropertyRef Name="MajorId" />
+      <PropertyRef Name="MinorId" />
+      <PropertyRef Name="GranteeId" />
+      <PropertyRef Name="GrantorId" />
+      <PropertyRef Name="Type" />
+      <PropertyRef Name="State" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="SqlDatabaseId" Type="Int32" Nullable="false" />
+    <Property Name="Class" Type="String" MaxLength="64" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="MajorId" Type="Int32" Nullable="false" />
+    <Property Name="MinorId" Type="Int32" Nullable="false" />
+    <Property Name="GranteeId" Type="Int32" Nullable="false" />
+    <Property Name="GrantorId" Type="Int32" Nullable="false" />
+    <Property Name="Type" Type="String" MaxLength="64" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="State" Type="String" MaxLength="64" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SqlDatabasePrincipal">
+    <Key>
+      <PropertyRef Name="SqlDatabaseId" />
+      <PropertyRef Name="SqlPrincipalId" />
+      <PropertyRef Name="Name" />
+      <PropertyRef Name="Type" />
+      <PropertyRef Name="IsFixedRole" />
+      <PropertyRef Name="CreateDate" />
+      <PropertyRef Name="ModifyDate" />
+    </Key>
+    <Property Name="SqlDatabaseId" Type="Int32" Nullable="false" />
+    <Property Name="SqlPrincipalId" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="SqlSid" Type="Binary" MaxLength="85" FixedLength="false" />
+    <Property Name="TrusteeId" Type="Int32" />
+    <Property Name="Type" Type="String" MaxLength="64" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="DefaultSchemaName" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="IsFixedRole" Type="Boolean" Nullable="false" />
+    <Property Name="CreateDate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="ModifyDate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="IsExpanded" Type="Boolean" />
+    <Property Name="IsBusy" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="SqlDatabaseRoleExpandedMember">
+    <Key>
+      <PropertyRef Name="SqlDatabaseId" />
+      <PropertyRef Name="RoleId" />
+      <PropertyRef Name="MemberId" />
+    </Key>
+    <Property Name="SqlDatabaseId" Type="Int32" Nullable="false" />
+    <Property Name="RoleId" Type="Int32" Nullable="false" />
+    <Property Name="MemberId" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SqlDatabaseRoleMember">
+    <Key>
+      <PropertyRef Name="SqlDatabaseId" />
+      <PropertyRef Name="RoleId" />
+      <PropertyRef Name="MemberId" />
+    </Key>
+    <Property Name="SqlDatabaseId" Type="Int32" Nullable="false" />
+    <Property Name="RoleId" Type="Int32" Nullable="false" />
+    <Property Name="MemberId" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SqlDatabas">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="SqlInstanceId" />
+      <PropertyRef Name="Name" />
+      <PropertyRef Name="OwnerSqlSid" />
+      <PropertyRef Name="State" />
+      <PropertyRef Name="CollationName" />
+      <PropertyRef Name="RecoveryMode" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="SqlInstanceId" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="OwnerSqlSid" Type="Binary" MaxLength="85" FixedLength="false" Nullable="false" />
+    <Property Name="OwnerTrusteeId" Type="Int32" />
+    <Property Name="State" Type="String" MaxLength="64" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CollationName" Type="String" MaxLength="60" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="RecoveryMode" Type="String" MaxLength="60" FixedLength="false" Unicode="true" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SqlInstancePermission">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="SqlInstanceId" />
+      <PropertyRef Name="Class" />
+      <PropertyRef Name="MajorId" />
+      <PropertyRef Name="MinorId" />
+      <PropertyRef Name="GranteeId" />
+      <PropertyRef Name="GrantorId" />
+      <PropertyRef Name="Type" />
+      <PropertyRef Name="State" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="SqlInstanceId" Type="Int32" Nullable="false" />
+    <Property Name="Class" Type="String" MaxLength="64" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="MajorId" Type="Int32" Nullable="false" />
+    <Property Name="MinorId" Type="Int32" Nullable="false" />
+    <Property Name="GranteeId" Type="Int32" Nullable="false" />
+    <Property Name="GrantorId" Type="Int32" Nullable="false" />
+    <Property Name="Type" Type="String" MaxLength="64" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="State" Type="String" MaxLength="64" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SqlInstancePrincipal">
+    <Key>
+      <PropertyRef Name="SqlInstanceId" />
+      <PropertyRef Name="SqlPrincipalId" />
+      <PropertyRef Name="Name" />
+      <PropertyRef Name="SqlSid" />
+      <PropertyRef Name="Type" />
+      <PropertyRef Name="Disabled" />
+      <PropertyRef Name="CreateDate" />
+      <PropertyRef Name="ModifyDate" />
+    </Key>
+    <Property Name="SqlInstanceId" Type="Int32" Nullable="false" />
+    <Property Name="SqlPrincipalId" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="SqlSid" Type="Binary" MaxLength="85" FixedLength="false" Nullable="false" />
+    <Property Name="TrusteeId" Type="Int32" />
+    <Property Name="Type" Type="String" MaxLength="64" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Disabled" Type="Int32" Nullable="false" />
+    <Property Name="CreateDate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="ModifyDate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="IsExpanded" Type="Boolean" />
+    <Property Name="IsBusy" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="SqlInstanceRoleExpandedMember">
+    <Key>
+      <PropertyRef Name="SqlInstanceId" />
+      <PropertyRef Name="RoleId" />
+      <PropertyRef Name="MemberId" />
+    </Key>
+    <Property Name="SqlInstanceId" Type="Int32" Nullable="false" />
+    <Property Name="RoleId" Type="Int32" Nullable="false" />
+    <Property Name="MemberId" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SqlInstanceRoleMember">
+    <Key>
+      <PropertyRef Name="SqlInstanceId" />
+      <PropertyRef Name="RoleId" />
+      <PropertyRef Name="MemberId" />
+    </Key>
+    <Property Name="SqlInstanceId" Type="Int32" Nullable="false" />
+    <Property Name="RoleId" Type="Int32" Nullable="false" />
+    <Property Name="MemberId" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SqlInstance">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="Name" />
+      <PropertyRef Name="Server" />
+      <PropertyRef Name="Edition" />
+      <PropertyRef Name="Version" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Server" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Edition" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Version" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SqlTrusteeInfo">
+    <Key>
+      <PropertyRef Name="LoginIsFixedRole" />
+      <PropertyRef Name="IsDbOwner" />
+    </Key>
+    <Property Name="SqlInstanceId" Type="Int32" />
+    <Property Name="InstanceName" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="LoginId" Type="Int32" />
+    <Property Name="LoginSid" Type="Binary" MaxLength="85" FixedLength="false" />
+    <Property Name="LoginName" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="LoginType" Type="String" MaxLength="64" FixedLength="false" Unicode="false" />
+    <Property Name="LoginTrusteeId" Type="Int32" />
+    <Property Name="LoginDisabled" Type="Int32" />
+    <Property Name="LoginIsFixedRole" Type="Int32" Nullable="false" />
+    <Property Name="LoginRoleMemberId" Type="Int32" />
+    <Property Name="LoginRoleMemberSqlId" Type="Binary" MaxLength="85" FixedLength="false" />
+    <Property Name="LoginRoleMemberName" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="LoginRoleMemberTrusteeId" Type="Int32" />
+    <Property Name="LoginRoleMemberType" Type="String" MaxLength="64" FixedLength="false" Unicode="false" />
+    <Property Name="CanConnectToInstance" Type="Int32" />
+    <Property Name="DenyRevokeConnectToInstance" Type="Int32" />
+    <Property Name="HasControlServer" Type="Int32" />
+    <Property Name="NrInstanceGrants" Type="Int32" />
+    <Property Name="NrInstanceGrantWithOption" Type="Int32" />
+    <Property Name="NrInstanceDenyRevoke" Type="Int32" />
+    <Property Name="SqlDatabaseId" Type="Int32" />
+    <Property Name="DbName" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="OwnerSqlSid" Type="Binary" MaxLength="85" FixedLength="false" />
+    <Property Name="DbUserSqlSid" Type="Binary" MaxLength="85" FixedLength="false" />
+    <Property Name="DbUserId" Type="Int32" />
+    <Property Name="DbUserName" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="DbUserType" Type="String" MaxLength="64" FixedLength="false" Unicode="false" />
+    <Property Name="DbUserTrusteeId" Type="Int32" />
+    <Property Name="DbUserIsFixedRole" Type="Boolean" />
+    <Property Name="DbUserRoleMemberId" Type="Int32" />
+    <Property Name="DbUserRoleMemberSqlId" Type="Binary" MaxLength="85" FixedLength="false" />
+    <Property Name="DbUserRoleMemberName" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="DbUserRoleMemberTrusteeId" Type="Int32" />
+    <Property Name="DbUserRoleMemberType" Type="String" MaxLength="64" FixedLength="false" Unicode="false" />
+    <Property Name="CanConnectToDb" Type="Int32" />
+    <Property Name="DenyRevokeConnectToDb" Type="Int32" />
+    <Property Name="NrDbGrants" Type="Int32" />
+    <Property Name="NrDbGrantWithOption" Type="Int32" />
+    <Property Name="NrDbDenyRevoke" Type="Int32" />
+    <Property Name="IsDbOwner" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SqlTrusteeInfoAdExpanded">
+    <Key>
+      <PropertyRef Name="LoginIsFixedRole" />
+      <PropertyRef Name="IsDbOwner" />
+    </Key>
+    <Property Name="SqlInstanceId" Type="Int32" />
+    <Property Name="InstanceName" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="LoginId" Type="Int32" />
+    <Property Name="LoginSid" Type="Binary" MaxLength="85" FixedLength="false" />
+    <Property Name="LoginName" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="LoginType" Type="String" MaxLength="64" FixedLength="false" Unicode="false" />
+    <Property Name="LoginTrusteeId" Type="Int32" />
+    <Property Name="LoginDisabled" Type="Int32" />
+    <Property Name="LoginIsFixedRole" Type="Int32" Nullable="false" />
+    <Property Name="LoginRoleMemberId" Type="Int32" />
+    <Property Name="LoginRoleMemberSqlId" Type="Binary" MaxLength="85" FixedLength="false" />
+    <Property Name="LoginRoleMemberName" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="LoginRoleMemberTrusteeId" Type="Int32" />
+    <Property Name="LoginRoleMemberType" Type="String" MaxLength="64" FixedLength="false" Unicode="false" />
+    <Property Name="CanConnectToInstance" Type="Int32" />
+    <Property Name="DenyRevokeConnectToInstance" Type="Int32" />
+    <Property Name="HasControlServer" Type="Int32" />
+    <Property Name="NrInstanceGrants" Type="Int32" />
+    <Property Name="NrInstanceGrantWithOption" Type="Int32" />
+    <Property Name="NrInstanceDenyRevoke" Type="Int32" />
+    <Property Name="SqlDatabaseId" Type="Int32" />
+    <Property Name="DbName" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="OwnerSqlSid" Type="Binary" MaxLength="85" FixedLength="false" />
+    <Property Name="DbUserSqlSid" Type="Binary" MaxLength="85" FixedLength="false" />
+    <Property Name="DbUserId" Type="Int32" />
+    <Property Name="DbUserName" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="DbUserType" Type="String" MaxLength="64" FixedLength="false" Unicode="false" />
+    <Property Name="DbUserTrusteeId" Type="Int32" />
+    <Property Name="DbUserIsFixedRole" Type="Boolean" />
+    <Property Name="DbUserRoleMemberId" Type="Int32" />
+    <Property Name="DbUserRoleMemberSqlId" Type="Binary" MaxLength="85" FixedLength="false" />
+    <Property Name="DbUserRoleMemberName" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="DbUserRoleMemberTrusteeId" Type="Int32" />
+    <Property Name="DbUserRoleMemberType" Type="String" MaxLength="64" FixedLength="false" Unicode="false" />
+    <Property Name="CanConnectToDb" Type="Int32" />
+    <Property Name="DenyRevokeConnectToDb" Type="Int32" />
+    <Property Name="NrDbGrants" Type="Int32" />
+    <Property Name="NrDbGrantWithOption" Type="Int32" />
+    <Property Name="NrDbDenyRevoke" Type="Int32" />
+    <Property Name="IsDbOwner" Type="Int32" Nullable="false" />
+    <Property Name="AdUserId" Type="Int32" />
+    <Property Name="AdUserAuthority" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="AdUserSid" Type="String" MaxLength="64" FixedLength="false" Unicode="false" />
+    <Property Name="AdUserName" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="AdUserSamAccountName" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="AdUserObjectClass" Type="String" MaxLength="64" FixedLength="false" Unicode="true" />
+    <Property Name="AdUserDisplayName" Type="String" MaxLength="2048" FixedLength="false" Unicode="true" />
+    <Property Name="AdUserDescription" Type="String" MaxLength="2048" FixedLength="false" Unicode="true" />
+    <Property Name="AdUserDistinguishedName" Type="String" MaxLength="2048" FixedLength="false" Unicode="true" />
+    <Property Name="AdUserModifiedDate" Type="DateTime" Precision="0" />
+    <Property Name="AdUserEnabled" Type="Boolean" />
+    <Property Name="AdUserFirstName" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="AdUserLastName" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="AdUserLastPasswordSet" Type="DateTime" Precision="0" />
+    <Property Name="AdUserLastLogon" Type="DateTime" Precision="0" />
+    <Property Name="AdUserPasswordNeverExpires" Type="Boolean" />
+    <Property Name="AdUserUserCannotChangePassword" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="T_AD_CONFIG">
+    <Key>
+      <PropertyRef Name="ObjectSID" />
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ObjectSID" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Timestamp" Type="DateTime" Precision="0" />
+    <Property Name="Info" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Access" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="AccessType" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="IsInherited" Type="Boolean" />
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="ServerID" Type="Int32" />
+    <Property Name="Owner" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="OwnerIsWellKnown" Type="Boolean" />
+    <Property Name="OwnerRightsPresent" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="T_AD_DOMAIN_ROOT">
+    <Key>
+      <PropertyRef Name="ObjectSID" />
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ObjectSID" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Timestamp" Type="DateTime" Precision="0" />
+    <Property Name="Info" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="AccessType" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="Access" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="IsInherited" Type="Boolean" />
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="ServerID" Type="Int32" />
+    <Property Name="Owner" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="OwnerIsWellKnown" Type="Boolean" />
+    <Property Name="OwnerRightsPresent" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="T_AD_OBJECT_ACCESS">
+    <Key>
+      <PropertyRef Name="ObjectSID" />
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ObjectSID" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Timestamp" Type="DateTime" Precision="0" />
+    <Property Name="Info" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Access" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="AccessType" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="IsInherited" Type="Boolean" />
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="ServerID" Type="Int32" />
+    <Property Name="Owner" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="OwnerIsWellKnown" Type="Boolean" />
+    <Property Name="OwnerRightsPresent" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="T_AD_OBJECT_AUDIT">
+    <Key>
+      <PropertyRef Name="ObjectSID" />
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ObjectSID" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Timestamp" Type="DateTime" Precision="0" />
+    <Property Name="Info" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Access" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="AccessType" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="IsInherited" Type="Boolean" />
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="ServerID" Type="Int32" />
+  </EntityType>
+  <EntityType Name="T_ADMIN_COUNT">
+    <Key>
+      <PropertyRef Name="ObjectSID" />
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="Info" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Timestamp" Type="DateTime" Precision="0" />
+    <Property Name="CanBeDelegated" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ObjectSID" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="ServerID" Type="Int32" />
+  </EntityType>
+  <EntityType Name="T_ADMIN_SDHOLDER">
+    <Key>
+      <PropertyRef Name="ObjectSID" />
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ObjectSID" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Timestamp" Type="DateTime" Precision="0" />
+    <Property Name="Info" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="AccessType" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="Access" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="IsInherited" Type="Boolean" />
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="ServerID" Type="Int32" />
+    <Property Name="Owner" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="OwnerIsWellKnown" Type="Boolean" />
+    <Property Name="OwnerRightsPresent" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="T_ALL_DRIVERS">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="ModuleName" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="DisplayName" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="DriverType" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="State" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="LinkDate" Type="DateTime" Precision="0" />
+    <Property Name="Path" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Timestamp" Type="DateTime" Precision="0" />
+    <Property Name="ServerID" Type="Int32" />
+  </EntityType>
+  <EntityType Name="T_AZURE_DIRECTORY_ROLES">
+    <Key>
+      <PropertyRef Name="ObjectSid" />
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="TenantName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Role" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Info" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="RoleMemberTpe" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ObjectSid" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Timestamp" Type="DateTime" Precision="0" />
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="ServerID" Type="Int32" />
+  </EntityType>
+  <EntityType Name="T_CA">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="CAPermissions" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="SID" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Timestamp" Type="DateTime" Precision="0" />
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="ServerID" Type="Int32" />
+  </EntityType>
+  <EntityType Name="T_CA_ENROLLMENT_RIGHTS">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="Officer" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Users" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ACEType" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Template" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Timestamp" Type="DateTime" Precision="0" />
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="ServerID" Type="Int32" />
+  </EntityType>
+  <EntityType Name="T_CA_MANAGER_RIGHTS">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="Officer" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Users" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ACEType" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Template" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Timestamp" Type="DateTime" Precision="0" />
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="ServerID" Type="Int32" />
+  </EntityType>
+  <EntityType Name="T_DCOM_DACL">
+    <Key>
+      <PropertyRef Name="ObjectSID" />
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ObjectSID" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Timestamp" Type="DateTime" Precision="0" />
+    <Property Name="Info" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="ServerID" Type="Int32" />
+    <Property Name="Access" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="AccessType" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="T_DIAGNOSTICS">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="OpId" />
+      <PropertyRef Name="OpName" />
+      <PropertyRef Name="Timestamp" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="OpId" Type="Guid" Nullable="false" />
+    <Property Name="OpName" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Timestamp" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="N1" Type="Int32" />
+    <Property Name="N2" Type="Int32" />
+    <Property Name="N3" Type="Int32" />
+    <Property Name="N4" Type="Int32" />
+    <Property Name="N5" Type="Int32" />
+    <Property Name="S1" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="S2" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="S3" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="S4" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="S5" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="OpStep" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="N6" Type="Int32" />
+    <Property Name="N7" Type="Int32" />
+    <Property Name="N8" Type="Int32" />
+    <Property Name="N9" Type="Int32" />
+    <Property Name="N10" Type="Int32" />
+    <Property Name="S6" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="S7" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="S8" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="S9" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="S10" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="T_EMPTY_GROUPS">
+    <Key>
+      <PropertyRef Name="ObjectSID" />
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ObjectSID" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Timestamp" Type="DateTime" Precision="0" />
+    <Property Name="Info" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="ServerID" Type="Int32" />
+  </EntityType>
+  <EntityType Name="T_EVENT_4663_LOG">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="TimeCreated" Type="DateTime" Precision="0" />
+    <Property Name="SubjectUserSid" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="SubjectUserName" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="SubjectDomainName" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="SubjectLogonId" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="ObjectServer" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="ObjectType" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="ObjectName" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="HandleId" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="AccessList" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="AccessMask" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="ProcessId" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="ProcessName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ResourceAttributes" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="Timestamp" Type="DateTime" Precision="0" />
+    <Property Name="ServerId" Type="Int32" />
+  </EntityType>
+  <EntityType Name="T_EXCHANGE_DACL">
+    <Key>
+      <PropertyRef Name="ObjectSID" />
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ObjectSID" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Timestamp" Type="DateTime" Precision="0" />
+    <Property Name="Info" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="ServerID" Type="Int32" />
+  </EntityType>
+  <EntityType Name="T_EXCHANGE_MAILBOX">
+    <Key>
+      <PropertyRef Name="ObjectSID" />
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ObjectSID" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Timestamp" Type="DateTime" Precision="0" />
+    <Property Name="Info" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="ServerID" Type="Int32" />
+  </EntityType>
+  <EntityType Name="T_FILE_ASSOC">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="Ext" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="FileType" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="Timestamp" Type="DateTime" Precision="0" />
+    <Property Name="ServerID" Type="Int32" />
+  </EntityType>
+  <EntityType Name="T_FILES_DACL">
+    <Key>
+      <PropertyRef Name="ObjectSID" />
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ObjectSID" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Timestamp" Type="DateTime" Precision="0" />
+    <Property Name="Info" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="LastAccessTime" Type="DateTime" Precision="0" />
+    <Property Name="Access" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="AccessType" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="IsInherited" Type="Boolean" />
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="ServerID" Type="Int32" />
+    <Property Name="Owner" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="OwnerIsWellKnown" Type="Boolean" />
+    <Property Name="OwnerRightsPresent" Type="Boolean" />
+    <Property Name="Size" Type="Int64" />
+    <Property Name="Ext" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="T_FILES_SACL">
+    <Key>
+      <PropertyRef Name="ObjectSID" />
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ObjectSID" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Timestamp" Type="DateTime" Precision="0" />
+    <Property Name="Info" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="LastAccessTime" Type="DateTime" Precision="0" />
+    <Property Name="Access" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="AccessType" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="IsInherited" Type="Boolean" />
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="ServerID" Type="Int32" />
+  </EntityType>
+  <EntityType Name="T_FOLDERS_DACL">
+    <Key>
+      <PropertyRef Name="ObjectSID" />
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ObjectSID" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Timestamp" Type="DateTime" Precision="0" />
+    <Property Name="Info" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="LastAccessTime" Type="DateTime" Precision="0" />
+    <Property Name="Access" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="AccessType" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="IsInherited" Type="Boolean" />
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="ServerID" Type="Int32" />
+    <Property Name="Owner" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="OwnerIsWellKnown" Type="Boolean" />
+    <Property Name="OwnerRightsPresent" Type="Boolean" />
+    <Property Name="Size" Type="Int64" />
+  </EntityType>
+  <EntityType Name="T_FOLDERS_SACL">
+    <Key>
+      <PropertyRef Name="ObjectSID" />
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ObjectSID" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Timestamp" Type="DateTime" Precision="0" />
+    <Property Name="Info" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="LastAccessTime" Type="DateTime" Precision="0" />
+    <Property Name="Access" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="AccessType" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="IsInherited" Type="Boolean" />
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="ServerID" Type="Int32" />
+  </EntityType>
+  <EntityType Name="T_GLB_GROUP_COUNT">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="GroupDN" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="GroupScope" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="GroupCount" Type="Int32" />
+    <Property Name="GlobalCount" Type="Int32" />
+    <Property Name="LocalCount" Type="Int32" />
+    <Property Name="UniversalCount" Type="Int32" />
+    <Property Name="SIDHistoryCount" Type="Int32" />
+    <Property Name="EstTokenSize" Type="Int32" />
+    <Property Name="LoopDetected" Type="Boolean" />
+    <Property Name="LoopDetectedOn" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ServerID" Type="Int32" />
+    <Property Name="Timestamp" Type="DateTime" Precision="0" />
+  </EntityType>
+  <EntityType Name="T_GPO">
+    <Key>
+      <PropertyRef Name="ObjectSID" />
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ObjectSID" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Timestamp" Type="DateTime" Precision="0" />
+    <Property Name="Info" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="AccessType" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="Access" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="IsInherited" Type="Boolean" />
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="ServerID" Type="Int32" />
+    <Property Name="Owner" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="OwnerIsWellKnown" Type="Boolean" />
+    <Property Name="OwnerRightsPresent" Type="Boolean" />
+    <Property Name="GPOGUID" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="LinkedTo" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="T_GPO_PREFS">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="GPOIdentifier" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="GPOName" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="DomainName" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="Scope" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="Action" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="GroupName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="UserName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="NewName" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="GroupSID" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="Setting" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Member" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="MemberSID" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="MemberAction" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Filter" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="LinksTo" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="FilterName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="FilterQuery" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ApplyGPOTo" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ApplyGPOToSID" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Timestamp" Type="DateTime" Precision="0" />
+    <Property Name="ServerID" Type="Int32" />
+  </EntityType>
+  <EntityType Name="T_GPO_RESTRICTED_GROUPS">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="GPOIdentifier" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="GPOName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="DomainName" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="GroupName" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="GroupNameSID" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="Member" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="MemberSID" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="MemberOf" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="MemberOfSID" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="LinksTo" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="FilterName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="FilterQuery" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ApplyGPOTo" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ApplyGPOToSID" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Timestamp" Type="DateTime" Precision="0" />
+    <Property Name="ServerID" Type="Int32" />
+  </EntityType>
+  <EntityType Name="T_KRBTGT_ATTRIBUTES">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="SID" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="Authority" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="msDS_KrbTgtLinkBl" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="T_LAST_LOGOFF">
+    <Key>
+      <PropertyRef Name="ObjectSID" />
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ObjectSID" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Timestamp" Type="DateTime" Precision="0" />
+    <Property Name="Info" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="ServerID" Type="Int32" />
+  </EntityType>
+  <EntityType Name="T_LOC_FIREWALL_RULES">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="Timestamp" Type="DateTime" Precision="0" />
+    <Property Name="RuleName" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Enabled" Type="Boolean" />
+    <Property Name="Direction" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Profiles" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="Grouping" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="LocalIP" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="RemoteIP" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="Protocol" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="LocalPort" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="RemotePort" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="EdgeTraversal" Type="Boolean" />
+    <Property Name="Program" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="Service" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="InterfaceTypes" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="Security" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="RuleSource" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="Action" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="ServerID" Type="Int32" />
+  </EntityType>
+  <EntityType Name="T_LOCAL_GROUPS">
+    <Key>
+      <PropertyRef Name="ObjectSID" />
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ObjectSID" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Timestamp" Type="DateTime" Precision="0" />
+    <Property Name="Info" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="ServerID" Type="Int32" />
+    <Property Name="GroupSID" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="T_LOCAL_SIDS">
+    <Key>
+      <PropertyRef Name="ObjectSID" />
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ObjectSID" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Timestamp" Type="DateTime" Precision="0" />
+    <Property Name="Info" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="ServerID" Type="Int32" />
+  </EntityType>
+  <EntityType Name="T_NTFS_DACL">
+    <Key>
+      <PropertyRef Name="ObjectSID" />
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ObjectSID" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Timestamp" Type="DateTime" Precision="0" />
+    <Property Name="Info" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="LastAccessTime" Type="DateTime" Precision="0" />
+    <Property Name="Access" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="AccessType" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="IsInherited" Type="Boolean" />
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="ServerID" Type="Int32" />
+    <Property Name="Owner" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="OwnerIsWellKnown" Type="Boolean" />
+    <Property Name="OwnerRightsPresent" Type="Boolean" />
+    <Property Name="Size" Type="Int64" />
+    <Property Name="Ext" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="T_NTFS_SACL">
+    <Key>
+      <PropertyRef Name="ObjectSID" />
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ObjectSID" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Timestamp" Type="DateTime" Precision="0" />
+    <Property Name="Info" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="LastAccessTime" Type="DateTime" Precision="0" />
+    <Property Name="Access" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="AccessType" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="IsInherited" Type="Boolean" />
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="ServerID" Type="Int32" />
+  </EntityType>
+  <EntityType Name="T_PRE_WINDOWS_2000">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="DN" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="SID" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="ObjectClass" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ServerID" Type="Int32" />
+    <Property Name="Timestamp" Type="DateTime" Precision="0" />
+  </EntityType>
+  <EntityType Name="T_PROCESS_INFO">
+    <Key>
+      <PropertyRef Name="ObjectSID" />
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ObjectSID" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Timestamp" Type="DateTime" Precision="0" />
+    <Property Name="Info" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="ServerID" Type="Int32" />
+  </EntityType>
+  <EntityType Name="T_REGISTRY_DACL">
+    <Key>
+      <PropertyRef Name="ObjectSID" />
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ObjectSID" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Timestamp" Type="DateTime" Precision="0" />
+    <Property Name="Info" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Access" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="AccessType" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="IsInherited" Type="Boolean" />
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="ServerID" Type="Int32" />
+    <Property Name="Owner" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="OwnerIsWellKnown" Type="Boolean" />
+    <Property Name="OwnerRightsPresent" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="T_REGISTRY_LAST_LOGOFF">
+    <Key>
+      <PropertyRef Name="ObjectSID" />
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ObjectSID" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Timestamp" Type="DateTime" Precision="0" />
+    <Property Name="Info" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="ServerID" Type="Int32" />
+  </EntityType>
+  <EntityType Name="T_REGISTRY_PROFILES">
+    <Key>
+      <PropertyRef Name="ObjectSID" />
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ObjectSID" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Timestamp" Type="DateTime" Precision="0" />
+    <Property Name="Info" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="ServerID" Type="Int32" />
+  </EntityType>
+  <EntityType Name="T_REGISTRY_SACL">
+    <Key>
+      <PropertyRef Name="ObjectSID" />
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ObjectSID" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Timestamp" Type="DateTime" Precision="0" />
+    <Property Name="Info" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Access" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="AccessType" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="IsInherited" Type="Boolean" />
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="ServerID" Type="Int32" />
+  </EntityType>
+  <EntityType Name="T_RODC_DATA">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="SID" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="ManagedBy" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="PropertyName" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="PropertyValue" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="T_SCAN_FILES">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="SessionGUID" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="ObjectType" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Import_Timestamp" Type="DateTime" Precision="0" />
+  </EntityType>
+  <EntityType Name="T_SCAN_SESSIONS">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="SessionGUID" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="ServerFQDN" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="Collection_Timestamp" Type="DateTime" Precision="0" />
+  </EntityType>
+  <EntityType Name="T_SCHEMA_DACL">
+    <Key>
+      <PropertyRef Name="ObjectSID" />
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ObjectSID" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Timestamp" Type="DateTime" Precision="0" />
+    <Property Name="Info" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="AccessType" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="IsInherited" Type="Boolean" />
+    <Property Name="Access" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="ServerID" Type="Int32" />
+  </EntityType>
+  <EntityType Name="T_SERVICE">
+    <Key>
+      <PropertyRef Name="ObjectSID" />
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ObjectSID" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Timestamp" Type="DateTime" Precision="0" />
+    <Property Name="Info" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="ServerID" Type="Int32" />
+    <Property Name="Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="T_SHARE_CONTENT_DACL">
+    <Key>
+      <PropertyRef Name="ObjectSID" />
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ObjectSID" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Timestamp" Type="DateTime" Precision="0" />
+    <Property Name="Info" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Access" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="LastAccessTime" Type="DateTime" Precision="0" />
+    <Property Name="AccessType" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="IsInherited" Type="Boolean" />
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="ServerID" Type="Int32" />
+    <Property Name="Owner" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="OwnerIsWellKnown" Type="Boolean" />
+    <Property Name="OwnerRightsPresent" Type="Boolean" />
+    <Property Name="Size" Type="Int64" />
+    <Property Name="Ext" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="T_SHARE_CONTENT_SACL">
+    <Key>
+      <PropertyRef Name="ObjectSID" />
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ObjectSID" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Timestamp" Type="DateTime" Precision="0" />
+    <Property Name="Info" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Access" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="LastAccessTime" Type="DateTime" Precision="0" />
+    <Property Name="AccessType" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="IsInherited" Type="Boolean" />
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="ServerID" Type="Int32" />
+  </EntityType>
+  <EntityType Name="T_SHARE_DACL">
+    <Key>
+      <PropertyRef Name="ObjectSID" />
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ObjectSID" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Timestamp" Type="DateTime" Precision="0" />
+    <Property Name="Info" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Access" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="LastAccessTime" Type="DateTime" Precision="0" />
+    <Property Name="AccessType" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="IsInherited" Type="Boolean" />
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="ServerID" Type="Int32" />
+  </EntityType>
+  <EntityType Name="T_SID_HISTORY">
+    <Key>
+      <PropertyRef Name="ObjectSID" />
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ObjectSID" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Timestamp" Type="DateTime" Precision="0" />
+    <Property Name="Info" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ObjectDN" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="SIDHistory" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="ServerID" Type="Int32" />
+    <Property Name="SIDHistorySamAccountName" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="SIDHistoryDN" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="IsSameDomain" Type="Boolean" />
+    <Property Name="IsWellKnownSID" Type="Boolean" />
+    <Property Name="WellKnownAccount" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="T_SIGNED_DRIVERS">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="DeviceName" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="InfName" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="IsSigned" Type="Boolean" />
+    <Property Name="Manufacturer" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="Timestamp" Type="DateTime" Precision="0" />
+    <Property Name="ServerID" Type="Int32" />
+  </EntityType>
+  <EntityType Name="T_SOFTWARE">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="DisplayName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Publisher" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="InstallLocation" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="InstallDate" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="Timestamp" Type="DateTime" Precision="0" />
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="ServerID" Type="Int32" />
+  </EntityType>
+  <EntityType Name="T_SPN">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="TrusteeId" Type="Int32" />
+    <Property Name="SPN" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="T_TASKS_DACL">
+    <Key>
+      <PropertyRef Name="ObjectSID" />
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ObjectSID" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Timestamp" Type="DateTime" Precision="0" />
+    <Property Name="Info" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="ServerID" Type="Int32" />
+  </EntityType>
+  <EntityType Name="T_TRUSTS">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="ForestName" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="DomainName" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="TrustName" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="TrustPartner" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="TrustType" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="TrustDirection" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="TrustAttributes" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="SupportedEncryptionTypes" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="TrustSID" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="RecordType" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="DNSName" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="NetBIOS" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="SID" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="Timestamp" Type="DateTime" Precision="0" />
+    <Property Name="ServerID" Type="Int32" />
+  </EntityType>
+  <EntityType Name="T_UNC_FILES_DACL">
+    <Key>
+      <PropertyRef Name="ObjectSID" />
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ObjectSID" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Timestamp" Type="DateTime" Precision="0" />
+    <Property Name="Info" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="LastAccessTime" Type="DateTime" Precision="0" />
+    <Property Name="Access" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="AccessType" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="IsInherited" Type="Boolean" />
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="ServerID" Type="Int32" />
+    <Property Name="Owner" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="OwnerIsWellKnown" Type="Boolean" />
+    <Property Name="OwnerRightsPresent" Type="Boolean" />
+    <Property Name="Size" Type="Int64" />
+    <Property Name="Ext" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="UNCServer" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="UNCShare" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="T_UNC_FILES_SACL">
+    <Key>
+      <PropertyRef Name="ObjectSID" />
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ObjectSID" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Timestamp" Type="DateTime" Precision="0" />
+    <Property Name="Info" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="LastAccessTime" Type="DateTime" Precision="0" />
+    <Property Name="Access" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="AccessType" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="IsInherited" Type="Boolean" />
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="ServerID" Type="Int32" />
+    <Property Name="UNCServer" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="UNCShare" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="T_UNC_FOLDERS_DACL">
+    <Key>
+      <PropertyRef Name="ObjectSID" />
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ObjectSID" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Timestamp" Type="DateTime" Precision="0" />
+    <Property Name="Info" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="LastAccessTime" Type="DateTime" Precision="0" />
+    <Property Name="Access" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="AccessType" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="IsInherited" Type="Boolean" />
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="ServerID" Type="Int32" />
+    <Property Name="Owner" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="OwnerIsWellKnown" Type="Boolean" />
+    <Property Name="OwnerRightsPresent" Type="Boolean" />
+    <Property Name="Size" Type="Int64" />
+    <Property Name="UNCServer" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="UNCShare" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="T_UNC_FOLDERS_SACL">
+    <Key>
+      <PropertyRef Name="ObjectSID" />
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ObjectSID" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Timestamp" Type="DateTime" Precision="0" />
+    <Property Name="Info" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="LastAccessTime" Type="DateTime" Precision="0" />
+    <Property Name="Access" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="AccessType" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="IsInherited" Type="Boolean" />
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="ServerID" Type="Int32" />
+    <Property Name="UNCServer" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="UNCShare" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="T_USER_RIGHTS">
+    <Key>
+      <PropertyRef Name="ObjectSID" />
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ObjectSID" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Timestamp" Type="DateTime" Precision="0" />
+    <Property Name="Info" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="ServerID" Type="Int32" />
+  </EntityType>
+  <EntityType Name="T_USER_TOKENS">
+    <Key>
+      <PropertyRef Name="ObjectSID" />
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="Info" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="SidCount" Type="Int32" />
+    <Property Name="Timestamp" Type="DateTime" Precision="0" />
+    <Property Name="CanBeDelegated" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ObjectSID" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="ServerID" Type="Int32" />
+  </EntityType>
+  <EntityType Name="T_WMI_DACL">
+    <Key>
+      <PropertyRef Name="ObjectSID" />
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ObjectSID" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Timestamp" Type="DateTime" Precision="0" />
+    <Property Name="Info" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Access" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="AccessType" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="ServerID" Type="Int32" />
+    <Property Name="Owner" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="OwnerIsWellKnown" Type="Boolean" />
+    <Property Name="OwnerRightsPresent" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="TASKS_DACL">
+    <Key>
+      <PropertyRef Name="ObjectSID" />
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ServerFqdn" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="ServerSID" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="ObjectSID" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Timestamp" Type="DateTime" Precision="0" />
+    <Property Name="Info" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="ServerID" Type="Int32" />
+    <Property Name="Authority" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Trustee">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="Authority" />
+      <PropertyRef Name="Sid" />
+      <PropertyRef Name="Name" />
+      <PropertyRef Name="SamAccountName" />
+      <PropertyRef Name="ModifiedDate" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="Authority" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Sid" Type="String" MaxLength="64" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="SamAccountName" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ObjectClass" Type="String" MaxLength="64" FixedLength="false" Unicode="true" />
+    <Property Name="DisplayName" Type="String" MaxLength="2048" FixedLength="false" Unicode="true" />
+    <Property Name="Description" Type="String" MaxLength="2048" FixedLength="false" Unicode="true" />
+    <Property Name="DistinguishedName" Type="String" MaxLength="2048" FixedLength="false" Unicode="true" />
+    <Property Name="ModifiedDate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="WhenCreated" Type="DateTime" Precision="0" />
+    <Property Name="WhenChanged" Type="DateTime" Precision="0" />
+  </EntityType>
+  <EntityType Name="TrusteesAsComputer">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="ComputerType" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="OS" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="OSServicePack" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="OSVersion" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="TrusteesAsGroup">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="IsBusy" />
+      <PropertyRef Name="IsVisited" />
+      <PropertyRef Name="IsExpanded" />
+      <PropertyRef Name="IsFaulty" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="Scope" Type="String" MaxLength="32" FixedLength="false" Unicode="true" />
+    <Property Name="IsBusy" Type="Boolean" Nullable="false" />
+    <Property Name="IsVisited" Type="Boolean" Nullable="false" />
+    <Property Name="IsExpanded" Type="Boolean" Nullable="false" />
+    <Property Name="IsFaulty" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TrusteesAsPrincipal">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="PasswordNeverExpires" />
+      <PropertyRef Name="UserCannotChangePassword" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="Enabled" Type="Boolean" />
+    <Property Name="FirstName" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="LastName" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="LastPasswordSet" Type="DateTime" Precision="0" />
+    <Property Name="LastLogon" Type="DateTime" Precision="0" />
+    <Property Name="PasswordNeverExpires" Type="Boolean" Nullable="false" />
+    <Property Name="UserCannotChangePassword" Type="Boolean" Nullable="false" />
+    <Property Name="ExchMasterAccountSid" Type="String" MaxLength="64" FixedLength="false" Unicode="false" />
+    <Property Name="UPN" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="UAC" Type="Int32" />
+    <Property Name="BadPasswordTime" Type="DateTime" Precision="0" />
+    <Property Name="AccountExpires" Type="DateTime" Precision="0" />
+    <Property Name="AllowedToDelegateTo" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="KeyVersionNumber" Type="Int32" />
+  </EntityType>
+  <EntityType Name="TRUST">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="ForestName" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="DomainName" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="TrustName" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="TrustPartner" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="TrustType" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="TrustDirection" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="TrustAttributes" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="SupportedEncryptionTypes" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="TrustSID" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="RecordType" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="DNSName" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="NetBIOS" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="SID" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="Timestamp" Type="DateTime" Precision="0" />
+    <Property Name="ServerID" Type="Int32" />
+    <Property Name="ServerFqdn" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="ServerSID" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="Authority" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="UNC_FILES_DACL">
+    <Key>
+      <PropertyRef Name="ObjectSID" />
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ServerFqdn" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="ServerSID" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="ObjectSID" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Timestamp" Type="DateTime" Precision="0" />
+    <Property Name="Info" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="LastAccessTime" Type="DateTime" Precision="0" />
+    <Property Name="Access" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="AccessType" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="IsInherited" Type="Boolean" />
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="ServerID" Type="Int32" />
+    <Property Name="Authority" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="Owner" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="OwnerIsWellKnown" Type="Boolean" />
+    <Property Name="OwnerRightsPresent" Type="Boolean" />
+    <Property Name="Size" Type="Int64" />
+    <Property Name="Ext" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="UNC_FILES_SACL">
+    <Key>
+      <PropertyRef Name="ObjectSID" />
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ServerFqdn" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="ServerSID" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="ObjectSID" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Timestamp" Type="DateTime" Precision="0" />
+    <Property Name="Info" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="LastAccessTime" Type="DateTime" Precision="0" />
+    <Property Name="Access" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="AccessType" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="IsInherited" Type="Boolean" />
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="ServerID" Type="Int32" />
+    <Property Name="Authority" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="UNC_FOLDERS_DACL">
+    <Key>
+      <PropertyRef Name="ObjectSID" />
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ServerFqdn" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="ServerSID" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="ObjectSID" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Timestamp" Type="DateTime" Precision="0" />
+    <Property Name="Info" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="LastAccessTime" Type="DateTime" Precision="0" />
+    <Property Name="Access" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="AccessType" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="IsInherited" Type="Boolean" />
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="ServerID" Type="Int32" />
+    <Property Name="Authority" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="Owner" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="OwnerIsWellKnown" Type="Boolean" />
+    <Property Name="OwnerRightsPresent" Type="Boolean" />
+    <Property Name="Size" Type="Int64" />
+  </EntityType>
+  <EntityType Name="UNC_FOLDERS_SACL">
+    <Key>
+      <PropertyRef Name="ObjectSID" />
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ServerFqdn" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="ServerSID" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="ObjectSID" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Timestamp" Type="DateTime" Precision="0" />
+    <Property Name="Info" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="LastAccessTime" Type="DateTime" Precision="0" />
+    <Property Name="Access" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="AccessType" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="IsInherited" Type="Boolean" />
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="ServerID" Type="Int32" />
+    <Property Name="Authority" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="UNRESOLVED_MEMBERSHIP">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="MemberId" Type="Int32" />
+    <Property Name="GroupDN" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Resolved" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="USER_RIGHTS">
+    <Key>
+      <PropertyRef Name="ObjectSID" />
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ServerFqdn" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="ServerSID" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="ObjectSID" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Timestamp" Type="DateTime" Precision="0" />
+    <Property Name="Info" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="ServerID" Type="Int32" />
+    <Property Name="Authority" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="USER_TOKENS">
+    <Key>
+      <PropertyRef Name="ObjectSID" />
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ServerFqdn" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="ServerSID" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="SidCount" Type="Int32" />
+    <Property Name="Timestamp" Type="DateTime" Precision="0" />
+    <Property Name="CanBeDelegated" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ObjectSID" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="ServerID" Type="Int32" />
+    <Property Name="Authority" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="Info" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="WMI_DACL">
+    <Key>
+      <PropertyRef Name="ObjectSID" />
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ServerFqdn" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="ServerSID" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="ObjectSID" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Timestamp" Type="DateTime" Precision="0" />
+    <Property Name="Info" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Access" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="AccessType" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="ServerID" Type="Int32" />
+    <Property Name="Authority" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="Owner" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="OwnerIsWellKnown" Type="Boolean" />
+    <Property Name="OwnerRightsPresent" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="ADAdminSDHolderReport">
+    <Key>
+      <PropertyRef Name="ObjectSid" />
+      <PropertyRef Name="Name" />
+      <PropertyRef Name="Authority" />
+      <PropertyRef Name="SamAccountName" />
+      <PropertyRef Name="ModifiedDate" />
+    </Key>
+    <Property Name="ServerFqdn" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="Info" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="AccessType" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="Access" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="IsInherited" Type="Boolean" />
+    <Property Name="ObjectSid" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Authority" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ObjectClass" Type="String" MaxLength="64" FixedLength="false" Unicode="true" />
+    <Property Name="SamAccountName" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="DistinguishedName" Type="String" MaxLength="2048" FixedLength="false" Unicode="true" />
+    <Property Name="ModifiedDate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="WhenCreated" Type="DateTime" Precision="0" />
+    <Property Name="WhenChanged" Type="DateTime" Precision="0" />
+  </EntityType>
+  <EntityType Name="AdminCountReport">
+    <Key>
+      <PropertyRef Name="Name" />
+      <PropertyRef Name="Authority" />
+      <PropertyRef Name="SamAccountName" />
+      <PropertyRef Name="ObjectSID" />
+      <PropertyRef Name="ModifiedDate" />
+    </Key>
+    <Property Name="ServerFqdn" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="CanBeDelegated" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Name" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Authority" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ObjectClass" Type="String" MaxLength="64" FixedLength="false" Unicode="true" />
+    <Property Name="SamAccountName" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="DistinguishedName" Type="String" MaxLength="2048" FixedLength="false" Unicode="true" />
+    <Property Name="ObjectSID" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ModifiedDate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="WhenCreated" Type="DateTime" Precision="0" />
+    <Property Name="WhenChanged" Type="DateTime" Precision="0" />
+  </EntityType>
+  <EntityType Name="database_firewall_rules">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="name" />
+      <PropertyRef Name="start_ip_address" />
+      <PropertyRef Name="end_ip_address" />
+      <PropertyRef Name="create_date" />
+      <PropertyRef Name="modify_date" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="start_ip_address" Type="String" MaxLength="45" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="end_ip_address" Type="String" MaxLength="45" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="create_date" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="modify_date" Type="DateTime" Nullable="false" Precision="3" />
+  </EntityType>
+  <EntityContainer Name="ACLXRAYEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="AD_CONFIG" EntityType="Self.AD_CONFIG" />
+    <EntitySet Name="AD_DOMAIN_ROOT" EntityType="Self.AD_DOMAIN_ROOT" />
+    <EntitySet Name="AD_OBJECT_ACCESS" EntityType="Self.AD_OBJECT_ACCESS" />
+    <EntitySet Name="AD_OBJECT_AUDIT" EntityType="Self.AD_OBJECT_AUDIT" />
+    <EntitySet Name="ADMIN_COUNT" EntityType="Self.ADMIN_COUNT" />
+    <EntitySet Name="ADMIN_SDHOLDER" EntityType="Self.ADMIN_SDHOLDER" />
+    <EntitySet Name="ALL_DRIVERS" EntityType="Self.ALL_DRIVERS" />
+    <EntitySet Name="AllGroupsInfoes" EntityType="Self.AllGroupsInfo" />
+    <EntitySet Name="AllSPScopes" EntityType="Self.AllSPScope" />
+    <EntitySet Name="AllUsersInfoes" EntityType="Self.AllUsersInfo" />
+    <EntitySet Name="AZURE_DIRECTORY_ROLES" EntityType="Self.AZURE_DIRECTORY_ROLES" />
+    <EntitySet Name="CAs" EntityType="Self.CA" />
+    <EntitySet Name="CA_ENROLLMENT_RIGHTS" EntityType="Self.CA_ENROLLMENT_RIGHTS" />
+    <EntitySet Name="CA_MANAGER_RIGHTS" EntityType="Self.CA_MANAGER_RIGHTS" />
+    <EntitySet Name="Computers" EntityType="Self.Computer" />
+    <EntitySet Name="DCOM_DACL" EntityType="Self.DCOM_DACL" />
+    <EntitySet Name="DomainControllers" EntityType="Self.DomainController" />
+    <EntitySet Name="EMPTY_GROUPS" EntityType="Self.EMPTY_GROUPS" />
+    <EntitySet Name="EXCHANGE_DACL" EntityType="Self.EXCHANGE_DACL" />
+    <EntitySet Name="EXCHANGE_MAILBOX" EntityType="Self.EXCHANGE_MAILBOX" />
+    <EntitySet Name="FILE_ASSOC" EntityType="Self.FILE_ASSOC" />
+    <EntitySet Name="FILES_DACL" EntityType="Self.FILES_DACL" />
+    <EntitySet Name="FILES_SACL" EntityType="Self.FILES_SACL" />
+    <EntitySet Name="FOLDERS_DACL" EntityType="Self.FOLDERS_DACL" />
+    <EntitySet Name="FOLDERS_SACL" EntityType="Self.FOLDERS_SACL" />
+    <EntitySet Name="GPOes" EntityType="Self.GPO" />
+    <EntitySet Name="GroupExpandedGroups" EntityType="Self.GroupExpandedGroup" />
+    <EntitySet Name="GroupExpandedPrincipals" EntityType="Self.GroupExpandedPrincipal" />
+    <EntitySet Name="GroupMembers" EntityType="Self.GroupMember" />
+    <EntitySet Name="Groups" EntityType="Self.Group" />
+    <EntitySet Name="KRBTGT_ATTRIBUTES" EntityType="Self.KRBTGT_ATTRIBUTES" />
+    <EntitySet Name="LAST_LOGOFF" EntityType="Self.LAST_LOGOFF" />
+    <EntitySet Name="LOCAL_GROUPS" EntityType="Self.LOCAL_GROUPS" />
+    <EntitySet Name="LOCAL_SIDS" EntityType="Self.LOCAL_SIDS" />
+    <EntitySet Name="NTFS_DACL" EntityType="Self.NTFS_DACL" />
+    <EntitySet Name="NTFS_SACL" EntityType="Self.NTFS_SACL" />
+    <EntitySet Name="ORPHANED_SIDS" EntityType="Self.ORPHANED_SIDS" />
+    <EntitySet Name="Principals" EntityType="Self.Principal" />
+    <EntitySet Name="PROCESS_INFO" EntityType="Self.PROCESS_INFO" />
+    <EntitySet Name="REGISTRY_DACL" EntityType="Self.REGISTRY_DACL" />
+    <EntitySet Name="REGISTRY_LAST_LOGOFF" EntityType="Self.REGISTRY_LAST_LOGOFF" />
+    <EntitySet Name="REGISTRY_PROFILES" EntityType="Self.REGISTRY_PROFILES" />
+    <EntitySet Name="REGISTRY_SACL" EntityType="Self.REGISTRY_SACL" />
+    <EntitySet Name="RODC_DATA" EntityType="Self.RODC_DATA" />
+    <EntitySet Name="SCHEMA_DACL" EntityType="Self.SCHEMA_DACL" />
+    <EntitySet Name="SERVER_INFO" EntityType="Self.SERVER_INFO" />
+    <EntitySet Name="SERVICEs" EntityType="Self.SERVICE" />
+    <EntitySet Name="SHARE_CONTENT_DACL" EntityType="Self.SHARE_CONTENT_DACL" />
+    <EntitySet Name="SHARE_CONTENT_SACL" EntityType="Self.SHARE_CONTENT_SACL" />
+    <EntitySet Name="SHARE_DACL" EntityType="Self.SHARE_DACL" />
+    <EntitySet Name="SID_HISTORY" EntityType="Self.SID_HISTORY" />
+    <EntitySet Name="SidHistories" EntityType="Self.SidHistory" />
+    <EntitySet Name="SIGNED_DRIVERS" EntityType="Self.SIGNED_DRIVERS" />
+    <EntitySet Name="SOFTWAREs" EntityType="Self.SOFTWARE" />
+    <EntitySet Name="SP_Principals" EntityType="Self.SP_Principals" />
+    <EntitySet Name="SP_PrincipalsAssignments" EntityType="Self.SP_PrincipalsAssignments" />
+    <EntitySet Name="SP_PrincipalsPrincipals" EntityType="Self.SP_PrincipalsPrincipals" />
+    <EntitySet Name="SP_RoleAssignments" EntityType="Self.SP_RoleAssignments" />
+    <EntitySet Name="SP_RoleBindings" EntityType="Self.SP_RoleBindings" />
+    <EntitySet Name="SP_RoleDefinitions" EntityType="Self.SP_RoleDefinitions" />
+    <EntitySet Name="SP_Scopes" EntityType="Self.SP_Scopes" />
+    <EntitySet Name="SP_ScopesAssignments" EntityType="Self.SP_ScopesAssignments" />
+    <EntitySet Name="SPNs" EntityType="Self.SPN" />
+    <EntitySet Name="SqlDatabaseObjects" EntityType="Self.SqlDatabaseObject" />
+    <EntitySet Name="SqlDatabasePermissions" EntityType="Self.SqlDatabasePermission" />
+    <EntitySet Name="SqlDatabasePrincipals" EntityType="Self.SqlDatabasePrincipal" />
+    <EntitySet Name="SqlDatabaseRoleExpandedMembers" EntityType="Self.SqlDatabaseRoleExpandedMember" />
+    <EntitySet Name="SqlDatabaseRoleMembers" EntityType="Self.SqlDatabaseRoleMember" />
+    <EntitySet Name="SqlDatabases" EntityType="Self.SqlDatabas" />
+    <EntitySet Name="SqlInstancePermissions" EntityType="Self.SqlInstancePermission" />
+    <EntitySet Name="SqlInstancePrincipals" EntityType="Self.SqlInstancePrincipal" />
+    <EntitySet Name="SqlInstanceRoleExpandedMembers" EntityType="Self.SqlInstanceRoleExpandedMember" />
+    <EntitySet Name="SqlInstanceRoleMembers" EntityType="Self.SqlInstanceRoleMember" />
+    <EntitySet Name="SqlInstances" EntityType="Self.SqlInstance" />
+    <EntitySet Name="SqlTrusteeInfoes" EntityType="Self.SqlTrusteeInfo" />
+    <EntitySet Name="SqlTrusteeInfoAdExpandeds" EntityType="Self.SqlTrusteeInfoAdExpanded" />
+    <EntitySet Name="T_AD_CONFIG" EntityType="Self.T_AD_CONFIG" />
+    <EntitySet Name="T_AD_DOMAIN_ROOT" EntityType="Self.T_AD_DOMAIN_ROOT" />
+    <EntitySet Name="T_AD_OBJECT_ACCESS" EntityType="Self.T_AD_OBJECT_ACCESS" />
+    <EntitySet Name="T_AD_OBJECT_AUDIT" EntityType="Self.T_AD_OBJECT_AUDIT" />
+    <EntitySet Name="T_ADMIN_COUNT" EntityType="Self.T_ADMIN_COUNT" />
+    <EntitySet Name="T_ADMIN_SDHOLDER" EntityType="Self.T_ADMIN_SDHOLDER" />
+    <EntitySet Name="T_ALL_DRIVERS" EntityType="Self.T_ALL_DRIVERS" />
+    <EntitySet Name="T_AZURE_DIRECTORY_ROLES" EntityType="Self.T_AZURE_DIRECTORY_ROLES" />
+    <EntitySet Name="T_CA" EntityType="Self.T_CA" />
+    <EntitySet Name="T_CA_ENROLLMENT_RIGHTS" EntityType="Self.T_CA_ENROLLMENT_RIGHTS" />
+    <EntitySet Name="T_CA_MANAGER_RIGHTS" EntityType="Self.T_CA_MANAGER_RIGHTS" />
+    <EntitySet Name="T_DCOM_DACL" EntityType="Self.T_DCOM_DACL" />
+    <EntitySet Name="T_DIAGNOSTICS" EntityType="Self.T_DIAGNOSTICS" />
+    <EntitySet Name="T_EMPTY_GROUPS" EntityType="Self.T_EMPTY_GROUPS" />
+    <EntitySet Name="T_EVENT_4663_LOG" EntityType="Self.T_EVENT_4663_LOG" />
+    <EntitySet Name="T_EXCHANGE_DACL" EntityType="Self.T_EXCHANGE_DACL" />
+    <EntitySet Name="T_EXCHANGE_MAILBOX" EntityType="Self.T_EXCHANGE_MAILBOX" />
+    <EntitySet Name="T_FILE_ASSOC" EntityType="Self.T_FILE_ASSOC" />
+    <EntitySet Name="T_FILES_DACL" EntityType="Self.T_FILES_DACL" />
+    <EntitySet Name="T_FILES_SACL" EntityType="Self.T_FILES_SACL" />
+    <EntitySet Name="T_FOLDERS_DACL" EntityType="Self.T_FOLDERS_DACL" />
+    <EntitySet Name="T_FOLDERS_SACL" EntityType="Self.T_FOLDERS_SACL" />
+    <EntitySet Name="T_GLB_GROUP_COUNT" EntityType="Self.T_GLB_GROUP_COUNT" />
+    <EntitySet Name="T_GPO" EntityType="Self.T_GPO" />
+    <EntitySet Name="T_GPO_PREFS" EntityType="Self.T_GPO_PREFS" />
+    <EntitySet Name="T_GPO_RESTRICTED_GROUPS" EntityType="Self.T_GPO_RESTRICTED_GROUPS" />
+    <EntitySet Name="T_KRBTGT_ATTRIBUTES" EntityType="Self.T_KRBTGT_ATTRIBUTES" />
+    <EntitySet Name="T_LAST_LOGOFF" EntityType="Self.T_LAST_LOGOFF" />
+    <EntitySet Name="T_LOC_FIREWALL_RULES" EntityType="Self.T_LOC_FIREWALL_RULES" />
+    <EntitySet Name="T_LOCAL_GROUPS" EntityType="Self.T_LOCAL_GROUPS" />
+    <EntitySet Name="T_LOCAL_SIDS" EntityType="Self.T_LOCAL_SIDS" />
+    <EntitySet Name="T_NTFS_DACL" EntityType="Self.T_NTFS_DACL" />
+    <EntitySet Name="T_NTFS_SACL" EntityType="Self.T_NTFS_SACL" />
+    <EntitySet Name="T_PRE_WINDOWS_2000" EntityType="Self.T_PRE_WINDOWS_2000" />
+    <EntitySet Name="T_PROCESS_INFO" EntityType="Self.T_PROCESS_INFO" />
+    <EntitySet Name="T_REGISTRY_DACL" EntityType="Self.T_REGISTRY_DACL" />
+    <EntitySet Name="T_REGISTRY_LAST_LOGOFF" EntityType="Self.T_REGISTRY_LAST_LOGOFF" />
+    <EntitySet Name="T_REGISTRY_PROFILES" EntityType="Self.T_REGISTRY_PROFILES" />
+    <EntitySet Name="T_REGISTRY_SACL" EntityType="Self.T_REGISTRY_SACL" />
+    <EntitySet Name="T_RODC_DATA" EntityType="Self.T_RODC_DATA" />
+    <EntitySet Name="T_SCAN_FILES" EntityType="Self.T_SCAN_FILES" />
+    <EntitySet Name="T_SCAN_SESSIONS" EntityType="Self.T_SCAN_SESSIONS" />
+    <EntitySet Name="T_SCHEMA_DACL" EntityType="Self.T_SCHEMA_DACL" />
+    <EntitySet Name="T_SERVICE" EntityType="Self.T_SERVICE" />
+    <EntitySet Name="T_SHARE_CONTENT_DACL" EntityType="Self.T_SHARE_CONTENT_DACL" />
+    <EntitySet Name="T_SHARE_CONTENT_SACL" EntityType="Self.T_SHARE_CONTENT_SACL" />
+    <EntitySet Name="T_SHARE_DACL" EntityType="Self.T_SHARE_DACL" />
+    <EntitySet Name="T_SID_HISTORY" EntityType="Self.T_SID_HISTORY" />
+    <EntitySet Name="T_SIGNED_DRIVERS" EntityType="Self.T_SIGNED_DRIVERS" />
+    <EntitySet Name="T_SOFTWARE" EntityType="Self.T_SOFTWARE" />
+    <EntitySet Name="T_SPN" EntityType="Self.T_SPN" />
+    <EntitySet Name="T_TASKS_DACL" EntityType="Self.T_TASKS_DACL" />
+    <EntitySet Name="T_TRUSTS" EntityType="Self.T_TRUSTS" />
+    <EntitySet Name="T_UNC_FILES_DACL" EntityType="Self.T_UNC_FILES_DACL" />
+    <EntitySet Name="T_UNC_FILES_SACL" EntityType="Self.T_UNC_FILES_SACL" />
+    <EntitySet Name="T_UNC_FOLDERS_DACL" EntityType="Self.T_UNC_FOLDERS_DACL" />
+    <EntitySet Name="T_UNC_FOLDERS_SACL" EntityType="Self.T_UNC_FOLDERS_SACL" />
+    <EntitySet Name="T_USER_RIGHTS" EntityType="Self.T_USER_RIGHTS" />
+    <EntitySet Name="T_USER_TOKENS" EntityType="Self.T_USER_TOKENS" />
+    <EntitySet Name="T_WMI_DACL" EntityType="Self.T_WMI_DACL" />
+    <EntitySet Name="TASKS_DACL" EntityType="Self.TASKS_DACL" />
+    <EntitySet Name="Trustees" EntityType="Self.Trustee" />
+    <EntitySet Name="TrusteesAsComputers" EntityType="Self.TrusteesAsComputer" />
+    <EntitySet Name="TrusteesAsGroups" EntityType="Self.TrusteesAsGroup" />
+    <EntitySet Name="TrusteesAsPrincipals" EntityType="Self.TrusteesAsPrincipal" />
+    <EntitySet Name="TRUSTS" EntityType="Self.TRUST" />
+    <EntitySet Name="UNC_FILES_DACL" EntityType="Self.UNC_FILES_DACL" />
+    <EntitySet Name="UNC_FILES_SACL" EntityType="Self.UNC_FILES_SACL" />
+    <EntitySet Name="UNC_FOLDERS_DACL" EntityType="Self.UNC_FOLDERS_DACL" />
+    <EntitySet Name="UNC_FOLDERS_SACL" EntityType="Self.UNC_FOLDERS_SACL" />
+    <EntitySet Name="UNRESOLVED_MEMBERSHIP" EntityType="Self.UNRESOLVED_MEMBERSHIP" />
+    <EntitySet Name="USER_RIGHTS" EntityType="Self.USER_RIGHTS" />
+    <EntitySet Name="USER_TOKENS" EntityType="Self.USER_TOKENS" />
+    <EntitySet Name="WMI_DACL" EntityType="Self.WMI_DACL" />
+    <EntitySet Name="ADAdminSDHolderReports" EntityType="Self.ADAdminSDHolderReport" />
+    <EntitySet Name="AdminCountReports" EntityType="Self.AdminCountReport" />
+    <EntitySet Name="database_firewall_rules" EntityType="Self.database_firewall_rules" />
+    <FunctionImport Name="AdExpandedGroupsExplorer" ReturnType="Collection(ACLXRAYModel.AdExpandedGroupsExplorer_Result)">
+      <Parameter Name="TrusteeId" Mode="In" Type="Int32" />
+      <Parameter Name="Authority" Mode="In" Type="String" />
+      <Parameter Name="SamAccountName" Mode="In" Type="String" />
+      <Parameter Name="Scope" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="AdExpandedGroupsExplorerXRay" ReturnType="Collection(ACLXRAYModel.AdExpandedGroupsExplorerXRay_Result)">
+      <Parameter Name="TrusteeId" Mode="In" Type="Int32" />
+      <Parameter Name="Authority" Mode="In" Type="String" />
+      <Parameter Name="SamAccountName" Mode="In" Type="String" />
+      <Parameter Name="Scope" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="AdExpandedPrincipalsExplorer" ReturnType="Collection(ACLXRAYModel.AdExpandedPrincipalsExplorer_Result)">
+      <Parameter Name="GroupId" Mode="In" Type="Int32" />
+      <Parameter Name="Authority" Mode="In" Type="String" />
+      <Parameter Name="SamAccountName" Mode="In" Type="String" />
+      <Parameter Name="FirstName" Mode="In" Type="String" />
+      <Parameter Name="LastName" Mode="In" Type="String" />
+      <Parameter Name="ObjectClass" Mode="In" Type="String" />
+      <Parameter Name="Enabled" Mode="In" Type="Boolean" />
+    </FunctionImport>
+    <FunctionImport Name="AdTrusteesExplorer">
+      <Parameter Name="Authority" Mode="In" Type="String" />
+      <Parameter Name="SamAccountName" Mode="In" Type="String" />
+      <Parameter Name="FirstName" Mode="In" Type="String" />
+      <Parameter Name="LastName" Mode="In" Type="String" />
+      <Parameter Name="ObjectClass" Mode="In" Type="String" />
+      <Parameter Name="Enabled" Mode="In" Type="Boolean" />
+    </FunctionImport>
+    <FunctionImport Name="sp_ClearADTables" />
+    <FunctionImport Name="sp_ClearAllClientTables">
+      <Parameter Name="cutoffDate" Mode="In" Type="DateTime" />
+      <Parameter Name="batchSize" Mode="In" Type="Int32" />
+      <Parameter Name="ServerId" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_ClearClientTable">
+      <Parameter Name="tableName" Mode="In" Type="String" />
+      <Parameter Name="cutoffDate" Mode="In" Type="DateTime" />
+      <Parameter Name="batchSize" Mode="In" Type="Int32" />
+      <Parameter Name="ServerId" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_ClearSQLTables" />
+    <FunctionImport Name="sp_GetOrphanedSids" />
+    <FunctionImport Name="sp_GetSidForServer">
+      <Parameter Name="ServerFqdn" Mode="In" Type="String" />
+      <Parameter Name="ServerSID" Mode="In" Type="String" />
+      <Parameter Name="Option" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_GetSidForTrustee">
+      <Parameter Name="Authority" Mode="In" Type="String" />
+      <Parameter Name="SamAccountName" Mode="In" Type="String" />
+      <Parameter Name="Option" Mode="In" Type="Int16" />
+    </FunctionImport>
+    <FunctionImport Name="sp_ResolveAD" />
+    <FunctionImport Name="sp_ResolveLocalGroups" />
+    <FunctionImport Name="sp_WriteADDiagnosticInfo">
+      <Parameter Name="OPID" Mode="In" Type="Guid" />
+      <Parameter Name="OPNAME" Mode="In" Type="String" />
+      <Parameter Name="OPSTEP" Mode="In" Type="String" />
+      <Parameter Name="OPIDOUT" Mode="InOut" Type="Guid" />
+    </FunctionImport>
+    <FunctionImport Name="sp_WriteDiagnostics">
+      <Parameter Name="OpId" Mode="In" Type="Guid" />
+      <Parameter Name="OpName" Mode="In" Type="String" />
+      <Parameter Name="OpStep" Mode="In" Type="String" />
+      <Parameter Name="N1" Mode="In" Type="Int32" />
+      <Parameter Name="N2" Mode="In" Type="Int32" />
+      <Parameter Name="N3" Mode="In" Type="Int32" />
+      <Parameter Name="N4" Mode="In" Type="Int32" />
+      <Parameter Name="N5" Mode="In" Type="Int32" />
+      <Parameter Name="N6" Mode="In" Type="Int32" />
+      <Parameter Name="N7" Mode="In" Type="Int32" />
+      <Parameter Name="N8" Mode="In" Type="Int32" />
+      <Parameter Name="N9" Mode="In" Type="Int32" />
+      <Parameter Name="N10" Mode="In" Type="Int32" />
+      <Parameter Name="S1" Mode="In" Type="String" />
+      <Parameter Name="S2" Mode="In" Type="String" />
+      <Parameter Name="S3" Mode="In" Type="String" />
+      <Parameter Name="S4" Mode="In" Type="String" />
+      <Parameter Name="S5" Mode="In" Type="String" />
+      <Parameter Name="S6" Mode="In" Type="String" />
+      <Parameter Name="S7" Mode="In" Type="String" />
+      <Parameter Name="S8" Mode="In" Type="String" />
+      <Parameter Name="S9" Mode="In" Type="String" />
+      <Parameter Name="S10" Mode="In" Type="String" />
+      <Parameter Name="CUTOFFDATE" Mode="In" Type="DateTime" />
+      <Parameter Name="OPIDOUT" Mode="InOut" Type="Guid" />
+    </FunctionImport>
+    <FunctionImport Name="SPGetSitePermissions" ReturnType="Collection(ACLXRAYModel.SPGetSitePermissions_Result)">
+      <Parameter Name="scopeID" Mode="In" Type="Guid" />
+      <Parameter Name="Url" Mode="In" Type="String" />
+      <Parameter Name="Name" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="SPGetUserPermissions" ReturnType="Collection(ACLXRAYModel.SPGetUserPermissions_Result)">
+      <Parameter Name="user" Mode="In" Type="String" />
+      <Parameter Name="scopeID" Mode="In" Type="Guid" />
+    </FunctionImport>
+    <FunctionImport Name="SqlDbPermissionsByUserReport" ReturnType="Collection(ACLXRAYModel.SqlDbPermissionsByUserReport_Result)">
+      <Parameter Name="AdUserId" Mode="In" Type="Int32" />
+      <Parameter Name="Authority" Mode="In" Type="String" />
+      <Parameter Name="NameSearch" Mode="In" Type="String" />
+      <Parameter Name="SamSearch" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="SqlDbPermissionsReport" ReturnType="Collection(ACLXRAYModel.SqlDbPermissionsReport_Result)">
+      <Parameter Name="SqlInstanceId" Mode="In" Type="Int32" />
+      <Parameter Name="SqlDbId" Mode="In" Type="Int32" />
+      <Parameter Name="DbNameSearch" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="SqlDbPermissionsSummaryReport" ReturnType="Collection(ACLXRAYModel.SqlDbPermissionsSummaryReport_Result)">
+      <Parameter Name="InstanceId" Mode="In" Type="Int32" />
+    </FunctionImport>
+  </EntityContainer>
+  <ComplexType Name="AdExpandedGroupsExplorer_Result">
+    <Property Type="Int32" Name="Id" Nullable="false" />
+    <Property Type="String" Name="Sid" Nullable="false" MaxLength="64" />
+    <Property Type="String" Name="ObjectClass" Nullable="true" MaxLength="64" />
+    <Property Type="String" Name="Authority" Nullable="false" MaxLength="256" />
+    <Property Type="String" Name="SamAccountName" Nullable="false" MaxLength="256" />
+    <Property Type="String" Name="DistinguishedName" Nullable="true" MaxLength="2048" />
+    <Property Type="String" Name="DisplayName" Nullable="true" MaxLength="2048" />
+    <Property Type="String" Name="Scope" Nullable="true" MaxLength="32" />
+    <Property Type="Int32" Name="ExpandedGroupsCount" Nullable="false" />
+    <Property Type="Int32" Name="ExpandedPricipalsCount" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="AdExpandedGroupsExplorerXRay_Result">
+    <Property Type="Int32" Name="Id" Nullable="false" />
+    <Property Type="String" Name="Sid" Nullable="false" MaxLength="64" />
+    <Property Type="String" Name="ObjectClass" Nullable="true" MaxLength="64" />
+    <Property Type="String" Name="Authority" Nullable="false" MaxLength="256" />
+    <Property Type="String" Name="SamAccountName" Nullable="false" MaxLength="256" />
+    <Property Type="String" Name="DistinguishedName" Nullable="true" MaxLength="2048" />
+    <Property Type="String" Name="DisplayName" Nullable="true" MaxLength="2048" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="256" />
+    <Property Type="String" Name="Scope" Nullable="true" MaxLength="32" />
+    <Property Type="Int32" Name="ExpandedGroupsCount" Nullable="false" />
+    <Property Type="Int32" Name="ExpandedPricipalsCount" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="AdExpandedPrincipalsExplorer_Result">
+    <Property Type="Int32" Name="Id" Nullable="false" />
+    <Property Type="String" Name="Sid" Nullable="false" MaxLength="64" />
+    <Property Type="String" Name="Authority" Nullable="false" MaxLength="256" />
+    <Property Type="String" Name="SamAccountName" Nullable="false" MaxLength="256" />
+    <Property Type="String" Name="DistinguishedName" Nullable="true" MaxLength="2048" />
+    <Property Type="String" Name="DisplayName" Nullable="true" MaxLength="2048" />
+    <Property Type="String" Name="FirstName" Nullable="true" MaxLength="256" />
+    <Property Type="String" Name="LastName" Nullable="true" MaxLength="256" />
+    <Property Type="DateTime" Name="LastLogon" Nullable="true" Precision="16" />
+    <Property Type="DateTime" Name="LastPasswordSet" Nullable="true" Precision="16" />
+    <Property Type="Boolean" Name="PasswordNeverExpires" Nullable="true" />
+    <Property Type="Boolean" Name="UserCannotChangePassword" Nullable="true" />
+    <Property Type="Int32" Name="ExpandedGroupsCount" Nullable="false" />
+    <Property Type="Boolean" Name="Enabled" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="SPGetSitePermissions_Result">
+    <Property Type="String" Name="ParentName" Nullable="false" />
+    <Property Type="Guid" Name="ParentID" Nullable="true" />
+    <Property Type="String" Name="Url" Nullable="true" />
+    <Property Type="String" Name="Name" Nullable="true" />
+    <Property Type="Guid" Name="ID" Nullable="false" />
+    <Property Type="String" Name="ScopeTypeLabel" Nullable="true" MaxLength="6" />
+    <Property Type="Int32" Name="ScopeType" Nullable="false" />
+    <Property Type="String" Name="PrincipalName" Nullable="true" />
+    <Property Type="String" Name="PrincipalDisplayName" Nullable="true" />
+    <Property Type="String" Name="SPPrincipalLoginName" Nullable="true" />
+    <Property Type="String" Name="PrincipalAuthority" Nullable="true" />
+    <Property Type="String" Name="PrincipalLoginName" Nullable="true" />
+    <Property Type="Int32" Name="PrincipalType" Nullable="true" />
+    <Property Type="String" Name="PrincipalTypeLabel" Nullable="false" MaxLength="22" />
+    <Property Type="String" Name="MemberName" Nullable="true" />
+    <Property Type="String" Name="MemberDisplayName" Nullable="true" />
+    <Property Type="String" Name="SPMemberLoginName" Nullable="true" />
+    <Property Type="String" Name="MemberAuthority" Nullable="true" />
+    <Property Type="String" Name="MemberLoginName" Nullable="true" />
+    <Property Type="String" Name="PermissionName" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="ADGroupSID" Nullable="true" />
+    <Property Type="String" Name="IsDirectAdmin" Nullable="true" MaxLength="3" />
+  </ComplexType>
+  <ComplexType Name="SPGetUserPermissions_Result">
+    <Property Type="Guid" Name="SiteID" Nullable="false" />
+    <Property Type="String" Name="ParentName" Nullable="true" />
+    <Property Type="Guid" Name="ParentID" Nullable="true" />
+    <Property Type="Guid" Name="ScopeID" Nullable="true" />
+    <Property Type="String" Name="ScopeName" Nullable="true" />
+    <Property Type="String" Name="ScopeUrl" Nullable="true" />
+    <Property Type="String" Name="ScopeTypeLabel" Nullable="true" />
+    <Property Type="Int32" Name="ScopeType" Nullable="true" />
+    <Property Type="Guid" Name="RoleAssignmentID" Nullable="true" />
+    <Property Type="String" Name="RoleDefinitionName" Nullable="true" />
+    <Property Type="String" Name="SPGroup" Nullable="true" />
+    <Property Type="String" Name="PrincName" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="SqlDbPermissionsByUserReport_Result">
+    <Property Type="String" Name="InstanceName" Nullable="true" MaxLength="128" />
+    <Property Type="String" Name="DbName" Nullable="true" MaxLength="128" />
+    <Property Type="Int32" Name="AdUserid" Nullable="true" />
+    <Property Type="String" Name="AdUserAuthority" Nullable="true" MaxLength="256" />
+    <Property Type="String" Name="AdUserName" Nullable="true" MaxLength="256" />
+    <Property Type="String" Name="AdUserDisplayName" Nullable="true" MaxLength="2048" />
+    <Property Type="String" Name="LoginType" Nullable="true" MaxLength="64" />
+    <Property Type="String" Name="LoginName" Nullable="true" MaxLength="128" />
+    <Property Type="Int32" Name="LoginIsMember" Nullable="false" />
+    <Property Type="Int32" Name="LoginDisabled" Nullable="true" />
+    <Property Type="Int32" Name="LoginIsFixedRole" Nullable="false" />
+    <Property Type="Int32" Name="CanConnectToInstance" Nullable="true" />
+    <Property Type="Int32" Name="DenyRevokeConnectToInstance" Nullable="true" />
+    <Property Type="Int32" Name="HasControlServer" Nullable="true" />
+    <Property Type="Int32" Name="NrInstanceGrants" Nullable="true" />
+    <Property Type="Int32" Name="NrInstanceGrantWithOption" Nullable="true" />
+    <Property Type="Int32" Name="NrInstanceDenyRevoke" Nullable="true" />
+    <Property Type="Int32" Name="InstanceWarning" Nullable="true" />
+    <Property Type="String" Name="DbUserType" Nullable="true" MaxLength="64" />
+    <Property Type="String" Name="DbUserName" Nullable="true" MaxLength="128" />
+    <Property Type="Int32" Name="DbUserIsMember" Nullable="false" />
+    <Property Type="Int32" Name="CanConnectToDb" Nullable="true" />
+    <Property Type="Int32" Name="DenyRevokeConnectToDb" Nullable="true" />
+    <Property Type="Boolean" Name="DbUserIsFixedRole" Nullable="true" />
+    <Property Type="Binary" Name="OwnerSqlSid" Nullable="true" MaxLength="85" />
+    <Property Type="Binary" Name="LoginSid" Nullable="true" MaxLength="85" />
+    <Property Type="Binary" Name="DbUserSqlSid" Nullable="true" MaxLength="85" />
+    <Property Type="Int32" Name="IsDbOwner" Nullable="false" />
+    <Property Type="Int32" Name="NrDbGrants" Nullable="true" />
+    <Property Type="Int32" Name="NrDbGrantWithOption" Nullable="true" />
+    <Property Type="Int32" Name="NrDbDenyRevoke" Nullable="true" />
+    <Property Type="Int32" Name="DbWarning" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="SqlDbPermissionsReport_Result">
+    <Property Type="Int32" Name="AdUserId" Nullable="true" />
+    <Property Type="String" Name="AdUserAuthority" Nullable="true" MaxLength="256" />
+    <Property Type="String" Name="AdUserName" Nullable="true" MaxLength="256" />
+    <Property Type="String" Name="AdUserDisplayName" Nullable="true" MaxLength="2048" />
+    <Property Type="Int32" Name="LoginDisabled" Nullable="true" />
+    <Property Type="Int32" Name="HasInstanceDirectPermission" Nullable="false" />
+    <Property Type="Int32" Name="HasDbDirectPermission" Nullable="false" />
+    <Property Type="Int32" Name="CanConnectToInstance" Nullable="true" />
+    <Property Type="Int32" Name="DenyRevokeConnectToInstance" Nullable="true" />
+    <Property Type="Int32" Name="CanConnectToDb" Nullable="true" />
+    <Property Type="Int32" Name="DenyRevokeConnectToDb" Nullable="true" />
+    <Property Type="Int32" Name="HasControlServer" Nullable="true" />
+    <Property Type="Int32" Name="LoginIsFixedRole" Nullable="true" />
+    <Property Type="Int32" Name="DirectLoginIsFixedRole" Nullable="true" />
+    <Property Type="Int32" Name="DirectHasControlServer" Nullable="true" />
+    <Property Type="Int32" Name="DirectNrInstanceGrants" Nullable="true" />
+    <Property Type="Int32" Name="DirectNrInstanceGrantWithOption" Nullable="true" />
+    <Property Type="Int32" Name="NrInstanceDenyRevoke" Nullable="true" />
+    <Property Type="Int32" Name="DirectDbUserIsFixedRole" Nullable="true" />
+    <Property Type="Int32" Name="DirectNrDbGrants" Nullable="true" />
+    <Property Type="Int32" Name="DirectNrDbGrantWithOption" Nullable="true" />
+    <Property Type="Int32" Name="DirectNrDbDenyRevoke" Nullable="true" />
+    <Property Type="Int32" Name="IsDbOwner" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="SqlDbPermissionsSummaryReport_Result">
+    <Property Type="Int32" Name="Id" Nullable="true" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="128" />
+    <Property Type="Int32" Name="UsersWithDirectPermissions" Nullable="true" />
+  </ComplexType>
+</Schema>

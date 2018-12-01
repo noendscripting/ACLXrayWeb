@@ -1,0 +1,17 @@
+﻿
+@{
+    ViewBag.Title = "Trustee Search";
+    Layout = "~/Views/Shared/_MainLayout.cshtml";
+
+}
+<form method="post">
+  
+        @{
+            Html.RenderPartial("_SearchLayout");
+        }
+
+    <div class="input-group mb-3">
+        <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+    </div>
+</form>
+
